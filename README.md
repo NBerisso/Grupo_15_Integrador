@@ -10,4 +10,5 @@ El sitio apuntara a cualquier entusiasta y amante del cafe, asi como tambien a g
 El equipo esta conformado por:
 
   -Nicolas Berisso, 27 años de edad, vivo en capital federal y soy abogado. Me encanta el cafe, lo consumo a diario.
+  -Leandro Maldonado, 26 años de edad, vivo de Berazategui Zona Sur, soy Profesor de Musica. Me gusta enseñar y hacer musica.
   
