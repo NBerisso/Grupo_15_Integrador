@@ -14,3 +14,5 @@ El equipo esta conformado por:
   -Leandro Maldonado, 26 años de edad, vivo en Berazategui Zona Sur, soy Profesor de Musica. Me gusta enseñar y hacer musica.
   
   -Rocío Spina, 18 años de edad, vivo en Lujan Zona Oeste, trabajo como administradora en barrio privado. Empece a tomar cafe hace poco y se volvió parte de mi rutina
+
+  -Nicolas Denaday, 19 años, vivo en Capital Federal, trabajo como bedel en la UCES sede Centro. Tomo café hace años y me encanta descrubrir sabores nuevos siempre.
