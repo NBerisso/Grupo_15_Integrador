@@ -15,16 +15,21 @@ El equipo esta conformado por:
   
   -Rocío Spina, 18 años de edad, vivo en Lujan Zona Oeste, trabajo como administradora en barrio privado. Empece a tomar cafe hace poco y se volvió parte de mi rutina
 
-  -Nicolas Denaday, 19 años, vivo en Capital Federal, trabajo como bedel en la UCES sede Centro. Tomo café hace años y me encanta descrubrir sabores nuevos siempre.
+  -Nicolas Denaday, 20 años, vivo en Capital Federal, trabajo como bedel en la UCES sede Centro. Tomo café hace años y me encanta descrubrir sabores nuevos siempre.
   
   
   Inspiraciones:
   
   1- https://www.allsaintscafe.com.ar/
+  
   2- https://www.dolce-gusto.com.ar/
+  
   3- https://modobarista.com/
+  
   4- https://boutiquedelcafe.es/
+  
   5- https://royocafe.com.ar/
+  
   6- https://www.padrecoffeeroasters.com/
 
 
