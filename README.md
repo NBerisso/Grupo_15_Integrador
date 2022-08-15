@@ -1,4 +1,4 @@
-# grupo_15_Integrador
+# Grupo_15_Blended Cafe
 Proyecto Integrador Digital House
 
 
@@ -7,7 +7,7 @@ Nuestro sitio ofrecera una experiencia al cliente para poder adquirir cafe prove
 El sitio apuntara a cualquier entusiasta y amante del cafe, asi como tambien a gente dispuesta a adentrarse en este mundo y experimentar nuevos horizontes.
 
 
-El equipo esta conformado por:
+# El equipo esta conformado por:
 
   -Nicolas Berisso, 27 años de edad, vivo en capital federal y soy abogado. Me encanta el cafe, lo consumo a diario de diferentes maneras.
   
@@ -18,7 +18,7 @@ El equipo esta conformado por:
   -Nicolas Denaday, 20 años, vivo en Capital Federal, trabajo como bedel en la UCES sede Centro. Tomo café hace años y me encanta descrubrir nuevos sabores siempre.
   
   
-  Inspiraciones:
+  # Inspiraciones:
   
   1- https://www.allsaintscafe.com.ar/
   
@@ -33,15 +33,21 @@ El equipo esta conformado por:
   6- https://www.padrecoffeeroasters.com/
 
 
-  Tipografias:
+  # Tipografias:
   -Quicksand
+  
   -Muli
   
-  Colores: Cafes y tostados
+  # Colores: Cafes y tostados
+  
   .color1   #3c1505
+  
   .color2  #673517
+  
   .color3  #9f5e28
+  
   .color4  #de9841
+  
   .color5  #ffde6c
 
 
