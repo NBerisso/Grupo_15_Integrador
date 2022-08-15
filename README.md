@@ -35,19 +35,14 @@ El sitio apuntara a cualquier entusiasta y amante del cafe, asi como tambien a g
 
   # Tipografias:
   -Quicksand
-  
   -Muli
   
   # Colores: Cafes y tostados
   
   .color1   #3c1505
-  
-  .color2  #673517
-  
-  .color3  #9f5e28
-  
-  .color4  #de9841
-  
+  .color2  #673517  
+  .color3  #9f5e28  
+  .color4  #de9841  
   .color5  #ffde6c
 
 
