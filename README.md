@@ -9,7 +9,7 @@ El sitio apuntara a cualquier entusiasta y amante del cafe, asi como tambien a g
 
 El equipo esta conformado por:
 
-  -Nicolas Berisso, 27 años de edad, vivo en capital federal y soy abogado. Me encanta el cafe, lo consumo a diario.
+  -Nicolas Berisso, 27 años de edad, vivo en capital federal y soy abogado. Me encanta el cafe, lo consumo a diario de diferentes maneras.
   
   -Leandro Maldonado, 26 años de edad, vivo en Berazategui Zona Sur, soy Profesor de Musica. Me gusta enseñar y hacer musica.
   
@@ -26,3 +26,24 @@ El equipo esta conformado por:
   4- https://boutiquedelcafe.es/
   5- https://royocafe.com.ar/
   6- https://www.padrecoffeeroasters.com/
+
+
+  Tipografias:
+  -Quicksand
+  -Muli
+  
+  Colores: Cafes y tostados
+  .color1   #3c1505
+  .color2  #673517
+  .color3  #9f5e28
+  .color4  #de9841
+  .color5  #ffde6c
+
+
+
+
+
+
+
+
+
