@@ -7,5 +7,11 @@ app.use(express.static(path.join(__dirname,"public")));
 app.listen(3000, () => console.log("Servidor corriendo"));
 
 app.get("/", function(req,res){
-    res.sendFile(path.join(__dirname, "/views/index.html"))
+    res.sendFile(path.join(__dirname, "/views/home.html"))
 });
+app.get("/crearCuenta", function(req,res){
+    res.sendFile(path.join(__dirname,"/views/crearCuenta.html"))
+})
+app.get("/Producto", function(req,res){
+    res.sendFile(path.join(__dirname,"/views/Producto.html"))
+})

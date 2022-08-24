@@ -1,0 +1,47 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+main{
+    background-image: url("/img/granos.jpeg");
+}
+.logo{
+    color: white;
+    margin: 0% 50% 0% 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+h1{
+    font-size: 250%;
+    margin-top: 0%;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}
+.registro{
+    margin: 0% 35% 5% 35%;
+    background-color: #eee2b3;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: black 0px 0px 9px 8px;
+}
+input{
+    display: flex;
+    align-items: stretch;
+    width: 75%;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: black 0px 1px 1px 0px;
+}
+.botones p input{
+    color: white;
+    background-color: peru;
+    height: 30px;
+}
+.campos p input{
+    height: 30px;
+}
