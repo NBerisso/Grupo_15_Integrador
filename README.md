@@ -47,7 +47,7 @@ El sitio apuntara a cualquier entusiasta y amante del cafe, asi como tambien a g
 
 # Trello
 
-https://github.com/NBerisso/Grupo_15_Integrador
+https://trello.com/b/nkmuZ0ln/integrador-cafe
 
 
 
