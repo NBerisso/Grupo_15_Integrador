@@ -3,7 +3,9 @@
     box-sizing: border-box;
 }
 main{
-    background-image: url("/img/granos.jpeg");
+    background-image: url("/img/granos4.jpeg");
+    /* / background-image: url("/img/granos.jpeg"); */
+    /* background-color: saddlebrown; */ 
     position: relative;
     height: 44rem;
 }
@@ -16,16 +18,15 @@ main{
     padding: 10px;
 }
 h1{
-    font-size: 250%;
-    margin-top: 0%;
     color: white;
     display: flex;
     align-content: center;
     justify-content: center; 
 }
 .registro{
-    margin: 0% 35% 5% 35%;
-    background-color: #eee2b3;
+    margin: auto;
+    width: 30%;
+    background-color: #fff0b6ba;
     padding: 20px;
     border-radius: 10%;
     box-shadow: black 0px 0px 9px 8px;

@@ -4,7 +4,9 @@
 }
 
 main {
-    background-image: url("/img/granos4.jpeg");
+    /* background-image: url("/img/granos4.jpeg");
+    background-image: url("/img/granos.jpeg");  */
+    background-color:#3d2706;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -13,7 +15,8 @@ main {
 }
 
 .seccion{
-    background-color: #5f400b;
+    background-color: rgb(88 78 58 / 97%);
+    /* background-color: #de9841;  */
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -54,6 +57,7 @@ img:hover {
     flex-direction: column;
     align-items: stretch;
     width: 30%;
+    margin: 6rem 0rem;
 }
 
 .seccion2 select {
@@ -61,9 +65,23 @@ img:hover {
     font-size: x-large;
 }
 
-.seccion2 input {
+.seccion2 .numero{
     margin: 1rem;
     font-size: x-large;
+}
+.seccion2 .boton {
+    margin: 1rem;
+    font-size: x-large;
+}
+
+.seccion2 .boton:hover {
+    background-color: black;
+    color: white;
+}
+
+.seccion2 .boton:focus {
+    background-color: navy;
+    color: yellowgreen;
 }
 
 label{
