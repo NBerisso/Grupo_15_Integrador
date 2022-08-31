@@ -4,10 +4,9 @@
 }
 
 main {
-    /* background-image: url("/img/granos4.jpeg");
-    background-image: url("/img/granos.jpeg");  */
-    background-color:#3d2706;
+    background-image: url("/img/granos10.jpeg");
     height: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,8 +14,7 @@ main {
 }
 
 .seccion{
-    background-color: rgb(88 78 58 / 97%);
-    /* background-color: #de9841;  */
+    background-color: #5e4403de;
     height: 100%;
     display: flex;
     flex-direction: row;

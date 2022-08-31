@@ -2,35 +2,37 @@
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
 }
+
 main{
-    background-image: url("/img/granos4.jpeg");
-    /* / background-image: url("/img/granos.jpeg"); */
-    /* background-color: saddlebrown; */ 
-    position: relative;
-    height: 44rem;
+background-image: url(/img/granos4.jpeg);
+height: 56rem;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: flex-start;
 }
 .logo{
     left: 0%;
     color: white;
-    margin: 0% 50% 0% 50%;
+    margin: 0% 0% 0% 14%;
     padding: 10px;
     position: absolute;
     animation-name: deslizar;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-direction: alternate reverse;
+    animation-direction: alternate;
 }
 @keyframes deslizar {
     0%{
-        left: 0%;
-        font-size: 30px;
+        font-size: 20px;
     }
     50%{
-       font-size: 50px;
+       font-size: 32px;
     }
     100%{
         left:  80%;
         font-size: 10px;
+       font-size: 10px;
     }
 }
 h1{
@@ -39,14 +41,13 @@ h1{
     align-content: center;
     justify-content: center; 
 }
-.registro{
+.registro {
     margin: auto;
     width: 30%;
     background-color: #fff0b6ba;
     padding: 20px;
     border-radius: 10%;
-    box-shadow: black 0px 0px 9px 8px;
-    position: relative;
+    box-shadow: inset black -1px 1px 20px 4px;
 }
 input{
     display: flex;
