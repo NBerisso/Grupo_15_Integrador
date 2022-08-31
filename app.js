@@ -21,3 +21,15 @@ app.get("/crearCuenta", function(req,res){
 app.get("/Producto", function(req,res){
     res.sendFile(path.join(__dirname,"/views/Producto.html"))
 })
+
+app.get("/login", function(req,res){
+    res.sendFile(path.join(__dirname,"/views/login.html"))
+})
+
+app.get("/miCarrito", function(req,res){
+    res.sendFile(path.join(__dirname,"/views/miCarrito.html"))
+})
+
+app.get("/carritoFinal", function(req,res){
+    res.sendFile(path.join(__dirname,"/views/carritoFinal.html"))
+})
