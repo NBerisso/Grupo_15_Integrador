@@ -1,0 +1,80 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+main{
+    background-image: url("/img/granos4.jpeg");
+    /* / background-image: url("/img/granos.jpeg"); */
+    /* background-color: saddlebrown; */ 
+    position: relative;
+    height: 44rem;
+}
+.logo{
+    left: 0%;
+    color: white;
+    margin: 0% 50% 0% 50%;
+    padding: 10px;
+    position: absolute;
+    animation-name: deslizar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate reverse;
+}
+@keyframes deslizar {
+    0%{
+        left: 0%;
+        font-size: 30px;
+    }
+    50%{
+       font-size: 50px;
+    }
+    100%{
+        left:  80%;
+       font-size: 10px;
+    }
+}
+h1{
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}
+.registro{
+    margin: auto;
+    width: 30%;
+    background-color: #fff0b6ba;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: black 0px 0px 9px 8px;
+    position: relative;
+}
+input{
+    height: 30px;
+    display: flex;
+    align-items: stretch;
+    width: 75%;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: black 0px 1px 1px 0px;
+}
+.botones button{
+    color: white;
+    background-color: peru;
+    height: 30px;
+    display: flex;
+    align-items: stretch;
+    width: 75%;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: black 0px 1px 1px 0px;
+}
+.botones a{
+    text-decoration: none;
+}
+.link-registro{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 10px;
+}

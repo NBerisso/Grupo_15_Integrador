@@ -30,6 +30,8 @@ justify-content: flex-start;
        font-size: 32px;
     }
     100%{
+        left:  80%;
+        font-size: 10px;
        font-size: 10px;
     }
 }
