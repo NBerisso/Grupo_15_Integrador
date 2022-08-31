@@ -2,6 +2,7 @@
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -161,12 +162,9 @@ div .span1{
     position: relative;
 }
 
-.destacados ul{
-    padding: 20px;
-}
 
 .destacados li{
-    padding: 20px 0 0 0;
+    padding: 3rem 0 0 0;
     display: flex;
     align-items: center;
     width: 100%;
@@ -182,13 +180,14 @@ div .span1{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.grano{
-    width: 70%;
-    max-width: 500px;
+.planta{
+    width: 100%;
+    max-width: 700px;
     display: flex;
+    margin-right: 25px;
+    border-radius: 20px;
 }
 
 div .contenedor{
@@ -196,6 +195,7 @@ div .contenedor{
     display: flex;
     text-align: center;
     padding-left: 100px;
+    padding-top: 20px;
 }
 
 div .btn-1{
