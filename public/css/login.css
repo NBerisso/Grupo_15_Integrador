@@ -30,7 +30,7 @@ main{
     }
     100%{
         left:  80%;
-        font-size: 10px;
+       font-size: 10px;
     }
 }
 h1{
@@ -49,6 +49,7 @@ h1{
     position: relative;
 }
 input{
+    height: 30px;
     display: flex;
     align-items: stretch;
     width: 75%;
@@ -57,11 +58,23 @@ input{
     border-radius: 5px;
     box-shadow: black 0px 1px 1px 0px;
 }
-.botones p input{
+.botones button{
     color: white;
     background-color: peru;
     height: 30px;
+    display: flex;
+    align-items: stretch;
+    width: 75%;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: black 0px 1px 1px 0px;
 }
-.campos p input{
-    height: 30px;
+.botones a{
+    text-decoration: none;
+}
+.link-registro{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 10px;
 }
