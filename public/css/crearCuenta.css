@@ -2,38 +2,92 @@
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
 }
+body{
+    margin: 0%;
+}
 
-main{
-background-image: url(/img/granos4.jpeg);
-height: 56rem;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: flex-start;
+        /* NAVBAR */
+
+        .navbar{
+            background-color: black;
+            padding: 0px 25px ;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logotipo{
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .logo{
+            width: 100px;
+            cursor: pointer;
+            padding-right: 8px;
+        }
+        
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background-color: #de984d;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+        
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+
+main {
+    background-image: url(/img/granos4.jpeg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
 }
-.logo{
-    left: 0%;
+.logotipo{
+    display: flex;
+    align-items: center;
     color: white;
-    margin: 0% 0% 0% 14%;
-    padding: 10px;
-    position: absolute;
-    animation-name: deslizar;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    margin-left: 4rem;
 }
-@keyframes deslizar {
-    0%{
-        font-size: 20px;
-    }
-    50%{
-       font-size: 32px;
-    }
-    100%{
-        left:  80%;
-        font-size: 10px;
-       font-size: 10px;
-    }
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    padding-right: 8px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: contain;
+
+}
+
+img:hover {
+    transform: scale(1.5);
 }
 h1{
     color: white;
@@ -42,13 +96,14 @@ h1{
     justify-content: center; 
 }
 .registro {
-    margin: auto;
+    margin: 0% auto;
     width: 30%;
     background-color: #fff0b6ba;
     padding: 20px;
     border-radius: 10%;
     box-shadow: inset black -1px 1px 20px 4px;
 }
+
 input{
     display: flex;
     align-items: stretch;
@@ -62,6 +117,10 @@ input{
     color: white;
     background-color: peru;
     height: 30px;
+}
+.botones p input:hover {
+    background-color: black;
+    color: white;
 }
 .campos p input{
     height: 30px;

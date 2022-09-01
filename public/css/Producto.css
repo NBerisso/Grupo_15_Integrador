@@ -2,6 +2,60 @@
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
 }
+body{
+    margin: 0%;
+}
+
+        /* NAVBAR */
+
+        .navbar{
+            background-color: black;
+            padding: 0px 25px ;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logotipo{
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .logo{
+            width: 100px;
+            cursor: pointer;
+            padding-right: 8px;
+        }
+        
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background-color: #de984d;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+        
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
 
 main {
     background-image: url("/img/granos10.jpeg");
@@ -20,7 +74,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin: 6rem;
+    margin: 2rem 4rem;
     border-radius: 4rem;
 }
 
@@ -28,7 +82,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 3rem 2rem 3rem 2rem;
+    margin: 0rem 2rem 10rem 2rem;
     width: 35%;
     overflow: scroll;
 }
@@ -36,6 +90,7 @@ main {
 h1 {
     color: white;
     font-size: 60px;
+    padding: 8rem 4rem;
 }
 
 img {
@@ -55,7 +110,7 @@ img:hover {
     flex-direction: column;
     align-items: stretch;
     width: 30%;
-    margin: 6rem 0rem;
+    margin: 1rem 0rem;
 }
 
 .seccion2 select {
