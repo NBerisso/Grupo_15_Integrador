@@ -33,3 +33,7 @@ app.get("/miCarrito", function(req,res){
 app.get("/carritoFinal", function(req,res){
     res.sendFile(path.join(__dirname,"/views/carritoFinal.html"))
 })
+
+app.get("/home2", function(req,res){
+    res.sendFile(path.join(__dirname,"/views/home2.html"))
+})

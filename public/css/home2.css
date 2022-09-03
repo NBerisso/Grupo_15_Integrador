@@ -5,64 +5,370 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-html{
-    height: 100%;
-}
-
+/*--------------------------------------------------------
+----------------Seccion de NicoB--------------------------
+-----------------------------------------------------------*/ 
 body{
-    background-color: #6f4838;
-    height: 100%;
+    background-color: #180903;
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
 }
 
+h1 a{
+    color: #ffffff;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("../img/Fondo-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+        /* NAVBAR */
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logotipo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    padding-right: 8px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #de984d;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+        /* Pantalla 1 */
+
+
+.contenido{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.contenido h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.contenido p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+div .botones1{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #de984d;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+div .span1{
+    background-color:#de984d;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.botones1:hover span{
+    width: 100%;
+}
+
+.botones1:hover{
+    border: none;
+}
+
+
+            /* PANTALLA 2 */
+
+#destacados{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url("../img/testeo.jpg");
+    padding: 70px 0;
+}
+
+.titulo-destacados{
+    text-align: center;
+    padding: 40px
+}
+
+.titulo-destacados p{
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.titulo-destacados h1{
+    font-size: 25px;
+}
+
+.box-destacados{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.cafes-favoritos{
+    flex-basis: 60%;
+}
+
+.slide-cafe{
+    flex-basis: 40%;
+    margin: auto;
+}
+
+.slide-cafe img{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.cafes-favoritos h2{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+}
+
+.favoritos-cont{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.bandera img{
+    width: 100px;
+    height: 100px;
+}
+
+.favoritos-texto p{
+    padding: 0 20px;
+    font-size: 18px;
+    text-align: initial;
+    font-weight: bold;
+}
+
+
+div .btn-1{
+    width: 200px;
+    height: 45px;
+    border: 2px solid #de984d;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background: rgb(116, 72, 15);
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #de984d;
+    transition: ease-out 0.3s;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    box-shadow: inset 200px 0 0 0 #de984d;
+    cursor: pointer;
+}
+/*--------------------------------------------------------
+----------------Seccion de NicoB--------------------------
+-----------------------------------------------------------*/ 
+
+
+
+
+/*--------------------------------------------------------
+----------------Seccion de NicoD--------------------------
+-----------------------------------------------------------*/ 
 .section-three{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 4rem;
     align-items: center;
-    height: 100%;
+    padding-bottom: 3rem;
 }
 
 .card-info h2{
     margin: 1rem;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #922900;
 }
 
 .card-info p{
     padding: 1rem;
 }
 
-img{
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    object-position: center;
+.card-info img{
+    display: flex;
+    justify-content: center;
+    width: 5rem;
 }
 
 .card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 25rem;
     background-color:#fff;
     margin: 1rem 0;
     border-radius: 0.5rem;
-    padding: 0.25rem 0;
-    height: 40rem;
+    padding: 0.5rem;
+    height: 25rem;
     transition: box-shadow 0.3s, width 0.3s, height 0.3s;
+    position: relative;
 }
 
 .card-info:hover{
     box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.3);
     width: 25.5rem;
-    height: 40.5rem;
+    height: 25.5rem;
 }
 
-.img-description a{
+
+
+.card-info a{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     background-color: #3c1505;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     text-decoration: none;
     color: white;
     cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
+
+
+/* -------------------------Footer--------------------------------- */
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 16px;
+    padding: 0;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 0;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+    padding: 2rem;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+    padding: 2rem;
+}
+ul{
+    list-style-type: none;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-col-2 img{
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* -------------------------MediaQueries--------------------------------- */
+
+@media (max-width: 460px){
+    .card-info{
+        width: 90%;
+    }
+}
+
+/*--------------------------------------------------------
+----------------Seccion de NicoD--------------------------
+-----------------------------------------------------------*/ 

@@ -14,30 +14,43 @@
 
     <body>
         <header>
-            <h2>un header momentaneo para tener idea de como va quedando</h2>
+            <div class="navbar">
+                <h2 class="logotipo"><img src="img/LogoCafe.png" class="logo">Blended Cafe</h2>
+                <ul>
+                    <li><a href="/"> Home</a></li>
+                    <li><a href="/Producto"> Tienda</a></li>
+                    <li><a href="/crearCuenta"> Login</a></li>
+                    <li><a href="#"> Carrito</a></li>
+                    <li><a href="#"> Contacto</a></li>
+                </ul>
+            </div>
         </header>
         <main>
-            <h2>Mi carrito</h2>
-            <div class="productos">
-                <div class="partes">
-                    <div class="descripcion">Producto</div>
-                    <div class="precio">Precio</div>
+            <div class="desplegable">
+                <h2>Mi carrito</h2>
+                <div class="productos">
+                    <div class="descripcion">
+                        Producto
+                        <div>
+                            <img src="/img/bolsa sin fondo.png">
+                            <span>Cafe xxxxxx/xxx gr/xxxxx</span>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        Precio
+                        <div>
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>xxxx,xx</span>
+                            <i id="tacho" class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>                
                 </div>
-                <div class="descripcion">
-                    <img src="/img/bolsa.jpg">
-                    <span>Cafe xxxxxx/xxx gr/xxxxx</span>
-                </div>
-                <div class="precio">
+                <div class="total">
+                    <h5> Total </h5>
                     <i class="fas fa-dollar-sign"></i>
                     <span>xxxx,xx</span>
+                    <button>Comprar</button>
                 </div>
-                <i class="fas fa-trash-alt"></i>
-            </div>
-            <div class="total">
-                <h5> Total </h5>
-                <i class="fas fa-dollar-sign"></i>
-                <span>xxxx,xx</span>
-                <button>Comprar</button>
             </div>
         </main>
         <footer>

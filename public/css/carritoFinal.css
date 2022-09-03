@@ -5,10 +5,59 @@
 body{
     margin: 0;
 }
+            /* HEADER */
+.navbar{
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("../img/Fondo-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.logotipo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    padding-right: 8px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #de984d;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+            /* CARRITO */
 main{
     height: 30rem;
     color: white;    
-    background-color: peru;
+    /* background-color: peru; */
+    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url("../img/testeo.jpg");
+    /* background-image: url(/img/testeo.jpg); */
     display: flex;
     flex-direction: column;
     padding: 0.6rem;
@@ -20,64 +69,85 @@ main h2{
     justify-content: center;
     width: 100%;
 }
+            /* PRODUCTO */
 .productos{
     display: flex;
     flex-wrap: wrap;
 }
-main div i{
+.productos i{
     color: white;
-    align-self: center;
     margin-right: 5px;
 }
-main div img{
+.productos img{
     width: 70px;
     height: 70px;
 }
 .descripcion{
     width: 50%;
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.descripcion div {
+    display: flex;
     align-items: center;
-}
-.partes{
-    width: 100%;
-    display: flex;
-    height: 30px;    
-    justify-content: space-around;
-}
-.cosas{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
+    height: 90%;
 }
 .precio1{
-    /* width: 10%; */
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.precio1 div {
+    height: 90%;
     display: flex;
     align-items: center;
 }
 .cantidad{
-    /* width: 10%; */
+    width: 15%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+.cantidad select {
+    margin: 17% 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #fcce76;
+    border-radius: 5px;
 }
 .precio2{
-    /* width: 10%; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.precio2 div {    
+    height: 90%;
     display: flex;
     align-items: center;
 }
+#tacho{
+    margin-left: 15%;
+}
+            /* TOTAL */
 .total{
-    width: 17%;
+    width: 20%;
     align-self: flex-end;
     position: relative;
-    top: 40vh;
+    top: 35%;
+}
+h5{
+    font-size: 1.3em;
+    margin-bottom: 0.1px;
 }
 .total i{
     margin-right: auto;
 }
 button{    
     color: white;
-    text-shadow: 0.8px 0.5px black;
-    background-color: #fff0b6;
+    /* text-shadow: 0.8px 0.5px black; */
+    background-color: #fcce76;
     height: 30px;
     display: flex;
     align-items: center;
@@ -85,5 +155,8 @@ button{
     margin: 5%;
     border: 0.5px;
     border-radius: 5px;
-    box-shadow: black 0px 1px 1px 0px;
+    box-shadow: black 0px 1px 3px 0px;
+}
+button:hover{    
+    background-color: #ffc14d;
 }
