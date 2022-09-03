@@ -2,10 +2,58 @@
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+}
+            /* HEADER */
+.navbar{
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("../img/Fondo-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.logotipo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    padding-right: 8px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #de984d;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+            /* MAIN */
 main{
     background-image: url("/img/granos4.jpeg");
-    /* / background-image: url("/img/granos.jpeg"); */
-    /* background-color: saddlebrown; */ 
     position: relative;
     height: 44rem;
 }
@@ -38,6 +86,8 @@ h1{
     display: flex;
     align-content: center;
     justify-content: center; 
+    margin-top: 1px;
+    padding-top: 0.5em;
 }
 .registro{
     margin: auto;
@@ -63,7 +113,7 @@ input{
     background-color: peru;
     height: 30px;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     width: 75%;
     justify-content: center;
     margin: auto;
@@ -73,8 +123,12 @@ input{
 .botones a{
     text-decoration: none;
 }
+.botones button:hover{
+    background-color: #ffc14d;
+}
 .link-registro{
     margin-top: 20px;
     margin-bottom: 0;
     font-size: 10px;
+    text-align: center;
 }
