@@ -14,47 +14,119 @@
 </head>
 
 <body>
-    <!----------------------Empieza seccion 3------------------------------>
-    <section class="section-three">
-        <article class="card-info">
-            <h2>Origenes</h2>
-            <img class="card-img" src="img/img-coffee-card.jpg" alt="imagen de granos">
-            <div class="img-description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum numquam nostrum, quidem delectus
-                    dignissimos fugit harum esse natus laudantium dicta sed quas deserunt ad consectetur, soluta dolorem
-                    praesentium recusandae.</p>
-                <a href="/views/home2.html">Ver más</a>
+    <section class="banner">
+        <div class="navbar">
+            <h2 class="logotipo"><img src="img/LogoCafe.png" class="logo">Blended Cafe</h2>
+            <ul>
+                <li><a href="/home"> Home</a></li>
+                <li><a href="/Producto"> Tienda</a></li>
+                <li><a href="/crearCuenta"> Login</a></li>
+                <li><a href="#"> Carrito</a></li>
+                <li><a href="#"> Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="contenido">
+            <h1> Cafe al alcance de tu mano</h1>
+            <p>Desde Blended Cafe sentimos que el cafe va mas allá, un recorrido, una experiencia, desde 1994 unimos diferentes
+                <br>partes del mundo con tus sentimientos desde tostado y amargo hasta dulce y frutal.<br> Ayudando al cliente a redescrubir un mundo sin fronteras</p>
+            <div>
+                <button type="button" onclick="location.href='#'" class="botones1"><span class="span1"></span>CONTACTO</button>
+                <button type="button" onclick="location.href='/crearCuenta'" class="botones1"><span class="span1"></span>SUSCRIBITE</button>
             </div>
-        </article>
-        <article class="card-info">
-            <h2>Maquinas</h2>
-            <img class="card-img" src="img/img-machine-card.jpg" alt="imagen de cafetera">
-            <div class="img-description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus illum quam consectetur.
-                    Quibusdam
-                    consectetur amet, neque pariatur debitis hic libero excepturi nulla quod voluptates. Deserunt id
-                    ducimus
-                    tempora provident.</p>
-                <a href="/views/home2.html">Ver más</a>
-            </div>
-        </article>
-        <article class="card-info">
-            <h2>Historia</h2>
-            <img class="card-img" src="img/img-history-card.jpg" alt="imagen de cafe">
-            <div class="img-description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus illum quam consectetur.
-                    Quibusdam
-                    consectetur amet, neque pariatur debitis hic libero excepturi nulla quod voluptates. Deserunt id
-                    ducimus
-                    tempora provident.</p>
-                <a href="/views/home2.html">Ver más</a>
-            </div>
-        </article>
+        </div>
     </section>
 
-</body>
-<footer>
+    <section class="pantalla2">
+        <div class="destacados">
+            <h2>DESTACADOS</h2>
+            <ul>
+                <li>Cafe Tostado Morro <img src="img/Bandera-Brasil.png" alt="Brasil" class="banderas"></li>
+                <li>Cafe seco Manizales <img src="img/Bandera-Colombia.png" alt="Colombia" class="banderas"></li>
+                <li>Cafe Amargo Coclé <img src="img/Bandera-Panama.png" alt="Panama" class="banderas"></li>
+            </ul>
+            <div class="contenedor">
+                <button class="btn-1" type="button" onclick="location.href='#'">Ver Mas</button>
+            </div>
+        </div>
+        <div class="contenedorg">
+            <!-- <img src="img/coffee_bean.png" alt="Grano" class="grano" > -->
+            <img src="img/Planta-Cafe.jpg" alt="Slide" class="planta" >
+        </div>
+    </section>
 
-</footer>
+        <!----------------------Empieza seccion 3------------------------------>
+        <section class="section-three">
+            <article class="card-info">
+                <img class="card-img" src="img/coffee-beans.png" alt="Grano de café">
+                <h2>Origenes</h2>
+                <div class="img-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum numquam nostrum, quidem
+                        delectus
+                        dignissimos fugit harum esse natus laudantium dicta sed quas deserunt ad consectetur, soluta
+                        dolorem
+                        praesentium recusandae.</p>
+                </div>
+                <a href="/views/home2.html">Ver más</a>
+            </article>
+            <article class="card-info">
+                <img class="card-img" src="img/coffee-machine.png" alt="imagen de cafetera">
+                <h2>Maquinas</h2>
+                <div class="img-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus illum quam consectetur.
+                        Quibusdam
+                        consectetur amet, neque pariatur debitis hic libero excepturi nulla quod voluptates. Deserunt id
+                        ducimus
+                        tempora provident.</p>
+                </div>
+                <a href="/views/home2.html">Ver más</a>
+            </article>
+            <article class="card-info">
+                <img class="card-img" src="img/coffee-plant.png" alt="imagen de planta de cafe">
+                <h2>Historia</h2>
+                <div class="img-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus illum quam consectetur.
+                        Quibusdam
+                        consectetur amet, neque pariatur debitis hic libero excepturi nulla quod voluptates. Deserunt id
+                        ducimus
+                        tempora provident.</p>
+                </div>
+                <a href="/views/home2.html">Ver más</a>
+            </article>
+        </section>
+    </main>
+    <!-----------Footer------------ -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-col-1">
+                    <h3>Conocé nuestros locales</h3>
+                    <p>Encontranos por CABA y GBA</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/LogoCafe.png">
+                    <p>BlendedCafe</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Link utiles.</h3>
+                    <ul>
+                        <li>Cupones</li>
+                        <li>Politica de reembolso</li>
+                        <li>Blog</li>
+                        <li>Hacete miembro</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Seguinos!</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+</body>
 
 </html>
