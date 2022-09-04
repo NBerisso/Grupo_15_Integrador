@@ -25,7 +25,7 @@ h1 a{
         /* NAVBAR */
 
 .navbar{
-    width: 85%;
+    width: 90%;
     margin: auto;
     padding: 35px 0;
     display: flex;
@@ -92,7 +92,7 @@ h1 a{
 }
 
 .contenido p{
-    margin: 20px auto;
+    margin: 20px;
     font-weight: 100;
     line-height: 25px;
 }
@@ -227,7 +227,81 @@ div .btn-1{
 }
 
 
+div.burger-menu i{
+    background-color: #9f5e28;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+@media (max-width: 680px){
+    nav ul{
+        display: none;
+    }
+
+    .contenido{
+        width: 100%;
+    }
+    
+    .contenido h1{
+        font-size: 45px;
+        margin-top: 80px;
+        padding: 50px;
+    }
+    
+    .contenido p{
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .slide-cafe{
+        display: none;
+    }
+
+    .cafes-favoritos{
+        flex-basis: 100%;
+    }
+}
 
 
+@media (min-width: 681px){
+    .burger-menu{
+        display: none;
+    }
+
+    .navbar ul li{
+        margin: 0 5px;
+    }
+    .navbar ul{
+        width: 100%;
+        text-align: right;
+    }
+
+}
+
+@media (min-width: 750px){
+    .navbar ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .logotipo{
+        width: 40%
+    }
+
+    .navbar ul li{
+        margin: 0 20px;
+    }
+}
+
+@media (min-width: 992px){
+
+}
 
 
