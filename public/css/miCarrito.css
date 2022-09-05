@@ -55,7 +55,11 @@ body{
 main{
     height: 30rem;
     color: white;
-    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url("../img/testeo.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url("../img/fondo-con-granos.jpg");
+    /* background-image: url("../img/fondo-con-granos.jpg"); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
     display: flex;
     flex-direction: column;
     padding: 0.6rem;
@@ -70,7 +74,7 @@ main h2{
     width: 40%;
 }
 .desplegable{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,8 +126,8 @@ main h2{
     width: 100%;
     align-self: flex-end;
     position: relative;
-    top: 35%;
-    left: 75%;
+    top: 34%;
+    left: 87%;
 }
 h5{
     font-size: 1em;
@@ -131,6 +135,9 @@ h5{
 }
 .total i{
     margin-right: auto;
+}
+.total a{
+    text-decoration: none;
 }
 button{    
     color: white;
@@ -147,4 +154,20 @@ button{
 }
 button:hover{    
     background-color: #ffc14d;
+}
+@media(max-width: 990px){
+    .navbar ul{
+        text-align: center;
+    }
+    .desplegable{
+        width: 70%;
+    }
+}
+@media(max-width: 672px){
+    .navbar ul{
+        text-align: center;
+    }
+    .desplegable{
+        width: 100%;
+    }
 }
