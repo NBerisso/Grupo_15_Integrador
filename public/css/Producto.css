@@ -84,7 +84,6 @@ main {
     align-items: flex-start;
     margin: 0rem 2rem 10rem 2rem;
     width: 35%;
-    overflow: scroll;
 }
 
 h1 {
@@ -172,4 +171,88 @@ p {
     font-size: 40px;
     margin: 0px 12px;
     height: 37px;
+}
+/* MOVIL */
+@media (min-width:380px) and (max-width:599px){
+    /* HEADER */
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .navbar ul li{
+        padding: 20px;
+    }
+    /* MAIN */
+    .seccion{
+        display: flex;
+        flex-direction: column;
+    }
+    img:hover{
+        transform: none;
+    }
+    img{
+        width: 200%;
+    }
+    h1 {
+        font-size: 3rem;
+        padding: 2rem 0rem;
+    }
+    .seccion1{
+        overflow: inherit;
+        display: flex;
+        align-items: center;
+        height: 16rem;
+    }
+    .seccion2{
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+/* TABLET */
+@media (min-width:600px) and (max-width:989px){
+     /* HEADER */
+     .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .navbar ul li{
+        padding: 20px;
+    }
+    /* MAIN */
+    .seccion{
+        display: flex;
+        flex-direction: column;
+    }
+    img:hover{
+        transform: none;
+    }
+    img{
+        width: 200%;
+    }
+    h1 {
+        font-size: 3rem;
+        padding: 2rem 0rem;
+    }
+    .seccion1{
+        overflow: inherit;
+        display: flex;
+        align-items: center;
+        height: 16rem;
+    }
+    .seccion2{
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
 }

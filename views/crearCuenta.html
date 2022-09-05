@@ -27,12 +27,8 @@
         </div>
     </header>
     <main>
-        <div class="logo">
-            <h2 class="logotipo"><img src="img/LogoCafe.png" class="logo">Blended Cafe</h2>
-    </div>
         <div class="registro">
             <form action="/views/home.html" method="post">
-                <div class="campos">
                     <p>
                         <label for="Nombre y apellido"></label>
                         <input type="text" placeholder="Nombre y apellido">
@@ -42,14 +38,14 @@
                         <input type="text" placeholder="Nombre de usuari@">
                     </p>
                     <p>
-                        <label for="Telefono"><b>Telefono</b></label>
-                        <input type="tel" placeholder="Ej: 116540xxxx">
+                        <label for="Telefono"></label>
+                        <input type="tel" placeholder="Telefono">
                     </p>
                     <p>
                         <label for="Domicilio"></label>
                         <input type="text" placeholder="Domicilio">
                     </p>
-                    <p>
+                    <p class="fotoUser">
                         <label for="Foto de usuario"><b>Foto de usuario</b></label>
                         <input type="file">
                     </p>
@@ -61,17 +57,14 @@
                         <label for="Confirmar contrase単a"></label>
                         <input type="password" placeholder="Confirmar contrase単a">
                     </p>
-                </div>
-                <div class="botones">
                     <p>
                         <label for="Enviar"></label>
-                        <input type="submit">
+                        <input class= "efecto" type="submit">
                     </p>
                     <p>
                         <label for="Cancelar"></label>
-                        <input type="reset">
+                        <input class= "efecto" type="reset">
                     </p>
-                </div>
             </form>
         </div>
     </main>

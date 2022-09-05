@@ -96,12 +96,31 @@ h1{
     justify-content: center; 
 }
 .registro {
-    margin: 0% auto;
+    margin: 5% auto;
     width: 30%;
+    height: 80%;
     background-color: #fff0b6ba;
     padding: 20px;
     border-radius: 10%;
     box-shadow: inset black -1px 1px 20px 4px;
+}
+
+form{
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form p input{
+    height: 38px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fotoUser{
+    text-align: center;
+    font-size: 2rem;
 }
 
 input{
@@ -113,15 +132,83 @@ input{
     border-radius: 5px;
     box-shadow: black 0px 1px 1px 0px;
 }
-.botones p input{
-    color: white;
-    background-color: peru;
-    height: 30px;
-}
-.botones p input:hover {
+
+.efecto:hover {
     background-color: black;
     color: white;
 }
-.campos p input{
-    height: 30px;
+.efecto{
+    color: white;
+    background-color: peru;
+    height: 38px;
+    font-size: 20px;
+}
+/* MOVIL */
+@media (min-width:380px) and (max-width:599px){
+    /* HEADER */
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .navbar ul li{
+        padding: 20px;
+    }
+
+    /* MAIN */
+    .registro{
+        width: 85%;
+        height: 90%;
+     }
+     form{
+        height: 95%;
+     }
+     main{
+        height: 150vh;
+     }
+}
+/* TABLET */
+@media (min-width:600px) and (max-width:989px){
+     /* HEADER */
+     .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .navbar ul li{
+        padding: 20px;
+    }
+    /* MAIN */
+    .registro{
+        width: 85%;
+        height: 85%;
+     }
+     form{
+        height: 95%;
+     }
+     main{
+        height: 110vh;
+     }
+}
+/* LAPTOP */
+@media (min-width:991px) and (max-width:1296px){
+    /* MAIN */
+ .registro{
+    width: 50%;
+    height: 100%;
+ }
+ form{
+    height: 90%;
+ }
+ main{
+    height: 120vh;
+ }
 }
