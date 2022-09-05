@@ -424,16 +424,19 @@ div.burger-menu i{
 
 .footer-col-2 {
     text-align: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    /* margin-left: 5rem;
+    margin-right: 5rem; */
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-col-3,
-.footer-col-4 {
+.footer-col-3, .footer-col-4 {
     flex-basis: 12%;
     text-align: center;
     padding: 2rem;
     align-self: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
@@ -459,9 +462,8 @@ li a {
     height: 6rem;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-
-
 
 /* -------------------------MediaQueries--------------------------------- */
 
@@ -477,17 +479,26 @@ li a {
     }
 }
 
-@media (max-width: 580px) {
-    .container {
-        gap: 2rem;
-    }
-}
-
 @media (min-width: 460px){
     .card-info:hover {
         box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
         width: 25.5rem;
         height: 25.5rem;
+    }
+}
+
+@media (max-width: 1440px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(min-content, 10rem);
+        gap: 3rem;
+    }
+    .footer-col-3, .footer-col-4{
+        padding: 0;
+    }
+
+    .section-three{
+        flex-direction: column;
     }
 }
 
