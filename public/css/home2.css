@@ -8,27 +8,27 @@
 /*--------------------------------------------------------
 ----------------Seccion de NicoB--------------------------
 -----------------------------------------------------------*/
-body {
+body{
     background-color: #180903;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Fondo-2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
 }
 
-h1 a {
+h1 a{
     color: #ffffff;
 }
 
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("../img/Fondo-1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("../img/Fondo-1.jpg");
     background-size: cover;
     background-position: center;
 }
 
-/* NAVBAR */
+        /* NAVBAR */
 
-.navbar {
-    width: 85%;
+.navbar{
+    width: 90%;
     margin: auto;
     padding: 35px 0;
     display: flex;
@@ -36,32 +36,32 @@ h1 a {
     justify-content: space-between;
 }
 
-.logotipo {
+.logotipo{
     display: flex;
     align-items: center;
     color: white;
 }
 
-.logo {
+.logo{
     width: 100px;
     cursor: pointer;
     padding-right: 8px;
 }
 
-.navbar ul li {
+.navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
 
-.navbar ul li a {
+.navbar ul li a{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
 
-.navbar ul li::after {
+.navbar ul li::after{
     content: '';
     height: 3px;
     width: 0;
@@ -72,15 +72,15 @@ h1 a {
     transition: 0.5s;
 }
 
-.navbar ul li:hover::after {
+.navbar ul li:hover::after{
     width: 100%;
 }
 
 
-/* Pantalla 1 */
+        /* Pantalla 1 */
 
 
-.contenido {
+.contenido{
     width: 100%;
     position: absolute;
     top: 50%;
@@ -89,18 +89,18 @@ h1 a {
     color: white;
 }
 
-.contenido h1 {
+.contenido h1{
     font-size: 70px;
     margin-top: 80px;
 }
 
-.contenido p {
-    margin: 20px auto;
+.contenido p{
+    margin: 20px;
     font-weight: 100;
     line-height: 25px;
 }
 
-div .botones1 {
+div .botones1{
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -115,8 +115,8 @@ div .botones1 {
     overflow: hidden;
 }
 
-div .span1 {
-    background-color: #de984d;
+div .span1{
+    background-color:#de984d;
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -127,40 +127,40 @@ div .span1 {
     transition: 0.5s;
 }
 
-.botones1:hover span {
+.botones1:hover span{
     width: 100%;
 }
 
-.botones1:hover {
+.botones1:hover{
     border: none;
 }
 
 
-/* PANTALLA 2 */
+            /* PANTALLA 2 */
 
-#destacados {
+#destacados{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url("../img/testeo.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url("../img/testeo.jpg");
     padding: 70px 0;
 }
 
-.titulo-destacados {
+.titulo-destacados{
     text-align: center;
     padding: 40px
 }
 
-.titulo-destacados p {
+.titulo-destacados p{
     margin: auto;
     color: white;
     font-weight: bold;
     font-size: 40px;
 }
 
-.titulo-destacados h1 {
+.titulo-destacados h1{
     font-size: 25px;
 }
 
-.box-destacados {
+.box-destacados{
     width: 80%;
     margin: auto;
     display: flex;
@@ -169,39 +169,39 @@ div .span1 {
     text-align: center;
 }
 
-.cafes-favoritos {
+.cafes-favoritos{
     flex-basis: 60%;
 }
 
-.slide-cafe {
+.slide-cafe{
     flex-basis: 40%;
     margin: auto;
 }
 
-.slide-cafe img {
+.slide-cafe img{
     width: 90%;
     border-radius: 15px;
 }
 
-.cafes-favoritos h2 {
+.cafes-favoritos h2{
     text-align: left;
     margin-bottom: 10px;
     font-size: 28px;
     color: rgb(0, 0, 0);
 }
 
-.favoritos-cont {
+.favoritos-cont{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.bandera img {
+.bandera img{
     width: 100px;
     height: 100px;
 }
 
-.favoritos-texto p {
+.favoritos-texto p{
     padding: 0 20px;
     font-size: 18px;
     text-align: initial;
@@ -209,7 +209,7 @@ div .span1 {
 }
 
 
-div .btn-1 {
+div .btn-1{
     width: 200px;
     height: 45px;
     border: 2px solid #de984d;
@@ -228,6 +228,87 @@ div .btn-1 {
     box-shadow: inset 200px 0 0 0 #de984d;
     cursor: pointer;
 }
+
+
+div.burger-menu i{
+    background-color: #9f5e28;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+@media (max-width: 680px){
+    nav ul{
+        display: none;
+    }
+
+    .contenido{
+        width: 100%;
+    }
+    
+    .contenido h1{
+        font-size: 45px;
+        margin-top: 80px;
+        padding: 50px;
+    }
+    
+    .contenido p{
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .slide-cafe{
+        display: none;
+    }
+
+    .cafes-favoritos{
+        flex-basis: 100%;
+    }
+}
+
+
+@media (min-width: 681px){
+    .burger-menu{
+        display: none;
+    }
+
+    .navbar ul li{
+        margin: 0 5px;
+    }
+    .navbar ul{
+        width: 100%;
+        text-align: right;
+    }
+
+}
+
+@media (min-width: 750px){
+    .navbar ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .logotipo{
+        width: 40%
+    }
+
+    .navbar ul li{
+        margin: 0 20px;
+    }
+}
+
+@media (min-width: 992px){
+
+}
+
+
+
 
 /*--------------------------------------------------------
 ----------------Seccion de NicoB--------------------------
@@ -378,12 +459,9 @@ li a {
     height: 6rem;
     align-items: center;
     justify-content: center;
-    transition: rotate 1s;
 }
 
-.footer-col-2:hover img{
-    rotate: (360deg);
-}
+
 
 /* -------------------------MediaQueries--------------------------------- */
 
