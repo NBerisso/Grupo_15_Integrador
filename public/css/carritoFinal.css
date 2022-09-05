@@ -1,10 +1,10 @@
-*{
-    font-family: 'Quicksand', sans-serif;
-    box-sizing: border-box;
-}
-body{
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
+
             /* HEADER */
 .navbar{
     width: 100%;
@@ -53,7 +53,7 @@ body{
 }
             /* CARRITO */
 main{
-    height: 30rem;
+    height: 50rem;
     color: white;    
     /* background-color: peru; */
     background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url("../img/testeo.jpg");
@@ -160,3 +160,90 @@ button{
 button:hover{    
     background-color: #ffc14d;
 }
+
+
+/* -----------------Footer--------------- */
+
+.footer {
+    color: #8a8a8a;
+    font-size: 16px;
+    padding: 0;
+}
+
+.footer p {
+    color: #fff;
+}
+
+.footer h3 {
+    color: #c76700;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 0;
+}
+
+.footer-col-1 {
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-col-2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-col-3, .footer-col-4 {
+    text-align: center;
+    padding: 2rem;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    background: #33150a;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.footer-col-2 img {
+    width: 6rem;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* -----------------Footer--------------- */
+
+
+/* ------------MediaQueries------------------- */
+@media (max-width: 1440px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(min-content, 10rem);
+        gap: 3rem;
+    }
+    .footer-col-3, .footer-col-4{
+        padding: 0;
+    }
+}
+
+/* ------------MediaQueries------------------- */
