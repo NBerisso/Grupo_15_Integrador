@@ -1,44 +1,45 @@
-*{
-    font-family: 'Quicksand', sans-serif;
-    box-sizing: border-box;
-}
-body{
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
             /* HEADER */
-.navbar{
+.navbar {
+    background-color: black;
+    padding: 0px 25px;
     width: 100%;
-    margin: 0;
-    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("../img/Fondo-1.jpg");
-    background-size: cover;
-    background-position: center;
 }
-.logotipo{
+
+.logotipo {
     display: flex;
     align-items: center;
     color: white;
 }
-.logo{
+
+.logo {
     width: 100px;
     cursor: pointer;
     padding-right: 8px;
 }
-.navbar ul li{
+
+.navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
-.navbar ul li::after{
+
+.navbar ul li::after {
     content: '';
     height: 3px;
     width: 0;
@@ -48,14 +49,15 @@ body{
     bottom: -5px;
     transition: 0.5s;
 }
-.navbar ul li:hover::after{
+
+.navbar ul li:hover::after {
     width: 100%;
 }
             /* MAIN */
 main{
     background-image: url("/img/granos4.jpeg");
     position: relative;
-    height: 44rem;
+    height: 50rem;
 }
 .logo{
     left: 0%;
@@ -86,10 +88,11 @@ h1{
     display: flex;
     align-content: center;
     justify-content: center; 
-    margin-top: 1px;
-    padding-top: 0.5em;
+    margin: 1px auto;
+    padding: 0.5em;
 }
 .registro{
+    height: 50%;
     margin: auto;
     width: 30%;
     background-color: #fff0b6ba;
@@ -97,9 +100,18 @@ h1{
     border-radius: 10%;
     box-shadow: black 0px 0px 9px 8px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-input{
-    height: 30px;
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+form input{
+    height: 2.3em;
     display: flex;
     align-items: stretch;
     width: 75%;
@@ -107,11 +119,12 @@ input{
     margin: auto;
     border-radius: 5px;
     box-shadow: black 0px 1px 1px 0px;
+    font-size: 1em;
 }
 .botones button{
     color: white;
     background-color: peru;
-    height: 30px;
+    height: 2.3em;
     display: flex;
     align-items: center;
     width: 75%;
@@ -119,6 +132,7 @@ input{
     margin: auto;
     border-radius: 5px;
     box-shadow: black 0px 1px 1px 0px;
+    font-size: 1em;
 }
 .botones a{
     text-decoration: none;
@@ -127,8 +141,26 @@ input{
     background-color: #ffc14d;
 }
 .link-registro{
-    margin-top: 20px;
-    margin-bottom: 0;
-    font-size: 10px;
+    font-size: 1em;
     text-align: center;
+}
+/* -----------Media Queries---------- */
+@media (min-width:320px) and (max-width:599px) {
+    .navbar ul{
+        text-align: center;
+    }
+    .registro{
+        height: 50%;
+        width: 80%;
+    }
+}
+
+@media (min-width:600px) and (max-width:990px){
+    .navbar ul{
+        text-align: center;
+    }
+    .registro{
+        height: 50%;
+        width: 50%;
+    }
 }

@@ -4,7 +4,7 @@ const app= express();
 
 app.use(express.static(path.join(__dirname,"public")));
 
-app.listen(3000, () => console.log("Servidor corriendo"));
+app.listen(3030, () => console.log("Servidor corriendo"));
 
 app.get("/", function(req,res){
     res.sendFile(path.join(__dirname, "/views/home.html"))
@@ -32,8 +32,4 @@ app.get("/miCarrito", function(req,res){
 
 app.get("/carritoFinal", function(req,res){
     res.sendFile(path.join(__dirname,"/views/carritoFinal.html"))
-})
-
-app.get("/home2", function(req,res){
-    res.sendFile(path.join(__dirname,"/views/home2.html"))
 })
