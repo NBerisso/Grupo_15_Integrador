@@ -1,0 +1,8 @@
+Sprint 3 - Estado Proyecto integrador al 12/09:
+
+*Completado:
+    Rutas implementadas(Render implementado)
+    Reorganizacion de las vistas
+*En proceso:
+    Implementacion de EJS - Separacion en head/header/footer
+    Pagina creacion y edicion de productos
