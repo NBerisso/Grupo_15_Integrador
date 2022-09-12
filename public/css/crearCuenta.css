@@ -7,41 +7,42 @@
 
 /* NAVBAR */
 
-.navbar {
-    background-color: black;
-    padding: 0px 25px;
+.navbar{
     width: 100%;
+    margin: auto;
+    padding: 35px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url("../img/testeo.jpg");
 }
 
-.logotipo {
+.logotipo{
     display: flex;
     align-items: center;
     color: white;
 }
 
-.logo {
+.logo{
     width: 100px;
     cursor: pointer;
     padding-right: 8px;
 }
 
-.navbar ul li {
+.navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
 
-.navbar ul li a {
+.navbar ul li a{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
 
-.navbar ul li::after {
+.navbar ul li::after{
     content: '';
     height: 3px;
     width: 0;
@@ -52,9 +53,11 @@
     transition: 0.5s;
 }
 
-.navbar ul li:hover::after {
+.navbar ul li:hover::after{
     width: 100%;
 }
+
+
 
 main {
     background-image: url(/img/granos4.jpeg);
