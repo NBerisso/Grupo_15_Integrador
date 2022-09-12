@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <title>Blended Cafe</title>
+</head>
+
+<body>
+    <section class="banner" id="banner">
+        <nav class="navbar">
+            <h2 class="logotipo"><img src="img/LogoCafe.png" class="logo">Blended Cafe</h2>
+            <ul>
+                <li><a href="/"> Home</a></li>
+                <li><a href="/Producto"> Tienda</a></li>
+                <li><a href="/login"> Login</a></li>
+                <li><a href="/carritoFinal"> Carrito</a></li>
+                <li><a href="#"> Contacto</a></li>
+            </ul>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+        </nav>
+
+        <div class="contenido">
+            <h1> Cafe al alcance de tu mano</h1>
+            <p>Desde Blended Cafe sentimos que el cafe va mas allá, un recorrido, una experiencia, desde 1994 unimos
+                diferentes partes del mundo con tus sentimientos desde tostado y amargo hasta dulce y frutal.<br>
+                Ayudando al cliente a redescrubir un mundo sin fronteras</p>
+            <div>
+                <button type="button" onclick="location.href='#'" class="botones1"><span
+                        class="span1"></span>CONTACTO</button>
+                <button type="button" onclick="location.href='/crearCuenta'" class="botones1"><span
+                        class="span1"></span>SUSCRIBITE</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="destacados">
+        <div class="titulo-destacados">
+            <p>DESTACADOS</p>
+            <h1>Los mas Buscados</h1>
+        </div>
+        <div class="box-destacados">
+            <div class="cafes-favoritos">
+                <h2>Morro Aromatico</h2>
+                <div class="favoritos-cont">
+                    <div class="bandera">
+                        <img src="img/brasil.png">
+                    </div>
+                    <div class="favoritos-texto">
+                        <p>Proveniente de Brasil este grano se caracteriza por su robustes y aroma intenso</p>
+                    </div>
+                </div>
+                <h2>Manizales Frutal</h2>
+                <div class="favoritos-cont">
+                    <div class="bandera">
+                        <img src="img/colombia.png">
+                    </div>
+                    <div class="favoritos-texto">
+                        <p>Originario de Colombia y gracias a su clima tropical, esta region produce un grano suave con
+                            un sabor frutal</p>
+                    </div>
+                </div>
+                <h2>Coclé Amargo</h2>
+                <div class="favoritos-cont">
+                    <div class="bandera">
+                        <img src="img/panama.png">
+                    </div>
+                    <div class="favoritos-texto">
+                        <p>Directo de Panama se cultiva este grano amargo el cual mantiene un sabor matizado entre
+                            frutos secos y madera</p>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <button class="btn-1" type="button" onclick="location.href='#'">Ver Mas</button>
+                </div>
+            </div>
+            <div class="slide-cafe">
+                <img src="img/slide-1.jpg">
+            </div>
+        </div>
+    </section>
+    <!----------------------Empieza seccion 3------------------------------>
+    <section class="section-three">
+        <article class="card-info">
+            <img class="card-img" src="img/coffee-beans.png" alt="Grano de café">
+            <h2>Origenes</h2>
+            <div class="img-description">
+                <p>Desde Sao Paulo en Brasil, hasta el Valle del Cauca en Colombia.
+                    En BlendedCafe tenemos tenemos el mejor café, extraido de las mejores partes del mundo, dando
+                    calidad y sabores únicos.</p>
+            </div>
+            <a href="/views/home2.html">Ver más</a>
+        </article>
+        <article class="card-info">
+            <img class="card-img" src="img/coffee-machine.png" alt="imagen de cafetera">
+            <h2>Maquinas</h2>
+            <div class="img-description">
+                <p>La formula de un buen café es sencilla, buen origen y buena preparación.
+                    Por eso te ofrecemos las mejores maquinas de café disponibles en el mercado actual.
+                </p>
+            </div>
+            <a href="/views/home2.html">Ver más</a>
+        </article>
+        <article class="card-info">
+            <img class="card-img" src="img/coffee-plant.png" alt="imagen de planta de cafe">
+            <h2>Historia</h2>
+            <div class="img-description">
+                <p>Porqué ademas del café, es importante que sepas de donde venimos nosotros y nuestras ideas.
+                    Te contamos un poquito de la razón por la cual el café nos inspira a compartir sus secretos.
+                </p>
+            </div>
+            <a href="/views/home2.html">Ver más</a>
+        </article>
+    </section>
+    </main>
+    <!-----------Footer------------ -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-col-1">
+                    <h3>Conocé nuestros locales</h3>
+                    <p><a>Encontranos por CABA y GBA</a></p>
+                </div>
+                <div class="footer-col-2">
+                    <a href="#banner"><img src="img/LogoCafe.png"></a>
+                    <p>BlendedCafe</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Link utiles</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">Cupones</a></li>
+                        <li><a href="#" target="_blank">Politica de reembolso</a></li>
+                        <li><a href="#" target="_blank">Blog</a></li>
+                        <li><a href="#" target="_blank">Hacete miembro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Seguinos!</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>© Copyright 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
