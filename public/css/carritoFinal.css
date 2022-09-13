@@ -118,14 +118,13 @@ h5 {
 
 button {
     color: white;
-    /* text-shadow: 0.8px 0.5px black; */
     background-color: #fcce76;
-    height: 30px;
+    padding: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5%;
-    border: 0.5px;
+    border: 0.05em;
     border-radius: 5px;
     box-shadow: black 0px 1px 3px 0px;
 }
@@ -212,8 +211,43 @@ li a {
 
 
 /* ------------MediaQueries------------------- */
+<<<<<<< HEAD
 @media (max-width: 1440px) {
     .container {
+=======
+            /* MOBILE */
+@media (min-width:320px) and (max-width:599px){
+    .navbar ul{
+        text-align: center;
+    }
+    .productos{
+        justify-content: space-evenly;
+    }
+    .productos div{
+        font-size: 0.8em;
+    }
+    .productos img{
+        width: 40px;
+        height: 40px;
+    }
+    .descripcion{
+        width: 30%;
+    }
+    .cantidad select{
+        width: 70%;
+        margin: 30% 0;
+    }
+}
+            /* TABLET */
+@media (min-width:600px) and (max-width:990px){
+    .navbar ul{
+        text-align: center;
+    }
+}
+/* ----footer---- */
+@media (max-width: 1440px){
+    .container{
+>>>>>>> 4d3da4048fee7e3e7548e10264b8642e2e7352bc
         display: grid;
         grid-template-columns: repeat(min-content, 10rem);
         gap: 3rem;
