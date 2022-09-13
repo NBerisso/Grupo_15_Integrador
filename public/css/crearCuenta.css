@@ -1,66 +1,15 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Fondo-2.jpg");
 }
 
-/* NAVBAR */
-
-.navbar{
-    width: 100%;
-    margin: auto;
-    padding: 35px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url("../img/testeo.jpg");
-}
-
-.logotipo{
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-.logo{
-    width: 100px;
-    cursor: pointer;
-    padding-right: 8px;
-}
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-
-.navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background-color: #de984d;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-}
-
-.navbar ul li:hover::after{
-    width: 100%;
-}
 
 
 
 main {
     background-image: url(/img/granos4.jpeg);
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;

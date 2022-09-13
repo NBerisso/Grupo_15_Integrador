@@ -1,15 +1,14 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
-}
+} */
 
 /*--------------------------------------------------------
 ----------------Seccion de NicoB--------------------------
 -----------------------------------------------------------*/
 body{
-    background-color: #180903;
     background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
 }
 
@@ -27,7 +26,7 @@ h1 a{
 
         /* NAVBAR */
 
-.navbar{
+/* .navbar{
     width: 90%;
     margin: auto;
     padding: 35px 0;
@@ -74,7 +73,7 @@ h1 a{
 
 .navbar ul li:hover::after{
     width: 100%;
-}
+} */
 
 
         /* Pantalla 1 */
@@ -241,7 +240,7 @@ div.burger-menu i{
     width: 40px;
 }
 
-@media (max-width: 680px){
+/* @media (max-width: 680px){
     nav ul{
         display: none;
     }
@@ -301,11 +300,11 @@ div.burger-menu i{
     .navbar ul li{
         margin: 0 20px;
     }
-}
+} */
 
-@media (min-width: 992px){
+/* @media (min-width: 992px){
 
-}
+} */
 
 /*--------------------------------------------------------
 ----------------Seccion de NicoB--------------------------

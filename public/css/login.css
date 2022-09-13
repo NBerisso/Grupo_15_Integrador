@@ -1,63 +1,19 @@
-*{
-    font-family: 'Quicksand', sans-serif;
-    box-sizing: border-box;
-}
+
+
+
 body{
-    margin: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
 }
-            /* HEADER */
-.navbar{
-    width: 100%;
-    margin: 0;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("../img/Fondo-1.jpg");
-    background-size: cover;
-    background-position: center;
-}
-.logotipo{
-    display: flex;
-    align-items: center;
-    color: white;
-}
-.logo{
-    width: 100px;
-    cursor: pointer;
-    padding-right: 8px;
-}
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-.navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background-color: #de984d;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-}
-.navbar ul li:hover::after{
-    width: 100%;
-}
+
+
             /* MAIN */
 main{
     background-image: url("/img/granos4.jpeg");
     position: relative;
     height: 44rem;
 }
-.logo{
+
+/* .logo{
     left: 0%;
     color: white;
     margin: 0% 50% 0% 50%;
@@ -80,7 +36,8 @@ main{
         left:  80%;
        font-size: 10px;
     }
-}
+} */
+
 h1{
     color: white;
     display: flex;

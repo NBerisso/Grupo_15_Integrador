@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+        /* NAVBAR */
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logotipo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    padding-right: 8px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #de984d;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+@media (max-width: 680px){
+    nav ul{
+        display: none;
+    }
+
+    .contenido{
+        width: 100%;
+    }
+    
+    .contenido h1{
+        font-size: 45px;
+        margin-top: 80px;
+        padding: 50px;
+    }
+    
+    .contenido p{
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .slide-cafe{
+        display: none;
+    }
+
+    .cafes-favoritos{
+        flex-basis: 100%;
+    }
+}
+
+
+@media (min-width: 681px){
+    .burger-menu{
+        display: none;
+    }
+
+    .navbar ul li{
+        margin: 0 5px;
+    }
+    .navbar ul{
+        width: 100%;
+        text-align: right;
+    }
+
+}
+
+@media (min-width: 750px){
+    .navbar ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .logotipo{
+        width: 40%
+    }
+
+    .navbar ul li{
+        margin: 0 20px;
+    }
+}
+
+
+

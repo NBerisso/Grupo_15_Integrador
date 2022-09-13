@@ -1,113 +1,78 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Fondo-2.jpg");
 }
 
-            /* HEADER */
-.navbar{
-    width: 100%;
-    margin: 0;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("../img/Fondo-1.jpg");
-    background-size: cover;
-    background-position: center;
-}
-.logotipo{
-    display: flex;
-    align-items: center;
-    color: white;
-}
-.logo{
-    width: 100px;
-    cursor: pointer;
-    padding-right: 8px;
-}
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-.navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background-color: #de984d;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-}
-.navbar ul li:hover::after{
-    width: 100%;
-}
-            /* CARRITO */
-main{
+
+
+/* CARRITO */
+main {
     height: 50rem;
-    color: white;    
+    color: white;
     /* background-color: peru; */
-    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url("../img/testeo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("../img/testeo.jpg");
     /* background-image: url(/img/testeo.jpg); */
     display: flex;
     flex-direction: column;
     padding: 0.6rem;
 }
-main h2{
+
+main h2 {
     color: white;
     display: flex;
     align-content: center;
     justify-content: center;
     width: 100%;
 }
-            /* PRODUCTO */
-.productos{
+
+/* PRODUCTO */
+.productos {
     display: flex;
     flex-wrap: wrap;
 }
-.productos i{
+
+.productos i {
     color: white;
     margin-right: 5px;
 }
-.productos img{
+
+.productos img {
     width: 70px;
     height: 70px;
 }
-.descripcion{
+
+.descripcion {
     width: 50%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+
 .descripcion div {
     display: flex;
     align-items: center;
     height: 90%;
 }
-.precio1{
+
+.precio1 {
     width: 15%;
     display: flex;
     flex-direction: column;
 }
+
 .precio1 div {
     height: 90%;
     display: flex;
     align-items: center;
 }
-.cantidad{
+
+.cantidad {
     width: 15%;
     display: flex;
     flex-direction: column;
 }
+
 .cantidad select {
     margin: 17% 0;
     width: 50%;
@@ -117,34 +82,41 @@ main h2{
     background-color: #fcce76;
     border-radius: 5px;
 }
-.precio2{
+
+.precio2 {
     width: 20%;
     display: flex;
     flex-direction: column;
 }
-.precio2 div {    
+
+.precio2 div {
     height: 90%;
     display: flex;
     align-items: center;
 }
-#tacho{
+
+#tacho {
     margin-left: 15%;
 }
-            /* TOTAL */
-.total{
+
+/* TOTAL */
+.total {
     width: 20%;
     align-self: flex-end;
     position: relative;
     top: 35%;
 }
-h5{
+
+h5 {
     font-size: 1.3em;
     margin-bottom: 0.1px;
 }
-.total i{
+
+.total i {
     margin-right: auto;
 }
-button{    
+
+button {
     color: white;
     /* text-shadow: 0.8px 0.5px black; */
     background-color: #fcce76;
@@ -157,7 +129,8 @@ button{
     border-radius: 5px;
     box-shadow: black 0px 1px 3px 0px;
 }
-button:hover{    
+
+button:hover {
     background-color: #ffc14d;
 }
 
@@ -179,7 +152,10 @@ button:hover{
     margin-bottom: 20px;
 }
 
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
     min-width: 250px;
     margin-bottom: 0;
 }
@@ -197,7 +173,8 @@ button:hover{
     align-items: center;
 }
 
-.footer-col-3, .footer-col-4 {
+.footer-col-3,
+.footer-col-4 {
     text-align: center;
     padding: 2rem;
     align-self: flex-end;
@@ -235,13 +212,15 @@ li a {
 
 
 /* ------------MediaQueries------------------- */
-@media (max-width: 1440px){
-    .container{
+@media (max-width: 1440px) {
+    .container {
         display: grid;
         grid-template-columns: repeat(min-content, 10rem);
         gap: 3rem;
     }
-    .footer-col-3, .footer-col-4{
+
+    .footer-col-3,
+    .footer-col-4 {
         padding: 0;
     }
 }
