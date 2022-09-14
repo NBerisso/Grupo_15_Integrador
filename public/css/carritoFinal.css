@@ -8,10 +8,10 @@ body {
 
 /* CARRITO */
 main {
-    height: 50rem;
+    height: 35rem;
     color: white;
     /* background-color: peru; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("../img/testeo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.30)), url("../img/testeo.jpg");
     /* background-image: url(/img/testeo.jpg); */
     display: flex;
     flex-direction: column;
@@ -24,12 +24,15 @@ main h2 {
     align-content: center;
     justify-content: center;
     width: 100%;
+    margin: 1em 0;
+    font-size: 1.7em;
 }
 
 /* PRODUCTO */
 .productos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .productos i {
@@ -42,8 +45,12 @@ main h2 {
     height: 70px;
 }
 
+.productos div{
+    font-size: 1.12em;
+}
+
 .descripcion {
-    width: 50%;
+    width: 41%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -104,7 +111,7 @@ main h2 {
     width: 20%;
     align-self: flex-end;
     position: relative;
-    top: 35%;
+    top: 40%;
 }
 
 h5 {
@@ -211,10 +218,7 @@ li a {
 
 
 /* ------------MediaQueries------------------- */
-<<<<<<< HEAD
-@media (max-width: 1440px) {
-    .container {
-=======
+
             /* MOBILE */
 @media (min-width:320px) and (max-width:599px){
     .navbar ul{
@@ -247,7 +251,6 @@ li a {
 /* ----footer---- */
 @media (max-width: 1440px){
     .container{
->>>>>>> 4d3da4048fee7e3e7548e10264b8642e2e7352bc
         display: grid;
         grid-template-columns: repeat(min-content, 10rem);
         gap: 3rem;
