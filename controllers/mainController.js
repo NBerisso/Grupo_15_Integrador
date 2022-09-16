@@ -21,6 +21,10 @@ const controladores = {
   carritoFinal: (req, res) => {
     res.render("./carritoFinal.ejs");
   },
+
+  agregarProductos: (req, res) => {
+    res.render("./agregar-Productos.ejs");
+  },
 };
 
 module.exports = controladores;

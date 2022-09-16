@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ("./partials/head.ejs", {title:"agregar-Productos", style:"agregar-Productos"}) %>
+
+<body>
+    <main>
+        <section class="banner" id="banner">
+            <%- include ("./partials/navbar.ejs") %>       
+            <div class="register">
+                <form action="/register" method="get">
+                    <input type="text" name="producto" placeholder="Producto" class="control-formulario"><br>
+                    <input type="text" name="precio" placeholder="Precio" class="control-formulario"><br>      
+                    <h4>Molido Para</h4>
+                    <div class="interests">
+                        <div>
+                            <input type="checkbox" name="interests" value="a" id="a">
+                            <label for="a">Granos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interests" value="b" id="b">
+                            <label for="b">Prensa Francesa</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interests" value="c" id="c">
+                            <label for="c">Filtrado Manual</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interests" value="d" id="d">
+                            <label for="d">Maquina Espresso</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interests" value="e" id="e">
+                            <label for="e">Aeropress</label>
+                        </div>
+                    </div>
+                    
+                    <h4>Imagen del Producto</h4>
+                    <input type="file" name="avatar">
+                    <br>
+                    <textarea placeholder="descripcion" class="control-formulario"></textarea>
+                    <input type="submit" value="Enviar" class="botones-formulario1"><br>
+                    <br>
+                </form>
+                </div> 
+        </section>
+        
+    </main>
+
+</body>
+
+<%- include ("./partials/footer.ejs") %>
+
+</html>
+
+<!-- 
+<div class="registro">
+    <form action="/views/home.html" method="post">
+        <p>
+            <label for="Nombre Producto"></label>
+            <input type="text" placeholder="Nombre Producto" required>
+        </p>
+        <p>
+            <label for="Descripcion"></label>
+            <input type="text" placeholder="Descripcion"required>
+        </p>
+        <p>
+            <label for="Peso"></label>
+            <input type="text" placeholder="Peso" required>
+        </p>
+        <p>
+            <label for="Imagen"></label>
+            <input type="file" placeholder="imagen" accept=".jpg" required>
+        </p>
+        <p>
+            <label for="Precio"></label>
+            <input type="text" placeholder="Precio" required>
+        </p>
+        <p>
+            <label for="Categoria"></label>
+            <input type="text" placeholder="Categoria" required>
+        </p>
+        <p>
+            <label for="Enviar"></label>
+            <input class="efecto" type="submit">
+        </p>
+    </form>
+</div> -->
