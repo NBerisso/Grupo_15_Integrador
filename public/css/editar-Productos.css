@@ -106,9 +106,9 @@ textarea:valid~.etiqueta {
     flex-direction: row-reverse;
     justify-content: flex-end;
     padding: 1rem;
+    gap: 4rem;
 }
 
 .moliendas input{
     width: min-content;
-    gap: 2rem;
 }
