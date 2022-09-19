@@ -1,0 +1,114 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
+}
+
+h1 a{
+    color: #ffffff;
+}
+
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.6), #de984d),url("../img/fondo-prueba.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+.inputs{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+.etiqueta{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+.image-input{
+    position: relative;
+    color: #fff;
+    cursor: text;  
+    padding: 10px;
+    margin-bottom: 20px;  
+    font-size: 18px;
+}
+
+button{
+    font-size: 20px;
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus~.etiqueta,
+input:valid~.etiqueta,
+textarea:focus~.etiqueta,
+textarea:valid~.etiqueta {
+    top: -35px;
+    font-size: 14px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .inputs{
+    flex-basis: 48%;
+}
+
+
+.moliendas{
+    display:flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 18px;
+    padding: 0.8rem;
+}
+
+.moliendas div{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.moliendas input{
+    width: min-content;
+    gap: 2rem;
+}

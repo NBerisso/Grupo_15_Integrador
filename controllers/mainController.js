@@ -25,6 +25,9 @@ const controladores = {
   agregarProductos: (req, res) => {
     res.render("./agregar-Productos.ejs");
   },
+  editarProductos: (req, res) =>{
+    res.render("./editar-Productos.ejs");
+  }
 };
 
 module.exports = controladores;
