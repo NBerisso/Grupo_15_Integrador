@@ -5,7 +5,7 @@ body{
 
 
             /* MAIN */
-main {
+/* main {
     background-image: url(/img/granos4.jpeg);
     background-size: cover;
     height: 90vh;
@@ -14,33 +14,14 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: center;
-}
-
-/* .logo{
-    left: 0%;
-    color: white;
-    margin: 0% 50% 0% 50%;
-    padding: 10px;
-    position: absolute;
-    animation-name: deslizar;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate reverse;
-}
-@keyframes deslizar {
-    0%{
-        left: 0%;
-        font-size: 30px;
-    }
-    50%{
-       font-size: 50px;
-    }
-    100%{
-        left:  80%;
-       font-size: 10px;
-    }
 } */
 
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.8), #de984d),url("../img/Fondo-Productos.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+/* 
 h1{
     color: white;
     display: flex;
@@ -48,25 +29,22 @@ h1{
     justify-content: center; 
     margin: 1px auto;
     padding: 0.5em;
-}
+} */
 .registro{
-    height: 50%;
-    margin: auto;
-    width: 30%;
-    background-color: #fff0b6ba;
-    padding: 20px;
-    border-radius: 10%;
-    box-shadow: inset black -1px 1px 17px 4px;
-    position: relative;
+    width: 100%;
+    height: 80vh;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin: auto;
+    flex-direction: column;
 }
 form{
     height: 100%;
+    width: 35%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 form input{
     height: 2em;

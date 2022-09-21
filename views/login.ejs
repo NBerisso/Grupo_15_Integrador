@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-<%- include ("./partials/head.ejs", {title:"login", style:"login"}) %>   
-
+    <%- include ("./partials/head.ejs", {title:"login",
+    style:"login"}) %>
 
 <body>
-    <header>
-        <%- include ("./partials/navbar.ejs")%>
-    </header>
     <main>
+        <%- include ("./partials/navbar.ejs")%>
         <div class="registro">
             <form action="/views/home.html" method="post">
                 <div>
