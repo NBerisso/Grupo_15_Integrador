@@ -32,19 +32,26 @@ h1{
 } */
 .registro{
     width: 100%;
-    height: 80vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    padding: 2rem;
     flex-direction: column;
+    /* background-color: #fff0b6ba;
+    border-radius: 10%;
+    box-shadow: inset black -1px 1px 20px 4px; */
+
 }
 form{
-    height: 100%;
+    height: 80%;
     width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: #fff0b6ba;
+    border-radius: 10%;
+    box-shadow: inset black -1px 1px 20px 4px;
 }
 form input{
     height: 2em;
