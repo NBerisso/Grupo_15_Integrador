@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <%- include ("./partials/head.ejs", {title:"agregar-Productos",
   style:"agregar-Productos"}) %>
 
@@ -7,50 +8,52 @@
     <main>
         <%- include ("./partials/navbar.ejs") %>
       <div class="banner">
-        <form class="register">
+        <form class="register" action="/productos/agregar-Productos" enctype="multipart/form-data" method="post">
+            <h3>Agregar Producto</h3>
             <div class="row">
                 <div class="inputs">
-                    <input type="text" id="producto" required />
-                    <label class="etiqueta" for="producto">Producto</label>
+                    <input type="text" name="name" id="name" required />
+                    <label class="etiqueta" for="name">Producto</label>
                   </div>
                   <div class="inputs">
-                    <input type="text" id="precio" required />
-                    <label class="etiqueta" for="precio">Precio</label>
+                    <input type="text" name="price" id="price" required />
+                    <label class="etiqueta" for="price">Precio</label>
                   </div>
             </div>
         
-            <div class="moliendas">
+            <!-- <div class="moliendas">
                 <h4>Molienda Disponible:</h4>
-                <div>
+                <div class="cajita">
                     <input type="checkbox" name="moliendas" value="a" id="a">
                     <label for="a">Granos</label>
                 </div>
-                <div>
+                <div class="cajita">
                     <input type="checkbox" name="moliendas" value="b" id="b">
                     <label for="b">Prensa Francesa</label>
                 </div>
-                <div>
+                <div class="cajita">
                     <input type="checkbox" name="moliendas" value="c" id="c">
                     <label for="c">Filtrado Manual</label>
                 </div>
-                <div>
+                <div class="cajita">
                     <input type="checkbox" name="moliendas" value="d" id="d">
                     <label for="d">Maquina Espresso</label>
                 </div>
-                <div>
+                <div class="cajita">
                     <input type="checkbox" name="moliendas" value="e" id="e">
                     <label for="e">Aeropress</label>
                 </div>
-            </div>
+            </div> -->
 
 
           <div class="inputs">
-            <label class="image-input" for="imagen-producto">Imagen</label>
-            <input type="file" id="imagen-producto" required />
+            <label class="image-input" for="image">Imagen</label>
+            <input type="file" name="image" id="image" required />
           </div>
+
           <div class="inputs">
-            <textarea id="descripcion" rows="8" required ></textarea>
-            <label class="etiqueta" for="descripcion">Descripcion </label>
+            <textarea name="description" id="description" rows="8" required ></textarea>
+            <label class="etiqueta" for="description">Descripcion </label>
           </div>
           <button type="submit">Crear</button>
 

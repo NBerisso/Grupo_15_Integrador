@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "cafe Rosario",
+        "price": "600",
+        "description": "asdasd"
+    },
+    {
+        "id": 2,
+        "name": "cafe zapallo",
+        "price": "6213",
+        "description": "asdasd"
+    },
+    {
+        "id": 3,
+        "name": "cafe tomaco",
+        "price": "213",
+        "description": "asdasd"
+    },
+    {
+        "id": null,
+        "name": "cafe sanjuanino",
+        "price": 98721,
+        "description": "cafe amargo con un dejo picante",
+        "image": "image1663796243086-.jpg"
+    }
+]

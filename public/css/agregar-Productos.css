@@ -12,6 +12,11 @@ main{
     background-position: center; 
 }
 
+/* .cajita{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+} */
 
 .banner {
     width: 100%;
@@ -29,6 +34,15 @@ form{
 .inputs{
     margin-bottom: 30px;
     position: relative;
+}
+
+form h3{
+    color: white;
+    display: flex;
+    padding-bottom: 30px;
+    font-size: 30px;
+    justify-content: center;
+    text-decoration: underline;
 }
 
 input, textarea{
@@ -95,4 +109,10 @@ textarea:valid~.etiqueta {
     color: #fff;
     font-size: 18px;
     padding: 20px;
+}
+
+@media (max-width: 400px) {
+    .banner {
+        height: 110vh;
+    }
 }

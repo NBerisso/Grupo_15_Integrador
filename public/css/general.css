@@ -60,6 +60,7 @@
 @media (max-width: 680px){
     nav ul{
         display: none;
+        text-align: right;
     }
 
     .contenido{
@@ -102,16 +103,12 @@
 
 }
 
-@media (min-width: 750px){
+@media (min-width: 850px){
     .navbar ul{
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
         justify-content: flex-end;
-    }
-
-    .logotipo{
-        width: 40%
     }
 
     .navbar ul li{

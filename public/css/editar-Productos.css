@@ -19,12 +19,20 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
 }
 
 form{
     width: 90%;
     max-width: 600px;
+}
+
+form h3{
+    color: white;
+    display: flex;
+    padding-bottom: 30px;
+    font-size: 30px;
+    justify-content: center;
+    text-decoration: underline;
 }
 
 .inputs{
@@ -111,4 +119,10 @@ textarea:valid~.etiqueta {
 
 .moliendas input{
     width: min-content;
+}
+
+@media (max-width: 400px) {
+    .banner {
+        height: 110vh;
+    }
 }

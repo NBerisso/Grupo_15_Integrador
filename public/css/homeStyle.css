@@ -1,9 +1,9 @@
-/* * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
-} */
+}
 
 /*--------------------------------------------------------
 ----------------Seccion de NicoB--------------------------
@@ -24,63 +24,12 @@ h1 a{
     background-position: center;
 }
 
-        /* NAVBAR */
-
-/* .navbar{
-    width: 90%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logotipo{
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-.logo{
-    width: 100px;
-    cursor: pointer;
-    padding-right: 8px;
-}
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-
-.navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background-color: #de984d;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-}
-
-.navbar ul li:hover::after{
-    width: 100%;
-} */
-
-
         /* Pantalla 1 */
 
 
 .contenido{
     width: 100%;
+    
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -240,12 +189,8 @@ div.burger-menu i{
     width: 40px;
 }
 
-/* @media (max-width: 680px){
-    nav ul{
-        display: none;
-    }
-
-    .contenido{
+@media (max-width: 680px){
+        .contenido{
         width: 100%;
     }
     
@@ -270,41 +215,16 @@ div.burger-menu i{
 }
 
 
-@media (min-width: 681px){
-    .burger-menu{
-        display: none;
-    }
-
-    .navbar ul li{
-        margin: 0 5px;
-    }
-    .navbar ul{
-        width: 100%;
-        text-align: right;
-    }
-
-}
-
-@media (min-width: 750px){
-    .navbar ul{
-        width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-    }
-
-    .logotipo{
-        width: 40%
-    }
-
-    .navbar ul li{
-        margin: 0 20px;
-    }
+/* @media (min-width: 681px){
+    
 } */
 
-/* @media (min-width: 992px){
+/* @media (min-width: 750px){
+
 
 } */
+
+
 
 /*--------------------------------------------------------
 ----------------Seccion de NicoB--------------------------
