@@ -2,25 +2,63 @@
 body{
     background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
 }
-
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.7), #c58642),url("../img/menu-coffee.jpg");
+    background-size: cover;
+    background-position: bottom; 
+}
+.menu{
+    width: 100%;
+    height: 190vh;
+}
+h1{
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+    margin: 1px auto;
+    padding: 0.5em;
+    text-decoration: underline;
+}
 section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
   
 article{
-width: 350px;
-border: 1px solid black;
+    width: 20em;
+    height: 27em;
+    border: 1px solid black;
+    background-color: #eaac6ade;
+    color: white;
+    border-radius: 4%;
 }
 
 .img-container{
-width: 100%;
-height: 300px;
+    width: 100%;
+    height: 60%;
 }
 
 .img-container img{
-width: 100%;
-height: 300px;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    height: 40%;
+    justify-content: flex-end;
+}
+
+.info ul{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }

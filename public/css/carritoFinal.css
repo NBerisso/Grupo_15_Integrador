@@ -7,20 +7,33 @@ body {
 
 
 /* CARRITO */
-main {
-    /* height: 35rem; */
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.7), #c58642),url("../img/fondo-carrito.jpg");
+    background-size: cover;
+    background-position: center;     
+    height: 130vh;
+}
+/* main {  
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.30)), url("../img/testeo.jpg");
     display: flex;
     flex-direction: column;
-    /* padding: 0.6rem; */
     width: 100%;
     height: 80vh;
     background-size: cover;
     background-position: center;
+} */
+
+
+/* PRODUCTO */
+.productos {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
-main h2 {
+.productos h2 {
     color: white;
     display: flex;
     align-content: center;
@@ -28,13 +41,6 @@ main h2 {
     width: 100%;
     margin: 1em 0;
     font-size: 1.7em;
-}
-
-/* PRODUCTO */
-.productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
 .productos i {
@@ -89,8 +95,9 @@ main h2 {
     display: flex;
     justify-content: center;
     color: white;
-    background-color: #fcce76;
+    background-color: #ae6922;
     border-radius: 5px;
+    border: 1px solid #fff;
 }
 
 .precio2 {
@@ -112,9 +119,10 @@ main h2 {
 /* TOTAL */
 .total {
     width: 20%;
-    align-self: flex-end;
     position: relative;
-    top: 40%;
+    top: 38%;
+    left: 80%;
+    color: white;;
 }
 
 h5 {
@@ -125,10 +133,12 @@ h5 {
 .total i {
     margin-right: auto;
 }
-
+.total span{
+    font-size: 1.2em;
+}
 button {
     color: white;
-    background-color: #fcce76;
+    background-color: #bf771b;
     padding: 0.5em;
     display: flex;
     align-items: center;

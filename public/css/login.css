@@ -17,9 +17,9 @@ body{
 } */
 
 main{
-    background-image: linear-gradient(rgba(0,0,0,0.8), #de984d),url("../img/Fondo-Productos.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.7), #c58642),url("../img/fondo-login.jpg");
     background-size: cover;
-    background-position: center; 
+    background-position: bottom; 
 }
 /* 
 h1{
@@ -36,7 +36,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding-bottom: 2rem;
     flex-direction: column;
     /* background-color: #fff0b6ba;
     border-radius: 10%;
@@ -44,14 +44,14 @@ h1{
 
 }
 form{
-    height: 80%;
+    height: 70%;
     width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #fff0b6ba;
+    background-color: #eaac6ade;
     border-radius: 10%;
-    box-shadow: inset black -1px 1px 20px 4px;
+    box-shadow: inset black -1px 2px 27px 7px;
 }
 form input{
     height: 2em;
@@ -63,7 +63,9 @@ form input{
     border-radius: 5px;
     box-shadow: black 0px 1px 1px 0px;
     font-size: 1.3em;
+    font-weight: bold;
     text-align: center;
+    background-color: #f4e0ca83;
 }
 .botones button{
     color: white;
@@ -82,7 +84,7 @@ form input{
     text-decoration: none;
 }
 .botones button:hover{
-    background-color: #ffc14d;
+    background-color: rgb(161, 90, 20);
 }
 .link-registro{
     font-size: 1em;

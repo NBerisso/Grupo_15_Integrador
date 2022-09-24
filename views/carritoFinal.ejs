@@ -3,54 +3,52 @@
 
 <%- include ("./partials/head.ejs", {title:"carritoFinal", style:"carritoFinal"}) %>
 
-    <body>
-        <header>
-            <%- include ("./partials/navbar.ejs")%>
-        </header>
-        <main>
+<body>
+    <main>
+        <%- include ("./partials/navbar.ejs")%>
+        <div class="productos">
             <h2>Mi carrito final</h2>
-            <div class="productos">
-                <div class="descripcion">
-                    Producto
-                    <div>
-                        <img src="/img/bolsa.png">
-                        <span>Cafe xxxxxx/xxx gr/xxxxx</span>
-                    </div>
+            <div class="descripcion">
+                Producto
+                <div>
+                    <img src="/img/bolsa.png">
+                    <span>Cafe xxxxxx/xxx gr/xxxxx</span>
                 </div>
-                <div class="precio1">
-                    Precio x u.
-                    <div>
-                        <i class="fas fa-dollar-sign"></i>
-                        <span>xxxx,xx</span>
-                    </div>
-                </div>
-                <div class="cantidad">
-                    Cantidad
-                    <select name="cantidad" id="cantidad">
-                        <option disabled selected>Cant.</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="precio2">
-                    Precio Final
-                    <div>
-                        <i class="fas fa-dollar-sign"></i>
-                        <span>xxxx,xx</span>
-                        <i id="tacho" class="fas fa-trash-alt"></i>
-                    </div>
-                </div>                
             </div>
-            <div class="total">
-                <h5> Total </h5>
-                <i class="fas fa-dollar-sign"></i>
-                <span>xxxx,xx</span>
-                <button>Comprar</button>
+            <div class="precio1">
+                Precio x u.
+                <div>
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>xxxx,xx</span>
+                </div>
             </div>
-        </main>
-        <%- include ("./partials/footer.ejs") %>
-    </body>
+            <div class="cantidad">
+                Cantidad
+                <select name="cantidad" id="cantidad">
+                    <option disabled selected>Cant.</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="precio2">
+                Precio Final
+                <div>
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>xxxx,xx</span>
+                    <i id="tacho" class="fas fa-trash-alt"></i>
+                </div>
+            </div>                
+        </div>
+        <div class="total">
+            <h5> Total </h5>
+            <i class="fas fa-dollar-sign"></i>
+            <span>xxxx,xx</span>
+            <button>Comprar</button>
+        </div>
+    </main>
+    <%- include ("./partials/footer.ejs") %>
+</body>
 </html>

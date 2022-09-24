@@ -4,36 +4,35 @@
 <%- include ("./partials/head.ejs", {title:"menu-productos", style:"menu-productos"}) %>
 
 <body>
-
-
-    <div class="ps-content">
+  <main>
+    <div class="menu">
       <%- include ("./partials/navbar.ejs") %>
-        <h1>Menu del chef:</h1>
-  
-        <section class="menu-wrap">
-          <% products.forEach(function(cafe) { %>
-  
-          <article>
-            <div class="img-container">
-                  <!-- if ternario para el caso que no tenga imagen definida ponga una por defecto -->
-              <img src="/img/imagenes-cafes/<%= cafe.image ? cafe.image : 'porDefecto.jpg' %>" alt="cafe" />
-            </div>
-            <p>informacion del cafe:</p>
+      <h1>Menu de Cafe:</h1>
+      <section class="menu-wrap">
+        <% products.forEach(function(cafe) { %>
+
+        <article>
+          <div class="img-container">
+                <!-- if ternario para el caso que no tenga imagen definida ponga una por defecto -->
+            <img src="/img/imagenes-cafes/<%= cafe.image ? cafe.image : 'porDefecto.jpg' %>" alt="cafe" />
+          </div>
+          <div class="info">
+            <p>informacion del cafe </p>
             <ul>
-              <li>Nombre:<%= cafe.name %></li>
+              <li>Nombre: <%= cafe.name %></li>
               <li>Descripcion: <%= cafe.description %></li>  
               <li>Precio: <%= cafe.price %></li>
             </ul>
-          </article>
-  
-          <% }) %>
-        </section>
-      </div>
-  
-    <!-----------Footer------------ -->
-    <footer>
-        <%- include ("./partials/footer.ejs") %>
-    </footer>
-    
+          </div>
+        </article>
+
+        <% }) %>
+      </section>
+    </div>
+  </main>
+  <!-----------Footer------------ -->
+  <footer>
+      <%- include ("./partials/footer.ejs") %>
+  </footer>
 </body>
 </html>
