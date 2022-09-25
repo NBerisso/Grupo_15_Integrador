@@ -1,3 +1,4 @@
+const { create } = require("domain");
 const fs = require("fs");
 const path = require("path");
 
@@ -19,11 +20,7 @@ const controller = {
     agregarProductos: (req, res) => {
         res.render("./agregar-Productos.ejs");
     },
-
-    editarProductos: (req, res) => {
-        res.render("./editar-Productos.ejs");
-    },
-
+    
     detalleProducto: (req, res) => {
         res.render("./detalle-producto.ejs");
     },
@@ -37,19 +34,16 @@ const controller = {
     	// REVISAR DETAIL
     detail: (req, res) => {      
         const data = findAll();
-
         const cafeEncontrado = data.find(function(cafe){
             return cafe.id == req.params.id;
         });
-
         res.render("./Producto.ejs", { cafe: cafeEncontrado });
     },
 
     store: (req, res) => {
         const data = findAll();
-
         const newProduct = {
-            id: data.lenght + 1,
+            id: data.length + 1,
             name: req.body.name,
             price: Number(req.body.price),
             description: req.body.description,
@@ -62,20 +56,46 @@ const controller = {
 
         res.redirect("/productos/list");
     },
+    edit: (req, res) => {
+        const data = findAll();
 
+        const cafeEncontrado = data.find(function(cafe){
+            return cafe.id == req.params.id;
+        });
 
+        res.render("editar-Productos", { cafe: cafeEncontrado});
+    },
+    update: (req, res) =>{
+        const data = findAll();
+
+        const cafeEncontrado = data.find(function(cafe){
+            return cafe.id == req.params.id
+        })
+
+        cafeEncontrado.name = req.body.name;
+        cafeEncontrado.price = req.body.price;
+        cafeEncontrado.description = req.body.description;
+        cafeEncontrado.image = req.file ? req.file.filename : cafeEncontrado.image;
+   
+        writeFile(data);
+
+        res.redirect("/productos/list");
+    },
+    destroy: (req, res) =>{
+        const data = findAll();
+
+        const cafeEncontrado = data.findIndex(function(cafe){
+            return cafe.id == req.params.id
+        })
+
+        data.splice(cafeEncontrado, 1);
+
+        writeFile(data);
+
+        res.redirect("/productos/list");
+    }
 }
 
 
 
 module.exports = controller;
-
-
-
-
-
-
-
-
-
-

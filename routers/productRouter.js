@@ -21,14 +21,15 @@ let storage = multer.diskStorage({
 let upload = multer({storage: storage});
 
 
-router.get("/agregar-Productos", productController.agregarProductos);
+router.get("/agregar-Productos/:id", productController.agregarProductos);
 router.post("/agregar-Productos", upload.single('image'), productController.store);
 
 
-router.get("/editar-Productos", productController.editarProductos);
+router.get("/editar-Productos/:id", productController.edit);
+router.put("/editar-Productos/:id", productController.update);
+router.delete("/eliminar/:id", productController.destroy);
 
 router.get("/detalle-producto", productController.detalleProducto);
-
 
 router.get("/list", productController.list);
 

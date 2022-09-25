@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include ("./partials/head.ejs", {title:"editar-Productos",
-  style:"editar-Productos"}) %>
+<%- include ("./partials/head.ejs", {title:"editar-Productos", style:"editar-Productos"}) %>
 
   <body>
     <main>
-        <%- include ("./partials/navbar.ejs") %>
-      <div class="banner">
-        <form class="register">
-            <h3>Editar Producto</h3>
+      <%- include ("./partials/navbar.ejs") %>
+        <div class="banner">
+          <form class="register" action="/productos/editar-Productos/<%= cafe.id %>?_method=PUT" method="POST">
+            <h3>Editar Producto: <%= cafe.name %>
+            </h3>
             <div class="row">
-                <div class="inputs">
-                    <input type="text" id="producto" required />
-                    <label class="etiqueta" for="producto">Producto</label>
-                  </div>
-                  <div class="inputs">
-                    <input type="text" id="precio" required />
-                    <label class="etiqueta" for="precio">Precio</label>
-                  </div>
+              <div class="inputs">
+                <input type="text" id="producto" name="name" value="<%= cafe.name %>" required>
+                <label class="etiqueta" for="producto">Producto</label>
+              </div>
+              <div class="inputs">
+                <input type="text" id="precio" name="price" value="<%= cafe.price %>" required>
+                <label class="etiqueta" for="precio">Precio</label>
+              </div>
             </div>
 
             <div class="moliendas">
-                <h4>Seleccionar nueva Molienda:</h4>
-                <div>
-                    <input type="checkbox" name="moliendas" value="a" id="a">
-                    <label for="a">Granos</label> 
-                </div>
-                <div>
-                    <input type="checkbox" name="moliendas" value="b" id="b">
-                    <label for="b">Prensa Francesa</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="moliendas" value="c" id="c">
-                    <label for="c">Filtrado Manual</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="moliendas" value="d" id="d">
-                    <label for="d">Maquina Espresso</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="moliendas" value="e" id="e">
-                    <label for="e">Aeropress</label>
-                </div>
+              <h4>Seleccionar nueva Molienda:</h4>
+              <div>
+                <input type="checkbox" name="Granos" value="a" id="a">
+                <label for="a">Granos</label>
+              </div>
+              <div>
+                <input type="checkbox" name="Prensa Francesa" value="b" id="b">
+                <label for="b">Prensa Francesa</label>
+              </div>
+              <div>
+                <input type="checkbox" name="Filtrado Manual" value="c" id="c">
+                <label for="c">Filtrado Manual</label>
+              </div>
+              <div>
+                <input type="checkbox" name="Maquina Espresso" value="d" id="d">
+                <label for="d">Maquina Espresso</label>
+              </div>
+              <div>
+                <input type="checkbox" name="Aeropress" value="e" id="e">
+                <label for="e">Aeropress</label>
+              </div>
             </div>
+            <div class="inputs">
+              <label class="image-input" for="imagen-producto">Nueva Imagen (Opcional)</label>
+              <input type="file" id="imagen-producto">
+            </div>
+            <div class="inputs">
+              <textarea id="description" name="description" rows="8" required><%= cafe.description %></textarea>
+              <label class="etiqueta" for="description"></label>
+            </div>
+            <button type="submit">Editar</button>
 
-
-          <div class="inputs">
-            <label class="image-input" for="imagen-producto">Nueva Imagen (Opcional)</label>
-            <input type="file" id="imagen-producto" required />
-          </div>
-          <div class="inputs">
-            <textarea id="descripcion" rows="8" required ></textarea>
-            <label class="etiqueta" for="descripcion">Descripcion (Opcional)</label>
-          </div>
-          <button type="submit">Editar</button>
-
-        </form>
-      </div>
+          </form>
+          <form action="/productos/eliminar/<%= cafe.id %>?_method=DELETE" method="POST">
+            <button>Borrar</button>
+          </form>
+        </div>
     </main>
   </body>
 
   <%- include ("./partials/footer.ejs") %>
-</html>
 
+</html>
