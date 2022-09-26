@@ -21,7 +21,7 @@ let storage = multer.diskStorage({
 let upload = multer({storage: storage});
 
 
-router.get("/agregar-Productos/:id", productController.agregarProductos);
+router.get("/agregar-Productos", productController.agregarProductos);
 router.post("/agregar-Productos", upload.single('image'), productController.store);
 
 
