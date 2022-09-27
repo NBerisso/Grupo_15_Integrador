@@ -27,7 +27,7 @@ const controller = {
     
     list: (req, res) => {
         const data = findAll();
-        res.render("./menu-productos", { products: data });
+        res.render("./menu-productos.ejs", { products: data });
     },
 
 
