@@ -42,7 +42,8 @@ const controller = {
             name: req.body.name,
             price: Number(req.body.price),
             description: req.body.description,
-            image: req.file.filename
+            image: req.file.filename,
+            moliendas: [...req.body.moliendas]
         }  
 
         data.push(newProduct);
@@ -73,7 +74,8 @@ const controller = {
         cafeEncontrado.price = req.body.price;
         cafeEncontrado.description = req.body.description;
         cafeEncontrado.image = req.file ? req.file.filename : cafeEncontrado.image;
-   
+        cafeEncontrado.moliendas = req.body.moliendas;
+
         writeFile(data);
 
         res.redirect("/productos/list");

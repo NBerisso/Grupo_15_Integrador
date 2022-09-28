@@ -23,23 +23,23 @@
             <div class="moliendas">
               <h4>Seleccionar nueva Molienda:</h4>
               <div>
-                <input type="checkbox" name="Granos" value="a" id="a">
+                <input type="checkbox" name="moliendas" value="Granos" id="a" <%= cafe.moliendas.includes("Granos") ? "checked": "" %> >
                 <label for="a">Granos</label>
               </div>
               <div>
-                <input type="checkbox" name="Prensa Francesa" value="b" id="b">
+                <input type="checkbox" name="moliendas" value="Prensa Francesa" id="b" <%= cafe.moliendas.includes("Prensa Francesa") ? "checked": "" %>>
                 <label for="b">Prensa Francesa</label>
               </div>
               <div>
-                <input type="checkbox" name="Filtrado Manual" value="c" id="c">
+                <input type="checkbox" name="moliendas" value="Filtrado Manual" id="c" <%= cafe.moliendas.includes("Filtrado Manual") ? "checked": "" %>>
                 <label for="c">Filtrado Manual</label>
               </div>
               <div>
-                <input type="checkbox" name="Maquina Espresso" value="d" id="d">
+                <input type="checkbox" name="moliendas" value="Maquina Espresso" id="d" <%= cafe.moliendas.includes("Maquina Espresso") ? "checked": "" %>>
                 <label for="d">Maquina Espresso</label>
               </div>
               <div>
-                <input type="checkbox" name="Aeropress" value="e" id="e">
+                <input type="checkbox" name="moliendas" value="Aeropress" id="e" <%= cafe.moliendas.includes("Aeropress") ? "checked": "" %>>
                 <label for="e">Aeropress</label>
               </div>
             </div>

@@ -1,21 +1,25 @@
 [
     {
         "id": 1,
-        "name": "Cafe Brasil",
-        "price": 123,
-        "description": "Cafe aireado con dejos de madera quemada"
+        "name": "iugiguiu",
+        "price": "1",
+        "description": "iouohiugp",
+        "moliendas": [
+            "Milanesa"
+        ]
     },
     {
         "id": 2,
-        "name": "Cafe Volcanico",
-        "price": 345,
-        "description": "Proviene de granos cultivados al pie un volcan de centro america"
-    },
-    {
-        "id": 3,
         "name": "cafe sanjuanino",
         "price": 98721,
         "description": "cafe amargo con un dejo picante",
         "image": "image1663796243086-.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Hola",
+        "price": 400,
+        "description": "Buenassss",
+        "image": "image1664055584908-.png"
     }
 ]
