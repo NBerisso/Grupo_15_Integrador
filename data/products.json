@@ -1,19 +1,22 @@
 [
     {
-        "id": 3,
+        "id": 1,
         "name": "iugiguiu",
         "price": "1",
-        "description": "iouohiugp"
+        "description": "iouohiugp",
+        "moliendas": [
+            "Milanesa"
+        ]
     },
     {
-        "id": null,
+        "id": 2,
         "name": "cafe sanjuanino",
         "price": 98721,
         "description": "cafe amargo con un dejo picante",
         "image": "image1663796243086-.jpg"
     },
     {
-        "id": null,
+        "id": 3,
         "name": "Hola",
         "price": 400,
         "description": "Buenassss",
