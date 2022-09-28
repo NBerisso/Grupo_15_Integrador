@@ -27,7 +27,7 @@ const controller = {
     
     list: (req, res) => {
         const data = findAll();
-        res.render("./menu-productos", { products: data });
+        res.render("./menu-productos.ejs", { products: data });
     },
 
 
@@ -37,11 +37,12 @@ const controller = {
         const cafeEncontrado = data.find(function(cafe){
             return cafe.id == req.params.id;
         });
-        res.render("./Producto.ejs", { cafe: cafeEncontrado });
+        res.render("./detalle-producto.ejs", { cafe: cafeEncontrado });
     },
 
     store: (req, res) => {
         const data = findAll();
+        
         const newProduct = {
             id: data.length + 1,
             name: req.body.name,
@@ -57,6 +58,7 @@ const controller = {
 
         res.redirect("/productos/list");
     },
+
     edit: (req, res) => {
         const data = findAll();
 
@@ -66,6 +68,7 @@ const controller = {
 
         res.render("editar-Productos", { cafe: cafeEncontrado});
     },
+
     update: (req, res) =>{
         const data = findAll();
 
@@ -83,6 +86,7 @@ const controller = {
 
         res.redirect("/productos/list");
     },
+
     destroy: (req, res) =>{
         const data = findAll();
 

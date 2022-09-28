@@ -19,7 +19,7 @@ body{
 main{
     background-image: linear-gradient(rgba(0,0,0,0.7), #c58642),url("../img/fondo-login.jpg");
     background-size: cover;
-    background-position: bottom; 
+    /* background-position: bottom;  */
 }
 /* 
 h1{
