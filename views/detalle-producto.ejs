@@ -10,15 +10,15 @@
     <main>
         <div class="seccion">
             <div class="seccion1">
-                <h1>Producto</h1>
-                <img src="/img/bolsa.png">
+                <h1><%= cafe.name %></h1>
+                <img src="/img/imagenes-cafes/<%= cafe.image ? cafe.image : 'porDefecto.jpg' %>" alt="cafe" />
             </div>
             <div class="seccion2">
                 <span class="descripcion">
-                    <h2>NOMBRE XXXX</h2>
+                    <h2><%= cafe.name %></h2>
                 </span>
                 <span class="precio">
-                    <h3>$ xxx</h3>
+                    <h3><%= cafe.price %></h3>
                 </span>
                 <span class="MedioDePago">
                     <h3>Medios de Pago</h3>
@@ -44,9 +44,7 @@
                 <input class="numero" type="number" placeholder="0">
                 <input class="boton" type="button" value="agregar al carrito">
                 <h2>Descripcion del Producto</h2>
-                <p> asdasdasda sdasdasdasda sdasdasdasd asd asd asdad asd asdasdas asdasdas dasdasdasda sdasdas
-                    dasdasdas
-                    dasda sdasd asd asd asdasdasdasdasd asdasdasdasdasd</p>
+                <p><%= cafe.description %></p>
             </div>
         </div>
     </main>

@@ -29,12 +29,9 @@ router.get("/editar-Productos/:id", productController.edit);
 router.put("/editar-Productos/:id", productController.update);
 router.delete("/eliminar/:id", productController.destroy);
 
-router.get("/detalle-producto", productController.detalleProducto);
+router.get("/detalle-producto/:id", productController.detalleProducto);
 
 router.get("/list", productController.list);
-
-	// REVISAR
-router.get("/detail/:id", productController.detail);
 
 
 module.exports = router

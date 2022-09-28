@@ -22,22 +22,16 @@ const controller = {
     },
     
     detalleProducto: (req, res) => {
-        res.render("./detalle-producto.ejs");
+        const data = findAll();
+        const cafeEncontrado = data.find(function(cafe){
+            return cafe.id == req.params.id;
+        });
+        res.render("detalle-producto", { cafe: cafeEncontrado });
     },
     
     list: (req, res) => {
         const data = findAll();
         res.render("./menu-productos.ejs", { products: data });
-    },
-
-
-    	// REVISAR DETAIL
-    detail: (req, res) => {      
-        const data = findAll();
-        const cafeEncontrado = data.find(function(cafe){
-            return cafe.id == req.params.id;
-        });
-        res.render("./detalle-producto.ejs", { cafe: cafeEncontrado });
     },
 
     store: (req, res) => {

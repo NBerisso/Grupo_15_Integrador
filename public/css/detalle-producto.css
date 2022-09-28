@@ -1,31 +1,25 @@
 
 
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
+    background-image: linear-gradient(#00000078, #de984d00),url(../img/detalleCafe.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-
-
 main {
-    background-image: url("/img/granos10.jpeg");
-    height: 100%;
-    background-size: cover;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
 }
 
 .seccion {
-    background-color: #5e4403de;
-    height: 100%;
+    background-color: #2f2821cf;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     margin: 2rem 4rem;
     border-radius: 4rem;
-    width: 100%;
+    width: 80%;
 }
 
 .seccion1 {

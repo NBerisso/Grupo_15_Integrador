@@ -1,15 +1,16 @@
 
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Fondo-2.jpg");
+    background-image: linear-gradient(rgb(0 0 0 / 43%), #c5864254),url(../img/maquina.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 
 
 
 main {
-    background-image: url(/img/granos4.jpeg);
-    background-size: cover;
+    
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -53,7 +54,7 @@ h1 {
     margin: 5% auto;
     width: 30%;
     height: 80%;
-    background-color: #fff0b6ba;
+    background-color: #eaac6ade;
     padding: 20px;
     border-radius: 10%;
     box-shadow: inset black -1px 1px 20px 4px;
