@@ -17,9 +17,9 @@ body{
 } */
 
 main{
-    background-image: linear-gradient(rgba(0,0,0,0.7), #c58642),url("../img/fondo-login.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), #c58642),url("../img/fondo-login.jpg");
     background-size: cover;
-    /* background-position: bottom;  */
+    background-position: bottom; 
 }
 /* 
 h1{
@@ -87,7 +87,7 @@ form input{
     background-color: rgb(161, 90, 20);
 }
 .link-registro{
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
 }
 
@@ -96,9 +96,12 @@ form input{
     .navbar ul{
         text-align: center;
     }
-    .registro{
-        height: 50%;
+    form{
         width: 80%;
+        height: 50%;
+    }
+    .link-registro{
+        font-size: 1.3em;
     }
 }
 
@@ -106,8 +109,11 @@ form input{
     .navbar ul{
         text-align: center;
     }
-    .registro{
+    form{
+        width: 70%;
         height: 50%;
-        width: 50%;
+    }
+    .link-registro{
+        font-size: 1.3em;
     }
 }
