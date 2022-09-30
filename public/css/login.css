@@ -17,7 +17,7 @@ body{
 } */
 
 main{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), #c58642),url("../img/fondo-login.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), #c58642c3),url("../img/fondo-login.jpg");
     background-size: cover;
     background-position: bottom; 
 }
@@ -32,11 +32,11 @@ h1{
 } */
 .registro{
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2rem;
+    padding-bottom: 2em;
     flex-direction: column;
     /* background-color: #fff0b6ba;
     border-radius: 10%;
@@ -51,10 +51,10 @@ form{
     justify-content: space-evenly;
     background-color: #eaac6ade;
     border-radius: 10%;
-    box-shadow: inset black -1px 2px 27px 7px;
+    box-shadow: inset black -1px 2px 20px 4px;
 }
 form input{
-    height: 2em;
+    height: 2.3rem;
     display: flex;
     align-items: stretch;
     width: 75%;
@@ -62,15 +62,15 @@ form input{
     margin: auto;
     border-radius: 5px;
     box-shadow: black 0px 1px 1px 0px;
-    font-size: 1.3em;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-    background-color: #f4e0ca83;
+    /* background-color: #f4e0ca; */
 }
 .botones button{
     color: white;
     background-color: peru;
-    height: 2em;
+    height: 2.2rem;
     display: flex;
     align-items: center;
     width: 75%;
@@ -78,7 +78,7 @@ form input{
     margin: auto;
     border-radius: 5px;
     box-shadow: black 0px 1px 1px 0px;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 .botones a{
     text-decoration: none;
@@ -87,33 +87,49 @@ form input{
     background-color: rgb(161, 90, 20);
 }
 .link-registro{
-    font-size: 1.1em;
+    font-size: 1.1rem;
     text-align: center;
+    padding: 0 1rem;
 }
 
 /* -----------Media Queries---------- */
-@media (min-width:320px) and (max-width:599px) {
-    .navbar ul{
-        text-align: center;
-    }
-    form{
-        width: 80%;
-        height: 50%;
-    }
-    .link-registro{
-        font-size: 1.3em;
-    }
-}
-
-@media (min-width:600px) and (max-width:990px){
+@media (min-width:320px) and (max-width:600px) {
     .navbar ul{
         text-align: center;
     }
     form{
         width: 70%;
-        height: 50%;
+        height: 60%;
+    }
+    form input{
+        height: 2.3rem;
+        font-size: 0.8rem;
+    }
+    .botones button{
+        height: 2.3rem;
+        font-size: 1.1rem;
     }
     .link-registro{
-        font-size: 1.3em;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width:601px) and (max-width:990px){
+    .navbar ul{
+        text-align: center;
+    }
+    form{
+        width: 50%;
+        height: 70%;
+    }
+    form input{
+        height: 2.6rem;
+        font-size: 1rem;
+    }
+    .botones button{
+        height: 2.6rem;
+    }
+    .link-registro{
+        font-size: 1.2rem;
     }
 }

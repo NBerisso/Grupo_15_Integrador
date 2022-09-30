@@ -8,7 +8,7 @@
     <main>
         <%- include ("./partials/navbar.ejs")%>
         <div class="registro">
-            <form action="/views/home.html" method="post">
+            <form action="./views/home.ejs" method="POST">
                 <div>
                     <label for="E-mail"></label>
                     <input type="email" placeholder="E-mail">
@@ -18,7 +18,7 @@
                     <input type="password" placeholder="Contraseña">
                 </div>
                 <div class="botones">
-                    <a href="/home.html"><button type="submit">Iniciar sesión</button></a>
+                    <a href="/home"><button type="submit">Iniciar sesión</button></a>
                 </div>
                 <p class="link-registro">
                     No tienes cuenta? Registrate
