@@ -34,16 +34,15 @@
                 </select>
                 <select name="molienda" id="molienda">
                     <option disabled selected>Selecciona una Molienda</option>
-                    <option value="granos">granos</option>
-                    <option value="capsula">capsula</option>
-                    <option value="filtro">filtro</option>
-                    <option value="xxxxx">xxxx</option>
-                    <option value="xxxxxxxx">xxxxx</option>
-                </select>
-                <label>Cantidad</label>
-                <input class="numero" type="number" placeholder="0">
-                <input class="boton" type="button" value="agregar al carrito">
-                <h2>Descripcion del Producto</h2>
+                    <% cafe.moliendas.forEach(function(tipoMolienda) {%>                                    
+                        <option value=<%= tipoMolienda %>><%= tipoMolienda%></option>
+                    <% }); %>
+                    </select>     
+
+                        <label>Cantidad</label>
+                        <input class="numero" type="number" placeholder="0">
+                        <input class="boton" type="button" value="agregar al carrito">
+                        <h2>Descripcion del Producto</h2>
                 <p><%= cafe.description %></p>
             </div>
         </div>

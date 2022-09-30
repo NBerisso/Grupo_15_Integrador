@@ -13,13 +13,69 @@
         "name": "cafe sanjuanino",
         "price": 98721,
         "description": "cafe amargo con un dejo picante",
-        "image": "image1663796243086-.jpg"
+        "image": "image1663796243086-.jpg",
+        "moliendas": [
+            "Granos",
+            "Prensa Francesa",
+            "Filtrado Manual",
+            "Maquina Espresso",
+            ""
+        ]
     },
     {
         "id": 3,
-        "name": "Hola",
-        "price": 400,
-        "description": "Buenassss",
-        "image": "image1664055584908-.png"
+        "name": "cafe sin gusto",
+        "price": 2525,
+        "description": "khjkhjk gjhjkhjkhjk",
+        "image": "image1664418125418-.jpg",
+        "moliendas": [
+            "Granos",
+            "Prensa Francesa",
+            "Filtrado Manual",
+            "Maquina Espresso",
+            ""
+        ]
+    },
+    {
+        "id": 4,
+        "name": "cafe con queso",
+        "price": 5353,
+        "description": "khjkhjk gjhjkhjkhjk",
+        "image": "image1664418125418-.jpg",
+        "moliendas": [
+            "Prensa Francesa",
+            "Filtrado Manual",
+            "Aeropress",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 5,
+        "name": "cafe con miel",
+        "price": 4545,
+        "description": "khjkhjk gjhjkhjkhjk",
+        "image": "image1664418125418-.jpg",
+        "moliendas": [
+            "Granos",
+            "Maquina Espresso",
+            "Aeropress",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 6,
+        "name": "cafe con sal",
+        "price": 8526,
+        "description": "khjkhjk gjhjkhjkhjk",
+        "image": "image1664418125418-.jpg",
+        "moliendas": [
+            "Granos",
+            "Prensa Francesa",
+            "Filtrado Manual",
+            "",
+            ""
+        ]
     }
 ]

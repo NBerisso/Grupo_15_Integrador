@@ -89,7 +89,7 @@ input {
 }
 
 .efecto:hover {
-    background-color: black;
+    background-color: rgb(161, 90, 20);
     color: white;
 }
 
