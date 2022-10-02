@@ -178,7 +178,7 @@ div .btn-1{
 }
 
 
-div.burger-menu i{
+/* div.burger-menu i{
     background-color: #9f5e28;
     border-radius: 5px;
     color: #FFF;
@@ -187,7 +187,7 @@ div.burger-menu i{
     margin: 10px 0px 20px 0px;
     padding: 10px;
     width: 40px;
-}
+} */
 
 @media (max-width: 680px){
         .contenido{

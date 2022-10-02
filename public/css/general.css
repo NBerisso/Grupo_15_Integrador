@@ -57,6 +57,17 @@
     width: 100%;
 }
 
+div.burger-menu i{
+    background-color: #9f5e28;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
 @media (max-width: 680px){
     nav ul{
         display: none;
