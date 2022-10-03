@@ -13,7 +13,7 @@ El sitio apuntara a cualquier entusiasta y amante del cafe, asi como tambien a g
   
   -Leandro Maldonado, 26 años de edad, vivo en Berazategui Zona Sur, soy Profesor de Musica. Me gusta enseñar y hacer musica.
   
-  -Rocío Spina, 18 años de edad, vivo en Lujan Zona Oeste, trabajo como administradora en barrio privado. Empece a tomar cafe hace poco y se volvió parte de mi rutina
+  -Rocío Spina, 19 años de edad, vivo en Lujan Zona Oeste, trabajo como administradora en barrio privado. Empece a tomar cafe hace poco y se volvió parte de mi rutina
 
   -Nicolas Denaday, 20 años, vivo en Capital Federal, trabajo como bedel en la UCES sede Centro. Tomo café hace años y me encanta descrubrir nuevos sabores siempre.
   
