@@ -5,17 +5,6 @@ body{
 
 
             /* MAIN */
-/* main {
-    background-image: url(/img/granos4.jpeg);
-    background-size: cover;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: center;
-} */
-
 main{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), #c58642c3),url("../img/fondo-login.jpg");
     background-size: cover;

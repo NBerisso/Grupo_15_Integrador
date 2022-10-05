@@ -7,7 +7,7 @@
   <main>
     <div class="menu">
       <%- include ("./partials/navbar.ejs") %>
-      <h1>Menu de Cafe:</h1>
+      <h1>Menú de Café:</h1>
       <section class="menu-wrap">
         <% products.forEach(function(cafe) { %>
 
@@ -17,11 +17,12 @@
             <img src="/img/imagenes-cafes/<%= cafe.image ? cafe.image : 'porDefecto.jpg' %>" alt="cafe" />
           </div>
           <div class="info">
-            <p>informacion del cafe </p>
+            <p>Información del café </p>
             <ul>
               <li>Nombre: <%= cafe.name %></li>
-              <li>Descripcion: <%= cafe.description %></li>  
+              <li>Descripción: <%= cafe.description %></li>  
               <li>Precio: <%= cafe.price %></li>
+              <li>Moliendas: <%= cafe.moliendas %></li>
             </ul>
           </div>
         </article>

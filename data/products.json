@@ -5,7 +5,7 @@
         "price": "1",
         "description": "iouohiugp",
         "moliendas": [
-            "Milanesa"
+            " Milanesa"
         ]
     },
     {
@@ -15,10 +15,10 @@
         "description": "cafe amargo con un dejo picante",
         "image": "image1663796243086-.jpg",
         "moliendas": [
-            "Granos",
-            "Prensa Francesa",
-            "Filtrado Manual",
-            "Maquina Espresso",
+            " Granos",
+            " Prensa Francesa",
+            " Filtrado Manual",
+            " Maquina Espresso",
             ""
         ]
     },
@@ -29,10 +29,10 @@
         "description": "khjkhjk gjhjkhjkhjk",
         "image": "image1664418125418-.jpg",
         "moliendas": [
-            "Granos",
-            "Prensa Francesa",
-            "Filtrado Manual",
-            "Maquina Espresso",
+            " Granos",
+            " Prensa Francesa",
+            " Filtrado Manual",
+            " Maquina Espresso",
             ""
         ]
     },
@@ -43,9 +43,9 @@
         "description": "khjkhjk gjhjkhjkhjk",
         "image": "image1664418125418-.jpg",
         "moliendas": [
-            "Prensa Francesa",
-            "Filtrado Manual",
-            "Aeropress",
+            " Prensa Francesa",
+            " Filtrado Manual",
+            " Aeropress",
             "",
             ""
         ]
@@ -57,9 +57,9 @@
         "description": "khjkhjk gjhjkhjkhjk",
         "image": "image1664418125418-.jpg",
         "moliendas": [
-            "Granos",
-            "Maquina Espresso",
-            "Aeropress",
+            " Granos",
+            " Maquina Espresso",
+            " Aeropress",
             "",
             ""
         ]
@@ -71,11 +71,24 @@
         "description": "khjkhjk gjhjkhjkhjk",
         "image": "image1664418125418-.jpg",
         "moliendas": [
-            "Granos",
-            "Prensa Francesa",
-            "Filtrado Manual",
+            " Granos",
+            " Prensa Francesa",
+            " Filtrado Manual",
             "",
             ""
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Cafe sureño",
+        "price": 654,
+        "description": "cafe sureño aireado",
+        "image": "image1664838940863-.png",
+        "moliendas": [
+            " Granos",
+            " Prensa Francesa",
+            " Filtrado Manual",
+            " Maquina Espresso"
         ]
     }
 ]
