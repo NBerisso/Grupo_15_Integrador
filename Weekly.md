@@ -12,6 +12,20 @@ Reunion 17:00hs (todos presentes):
 -Charla general sobre arreglos en diferentes vistas para buscar una armonia entre todas las pantallas y sobre los pendientes a completar.
 
 
+6/10
+
+Reunion 16:30hs (todos presentes, Nico.B tiene que retirarse 16:50 por motivos personales, Nico.D tiene que retirarse por motivos personales):
+
+-Hablamos sobre el Sprint 5 y la forma de dividir las tareas.
+
+-Organizamos el Trello, haciendo la division de las tareas y plasmandolo en el tablero.
+
+-Planificamos futuras reuniones para trabajar en el Sprint, acordamos que la mejor forma es reunirnos todos para ir avanzando progresivamente. 
+
+-Corroboramos que nos falta del Sprint anterior.
+
+-Avanzamos un poco con el Sprint haciendo una estructura de carpetas.
+
 
 
 
