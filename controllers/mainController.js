@@ -6,14 +6,6 @@ const controladores = {
     res.render("./home.ejs");
   },
 
-  crearCuenta: (req, res) => {
-    res.render("./crearCuenta.ejs");
-  },
-
-  login: (req, res) => {
-    res.render("./login.ejs");
-  },
-
   carritoFinal: (req, res) => {
     res.render("./carritoFinal.ejs");
   },

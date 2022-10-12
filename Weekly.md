@@ -27,6 +27,19 @@ Reunion 16:30hs (todos presentes, Nico.B tiene que retirarse 16:50 por motivos p
 -Avanzamos un poco con el Sprint haciendo una estructura de carpetas.
 
 
+12/10
+
+Reunion 19:00hs (todos presentes)
+
+-Avanzamos con el Sprint 5, hicimos el proceso de register con las validaciones y mandamos los errores a la vista.
+
+-Todavia no hay que actualizar el Trello, faltan unos puntos para completar la actividad.
+
+-Hablamos sobre futuras reuniones y metodologias de trabajo.
+
+
+
+
 
 
 

@@ -9,31 +9,32 @@
     </header>
     <main>
         <div class="registro">
-            <form action="/views/home.html" method="post">
-                <p>
-                    <label for="Nombre y apellido"></label>
-                    <input type="text" placeholder="Nombre y apellido" required>
-                </p>
+            <form action="/users/crearCuenta" method="post">
                 <p>
                     <label for="Nombre de usuari@"></label>
-                    <input type="text" placeholder="Nombre de usuario" required minlength="4">
-                </p>
-                <p>
-                    <label for="Telefono"></label>
-                    <input type="tel" placeholder="Telefono">
+                    <input type="text" name="name" placeholder="Nombre de usuario">
+                    <% if(locals.errors && locals.errors.name){ %>
+                        <p><%= errors.name.msg %> </p>
+                    <% } %> 
                 </p>
                 <p>
                     <label for="email"></label>
-                    <input type="email" placeholder="E-mail" required>
+                    <input type="email" name="email" placeholder="E-mail">
+                    <% if(locals.errors && locals.errors.email){ %>
+                        <p><%= errors.email.msg %> </p>
+                    <% } %> 
                 </p>
                 <p>
                     <label for="Contraseña"></label>
-                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" name="password" placeholder="Contraseña">
+                    <% if(locals.errors && locals.errors.password){ %>
+                        <p><%= errors.password.msg %> </p>
+                    <% } %> 
                 </p>
-                <p>
+                <!-- <p>
                     <label for="Confirmar contraseña"></label>
-                    <input type="password" placeholder="Confirmar contraseña" required>
-                </p>
+                    <input type="password" name="password" placeholder="Confirmar contraseña">
+                </p> -->
                 <p>
                     <label for="Enviar"></label>
                     <input class="efecto" type="submit">

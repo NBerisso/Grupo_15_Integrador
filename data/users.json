@@ -5,5 +5,11 @@
         "email": "claudio_aguirre@gmail.com",
         "cellphone": 123456,
         "password": "asdasd"
+    },
+    {
+        "id": 2,
+        "name": "Nicolas",
+        "email": "nicodenaday@gmail.com",
+        "password": "$2a$10$D0Giaz/fv2n3GRbpJxi1NeeSvzHrkqEScHnc9T2S.Ho6H51DJpDO2"
     }
 ]
