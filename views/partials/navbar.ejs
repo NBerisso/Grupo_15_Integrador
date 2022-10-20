@@ -1,13 +1,21 @@
 <nav class="navbar">
-    <h2 class="logotipo"><img src="/img/LogoCafe.png" class="logo">Blended Cafe</h2>
-    <ul>
-        <li><a href="/"> Home</a></li>
-        <li><a href="/productos/list"> Tienda</a></li>
-        <li><a href="/login"> Login</a></li>
-        <li><a href="/carritoFinal"> Carrito</a></li>
-        <li><a href="#"> Contacto</a></li>
-    </ul>
-    <div class="burger-menu">
-        <i class="fa fa-bars burger"></i>
-    </div>
+  <h2 class="logotipo">
+    <img src="/img/LogoCafe.png" class="logo" />Blended Cafe
+  </h2>
+  <ul>
+    <li><a href="/"> Home</a></li>
+    <li><a href="/productos/list"> Tienda</a></li>
+    <li><a href="#"> Contacto</a></li>
+    <li><a href="/carritoFinal"> Carrito</a></li>
+    <% if(!locals.usuario){ %>
+     <li><a href="/users/login"> Login</a></li>
+    <% } else { %>
+     <form action="/users/logout" method="post">
+          <button type="submit">Cerrar sesion</button>
+      </form>
+    <% } %>
+  </ul>
+  <div class="burger-menu">
+    <i class="fa fa-bars burger"></i>
+  </div>
 </nav>

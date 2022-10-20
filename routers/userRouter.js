@@ -10,10 +10,10 @@ const validation = require("../validations/userValidations");
 router.get("/crearCuenta", userController.register);
 router.post("/crearCuenta", validation.registerValidation, userController.processRegister);
 
-//login
+//login - logout
 
 router.get("/login", userController.login);
-// router.post("/login", userController.processLogin);
-
+router.post("/login", validation.loginValidation, userController.processLogin);
+router.post("/logout", userController.logout);
 
 module.exports = router;

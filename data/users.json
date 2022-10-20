@@ -11,5 +11,11 @@
         "name": "Nicolas",
         "email": "nicodenaday@gmail.com",
         "password": "$2a$10$D0Giaz/fv2n3GRbpJxi1NeeSvzHrkqEScHnc9T2S.Ho6H51DJpDO2"
+    },
+    {
+        "id": 3,
+        "name": "hola",
+        "email": "hola@gmail.com",
+        "password": "$2a$10$hCBjcNR5qzX5DC8sPNTOO.tELQoIaVFP3kodd4eLbGOkmrCuaBo0W"
     }
 ]

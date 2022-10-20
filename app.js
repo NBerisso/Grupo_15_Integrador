@@ -9,6 +9,9 @@ const cookieParser = require("cookie-parser");
 const mainRouter = require('./routers/mainRouter');
 const productRouter = require('./routers/productRouter');
 const userRouter = require('./routers/userRouter');
+const localsMiddleware = require('./middlewares/localsMiddle');
+const recordameMiddle = require('./middlewares/recordameMiddle');
+
 
 
 // Configuracion
@@ -21,6 +24,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(session({secret: "Mensaje secreto", resave: false, saveUninitialized: true}));
 app.use(cookieParser());
+app.use(recordameMiddle);
+app.use(localsMiddleware);
 
 
 // Routers

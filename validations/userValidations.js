@@ -39,4 +39,13 @@ module.exports = {
             .notEmpty()
             .withMessage("Campo PASSWORD incompleto")
     ]
+    ,
+    loginValidation: [
+        body("email")
+        .notEmpty()
+        .withMessage("Campo EMAIL incompleto"),
+        body("password")
+        .notEmpty()
+        .withMessage("Campo PASSWORD incompleto")
+    ]
 }
