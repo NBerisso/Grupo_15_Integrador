@@ -38,6 +38,19 @@ Reunion 19:00hs (todos presentes)
 -Hablamos sobre futuras reuniones y metodologias de trabajo.
 
 
+20/10
+
+Reunion 16:30hs (todos presentes, menos Leandro)
+
+-Avanzamos con el Sprint 5, hicimos proceso de login, logout, validaciones del formulario de login, session y cookies (por completar), arreglo de vistas y middlewares.
+
+-Actualizamos Trello, falta para poder completar el Sprint.
+
+-Todavia necesitamos agregar la funcion de subir una imagen con Multer para el usuario.
+
+-Conversamos sobre futuras reuniones.
+
+
 
 
 
