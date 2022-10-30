@@ -51,7 +51,21 @@ Reunion 16:30hs (todos presentes, menos Leandro)
 -Conversamos sobre futuras reuniones.
 
 
+30/10
 
+Reunion 15hs (Nicolas Denaday y Nicolas Berisso)
+
+- Finalizamos el proceso de registrar usuario y login del mismo, reparamos las cookies, rutas accsesibles para usuarios logeados.
+
+- Validacion de productos
+
+- Middlewares
+
+- Actualizacion del tablero de trabajo (Trello)
+
+- Finalizado el Sprint 5
+
+- Falta arreglar cosas visuales en diferentes vistas
 
 
 
