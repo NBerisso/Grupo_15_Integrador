@@ -9,7 +9,7 @@
     </header>
     <main>
         <div class="registro">
-            <form action="/users/crearCuenta" method="post">
+            <form action="/users/crearCuenta" enctype="multipart/form-data" method="post">
                 <p>
                     <label for="Nombre de usuari@"></label>
                     <input type="text" name="name" placeholder="Nombre de usuario">
@@ -22,14 +22,18 @@
                     <input type="email" name="email" placeholder="E-mail">
                     <% if(locals.errors && locals.errors.email){ %>
                         <p><%= errors.email.msg %> </p>
-                    <% } %> 
+                    <% } %>
                 </p>
+                <div class="inputs">
+                     <label class="image-input" for="image">Imagen</label>
+                    <input type="file" name="image" id="image"/>
+                </div>
                 <p>
                     <label for="Contraseña"></label>
                     <input type="password" name="password" placeholder="Contraseña">
                     <% if(locals.errors && locals.errors.password){ %>
                         <p><%= errors.password.msg %> </p>
-                    <% } %> 
+                    <% } %>
                 </p>
                 <!-- <p>
                     <label for="Confirmar contraseña"></label>

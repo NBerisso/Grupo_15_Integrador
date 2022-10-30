@@ -3,6 +3,8 @@ const router = express.Router();
 const productController = require('../controllers/productController')
 const multer = require('multer');
 const path= require("path");
+const middleware = require('../middlewares/middleware')
+const {productsValidation} = require('../validations/productsValidation')
 
 
 
@@ -21,11 +23,11 @@ let storage = multer.diskStorage({
 let upload = multer({storage: storage});
 
 
-router.get("/agregar-Productos", productController.agregarProductos);
-router.post("/agregar-Productos", upload.single('image'), productController.store);
+router.get("/agregar-Productos", middleware, productController.agregarProductos);
+router.post("/agregar-Productos", upload.single('image'), productsValidation, productController.store);
 
 
-router.get("/editar-Productos/:id", productController.edit);
+router.get("/editar-Productos/:id", middleware, productController.edit);
 router.put("/editar-Productos/:id", productController.update);
 router.delete("/eliminar/:id", productController.destroy);
 

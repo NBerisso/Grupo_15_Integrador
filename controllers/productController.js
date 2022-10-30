@@ -1,6 +1,7 @@
 const { create } = require("domain");
 const fs = require("fs");
 const path = require("path");
+const { validationResult } = require('express-validator');
 
 
 function findAll() {
@@ -35,22 +36,32 @@ const controller = {
     },
 
     store: (req, res) => {
-        const data = findAll();
+        const validationErrors = validationResult(req)
+
+        if(!validationErrors.isEmpty()){
+            res.render("agregar-Productos", {
+                errors: validationErrors.mapped(),
+                errors2: validationErrors.array(),
+                old: req.body
+            })
+        }else{
+            const data = findAll();
         
-        const newProduct = {
-            id: data.length + 1,
-            name: req.body.name,
-            price: Number(req.body.price),
-            description: req.body.description,
-            image: req.file.filename,
-            moliendas: [...req.body.moliendas]
-        }  
-
-        data.push(newProduct);
-
-        writeFile(data);
-
-        res.redirect("/productos/list");
+            const newProduct = {
+                id: data.length + 1,
+                name: req.body.name,
+                price: Number(req.body.price),
+                description: req.body.description,
+                image: req.file.filename,
+                moliendas: [...req.body.moliendas]
+            }  
+    
+            data.push(newProduct);
+    
+            writeFile(data);
+    
+            res.redirect("/productos/list");
+        }        
     },
 
     edit: (req, res) => {

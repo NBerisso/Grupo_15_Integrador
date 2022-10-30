@@ -3,11 +3,13 @@ const path = require("path");
 const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
 
+
 function findAll() {
   const jsonData = fs.readFileSync(path.join(__dirname, "../data/users.json"));
   const data = JSON.parse(jsonData);
   return data;
 }
+
 
 function writeFile(data) {
   const dataString = JSON.stringify(data, null, 4);
@@ -34,6 +36,7 @@ module.exports = {
         id: users.length + 1,
         name: req.body.name,
         email: req.body.email,
+        image: req.file.filename,
         password: bcryptjs.hashSync(req.body.password, 10),
       };
 
@@ -70,7 +73,7 @@ module.exports = {
         }
 
         if(req.body.rememberUser){
-            res.cookie('Recordame', userFound.id, {maxAge: 60000})
+            res.cookie('recordame', userFound.id, {maxAge: 60 * 60 * 60})
         }
 
         res.redirect('/');
@@ -78,7 +81,7 @@ module.exports = {
   },
   logout: (req, res)=>{
     req.session.destroy();
-    res.clearCookie("Recordame");
+    res.clearCookie("recordame");
     res.redirect("/");
   }
 };

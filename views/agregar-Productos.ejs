@@ -10,13 +10,20 @@
       <div class="banner">
         <form class="register" action="/productos/agregar-Productos" enctype="multipart/form-data" method="post">
             <h3>Agregar Producto</h3>
+            <% if(locals.errors2){ %>
+              <ul>
+                  <% errors2.forEach(function(error) {  %>
+                      <li class="error-msg"> <%= error.msg %> </li>
+                  <% }) %> 
+              </ul>
+             <% } %>
             <div class="row">
                 <div class="inputs">
-                    <input type="text" name="name" id="name" required />
-                    <label class="etiqueta" for="name">Producto</label>
+                    <input type="text" name="name" id="name"/>
+                    <label class="etiqueta" for="name">Producto</label> 
                   </div>
                   <div class="inputs">
-                    <input type="text" name="price" id="price" required />
+                    <input type="text" name="price" id="price"/>
                     <label class="etiqueta" for="price">Precio</label>
                   </div>
             </div>
@@ -48,11 +55,11 @@
 
           <div class="inputs">
             <label class="image-input" for="image">Imagen</label>
-            <input type="file" name="image" id="image" required />
+            <input type="file" name="image" id="image"/>
           </div>
 
           <div class="inputs">
-            <textarea name="description" id="description" rows="8" required ></textarea>
+            <textarea name="description" id="description" rows="8"></textarea>
             <label class="etiqueta" for="description">Descripcion </label>
           </div>
           <button type="submit">Crear</button>

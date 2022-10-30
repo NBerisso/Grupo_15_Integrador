@@ -22,8 +22,13 @@ app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(session({secret: "Mensaje secreto", resave: false, saveUninitialized: true}));
+app.use(session({
+    secret: "Mensaje secreto", 
+    resave: false, 
+    saveUninitialized: true
+}));
 app.use(cookieParser());
+
 app.use(recordameMiddle);
 app.use(localsMiddleware);
 
