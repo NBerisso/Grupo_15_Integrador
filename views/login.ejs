@@ -7,7 +7,7 @@
       <%- include ("./partials/navbar.ejs")%>
       <div class="registro">
         <form action="/users/login" method="POST">
-          <div>
+          <div class="complete">
             <label for="E-mail"></label>
             <input name="email" type="email" placeholder="E-mail" />
             <% if(locals.errors && locals.errors.email){ %>
@@ -15,15 +15,17 @@
             <% } %>
           </div>
           <div>
-            <label for="Contraseña"></label>
-            <input name="password" type="password" placeholder="Contraseña" />
-            <% if(locals.errors && locals.errors.password){ %>
-            <p><%= locals.errors.password.msg %></p>
-            <% } %>
-          </div>
-          <div class="rememberUser">
-            <input type="checkbox" name="rememberUser" id="rememberBox">
-            <label class="formCheck" for="rememberBox">Recuerdame</label>
+            <div class="complete">
+              <label for="Contraseña"></label>
+              <input name="password" type="password" placeholder="Contraseña" />
+              <% if(locals.errors && locals.errors.password){ %>
+              <p><%= locals.errors.password.msg %></p>
+              <% } %>
+            </div>
+            <div class="rememberUser">
+              <input type="checkbox" name="rememberUser" id="rememberBox">
+              <label for="rememberBox">Recuerdame</label>
+            </div>
           </div>
           <div class="botones">
             <button type="submit">Iniciar sesión</button>

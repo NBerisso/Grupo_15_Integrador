@@ -63,15 +63,13 @@
 
 
 .cerradoSesion{
-        font-size: 17px;
-        background: transparent;
-        border: none;
-        color: transparent;
-        background: linear-gradient(to right,#f4a34c, white, #f4a34c);
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        filter: brightness(1.20);
-        filter: opacity(1);
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    filter: opacity(1);
 }
 
 
@@ -133,6 +131,11 @@ div.burger-menu i{
 }
 
 @media (max-width: 830px){
+    .navbar form{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 14%;
+    }
     .cerradoSesion{
         padding-top: 10px
     }
