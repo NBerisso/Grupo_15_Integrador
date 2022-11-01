@@ -104,24 +104,17 @@ input {
     font-size: 20px;
 }
 
+/*Errores */
+
+.error-msg{
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+
 /* MOVIL */
 @media (min-width:320px) and (max-width:599px) {
 
-    /* HEADER */
-    .navbar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar ul {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .navbar ul li {
-        padding: 20px;
-    }
 
     /* MAIN */
     .registro {
@@ -141,21 +134,6 @@ input {
 /* TABLET */
 @media (min-width:600px) and (max-width:990px) {
 
-    /* HEADER */
-    .navbar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar ul {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .navbar ul li {
-        padding: 20px;
-    }
 
     /* MAIN */
     .registro {
