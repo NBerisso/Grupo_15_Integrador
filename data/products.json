@@ -5,7 +5,10 @@
         "price": "1",
         "description": "iouohiugp",
         "moliendas": [
-            " Milanesa"
+            "Granos",
+            "Prensa Francesa",
+            "Filtrado Manual",
+            "Maquina Espresso"
         ]
     },
     {
@@ -89,6 +92,17 @@
             " Prensa Francesa",
             " Filtrado Manual",
             " Maquina Espresso"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "milanesa",
+        "price": 232323,
+        "description": "asdasdasdasd",
+        "image": "image1667375931810-.png",
+        "moliendas": [
+            " Granos",
+            " Aeropress"
         ]
     }
 ]
