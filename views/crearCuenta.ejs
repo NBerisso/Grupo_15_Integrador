@@ -3,54 +3,66 @@
 
 <%- include ("./partials/head.ejs", {title:"crearCuenta", style:"crearCuenta"}) %>
 
-<body>
-    <header>
-        <%- include ("./partials/navbar.ejs")%>
-    </header>
-    <main>
-        <div class="registro">
-            <form action="/users/crearCuenta" enctype="multipart/form-data" method="post">
-                <p>
-                    <label for="Nombre de usuari@"></label>
-                    <input type="text" name="name" placeholder="Nombre de usuario">
-                    <% if(locals.errors && locals.errors.name){ %>
-                        <p><%= errors.name.msg %> </p>
-                    <% } %> 
-                </p>
-                <p>
-                    <label for="email"></label>
-                    <input type="email" name="email" placeholder="E-mail">
-                    <% if(locals.errors && locals.errors.email){ %>
-                        <p><%= errors.email.msg %> </p>
-                    <% } %>
-                </p>
-                <p>
-                    <label class="image1" for="image">Subir Imagen</label>
-                    <input type="file" name="image" class="image"/>
-                </p>
-                <p>
-                    <label for="Contraseña"></label>
-                    <input type="password" name="password" placeholder="Contraseña">
-                    <% if(locals.errors && locals.errors.password){ %>
-                        <p><%= errors.password.msg %> </p>
-                    <% } %>
-                </p>
-                <!-- <p>
+    <body>
+        <header>
+            <%- include ("./partials/navbar.ejs")%>
+        </header>
+        <main>
+            <div class="registro">
+
+                <form action="/users/crearCuenta" enctype="multipart/form-data" method="post">
+                    <p>
+                        <label for="Nombre de usuari@"></label>
+                        <input type="text" name="name" placeholder="Nombre de usuario">
+                        <% if(locals.errors && locals.errors.name){ %>
+                            <p class="error-msg"><i class="far fa-times-circle"></i>
+                                <%= errors.name.msg %>
+                            </p>
+                            <% } %>
+                    </p>
+                    <p>
+                        <label for="email"></label>
+                        <input type="email" name="email" placeholder="E-mail">
+                        <% if(locals.errors && locals.errors.email){ %>
+                            <p class="error-msg"><i class="far fa-times-circle"></i>
+                                <%= errors.email.msg %>
+                            </p>
+                            <% } %>
+                    </p>
+                    <p>
+                        <label class="image1" for="image">Subir Imagen</label>
+                        <input type="file" name="image" class="image" />
+                        <% if(locals.errors && locals.errors.image){ %>
+                            <p class="error-msg"><i class="far fa-times-circle"></i>
+                                <%= errors.image.msg %>
+                            </p>
+                            <% } %>
+                    </p>
+                    <p>
+                        <label for="Contraseña"></label>
+                        <input type="password" name="password" placeholder="Contraseña">
+                        <% if(locals.errors && locals.errors.password){ %>
+                            <p class="error-msg"><i class="far fa-times-circle"></i>
+                                <%= errors.password.msg %>
+                            </p>
+                            <% } %>
+                    </p>
+                    <!-- <p>
                     <label for="Confirmar contraseña"></label>
                     <input type="password" name="password" placeholder="Confirmar contraseña">
                 </p> -->
-                <p>
-                    <label for="Enviar"></label>
-                    <input class="efecto" type="submit">
-                </p>
-                <p>
-                    <label for="Cancelar"></label>
-                    <input class="efecto" type="reset">
-                </p>
-            </form>
-        </div>
-    </main>
-    <%- include ("./partials/footer.ejs") %>
-</body>
+                    <p>
+                        <label for="Enviar"></label>
+                        <input class="efecto" type="submit">
+                    </p>
+                    <p>
+                        <label for="Cancelar"></label>
+                        <input class="efecto" type="reset">
+                    </p>
+                </form>
+            </div>
+        </main>
+        <%- include ("./partials/footer.ejs") %>
+    </body>
 
 </html>

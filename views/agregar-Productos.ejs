@@ -10,21 +10,31 @@
       <div class="banner">
         <form class="register" action="/productos/agregar-Productos" enctype="multipart/form-data" method="post">
             <h3>Agregar Producto</h3>
-            <% if(locals.errors2){ %>
+            <!-- <% if(locals.errors2){ %>
               <ul>
                   <% errors2.forEach(function(error) {  %>
                       <li class="error-msg"> <%= error.msg %> </li>
                   <% }) %> 
               </ul>
-             <% } %>
+             <% } %> -->
             <div class="row">
                 <div class="inputs">
                     <input type="text" name="name" id="name"/>
-                    <label class="etiqueta" for="name">Producto</label> 
+                    <label class="etiqueta" for="name">Producto</label>
+                    <% if(locals.errors && locals.errors.name){ %>
+                      <p class="error-msg"><i class="far fa-times-circle"></i>
+                          <%= errors.name.msg %>
+                      </p>
+                      <% } %> 
                   </div>
                   <div class="inputs">
                     <input type="text" name="price" id="price"/>
                     <label class="etiqueta" for="price">Precio</label>
+                    <% if(locals.errors && locals.errors.price){ %>
+                      <p class="error-msg"><i class="far fa-times-circle"></i>
+                          <%= errors.price.msg %>
+                      </p>
+                      <% } %>
                   </div>
             </div>
         
@@ -56,6 +66,11 @@
           <div class="inputs">
             <label class="image-input" for="image">Imagen</label>
             <input type="file" name="image" id="image"/>
+            <% if(locals.errors && locals.errors.image){ %>
+              <p class="error-msg"><i class="far fa-times-circle"></i>
+                  <%= errors.image.msg %>
+              </p>
+              <% } %>
           </div>
 
           <div class="inputs">

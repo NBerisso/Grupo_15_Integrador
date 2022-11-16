@@ -67,6 +67,16 @@ Reunion 15hs (Nicolas Denaday y Nicolas Berisso)
 
 - Falta arreglar cosas visuales en diferentes vistas
 
+7/11
+
+Reunion 17:30hs (Todos presentes)
+
+- Estuvimos actualizando el retro y el trello
+
+- Leimos el sprint en la reunion
+
+- Faltan asignar las ultimas tareas, en principio arreglamos realizar el diagrama todos
+
 16/11 
 
 Reunion 17hs (todos presentes)
@@ -76,6 +86,7 @@ Reunion 17hs (todos presentes)
 - Organizamos futuras reuniones para el viernes y el lunes que viene.
 
 - Falta para completar el sprint vigente.
+
 
 
 

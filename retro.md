@@ -53,3 +53,38 @@
 # DEJAR DE HACER
 
 -Avanzar sobre el proyecto sin antes distribuir las tareas de manera equitativa.
+
+# SPRINT 5
+
+# COMENZAR A HACER
+
+- Ser más constantes con las llamadas grupales. Establecer un dia y horario para realizarlas.
+- respetar el plan que armamos como grupo para realizar los trabajos
+- realizar un tour por el proyecto para corroborar que todo el codigo esta entendido.
+- establecer fechas de avances sobre cada tarea asignada
+- proponer en lo posible las reuniones con un dia de antelacion.
+
+# HACER MÁS
+
+- Corroborar que cada integrante entienda las tareas planteadas en cada sprint, sin la necesidad de tenerlas asignadas de manera que en un proximo sprint si le toca avanzar sobre el trabajo de otro sepa sobre la tarea realizada
+- Tener la predisposicion de preguntar y ayudar de ser posible a otro integrante del grupo
+- Agregar en trello de creer necesario una "Sub-tarea" de las que ya se me asigno en la reunion al comienzo del sprint (Aclaracion: yo en este sprint realice la funcion de detalle de producto(tarea), tambien realice un forEach para la opcion moliendas (Sub-tarea)).
+- Ser más participativos, tener más iniciativa y no esperar que nos digan los demás que hacer. Si nadie propone, proponer.
+- dialogar sobre todos los problemas que surjan en el momento y no dejarlo pasar
+
+# CONTINUAR HACIENDO
+
+- Utilizar el Trello de manera frecuente cada vez que se realizen cambio sobre el proyecto.
+- Actualizacion de weekly y retro
+
+# HACER MENOS
+
+- Llegar a la reunion para comenzar a trabajar sobre un sprint sin haberlo leido con antelacion.
+- Quedarse con la duda sobre alguna tarea asignada despues de una reunion.
+- No dejar cosas por sentado
+
+# DEJAR DE HACER
+
+- Avanzar sobre el proyecto sin antes distribuir las tareas de manera equitativa.
+- Tomar decisiones sobre el proyecto sin antes consutar o preguntar al equipo
+- No avisar sobre cualquier tema relacionado al proyecto al equipo (avances, dudas, nuevas propúestas o cambios en el trello)

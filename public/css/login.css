@@ -95,6 +95,17 @@ form .rememberUser label{
     padding: 0 1rem;
 }
 
+/*Errores */
+
+.error-msg{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    padding-left: 15%;
+}
+form p i {
+    font-size: 1em;
+}
 /* -----------Media Queries---------- */
 @media (min-width:320px) and (max-width:600px) {
     .navbar ul{

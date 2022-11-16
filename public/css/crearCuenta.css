@@ -104,6 +104,18 @@ input {
     font-size: 20px;
 }
 
+/*Errores */
+
+.error-msg{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    padding-left: 15%;
+}
+form p i {
+    font-size: 1em;
+}
+
 /* MOVIL */
 @media (min-width:320px) and (max-width:599px) {
 
@@ -125,6 +137,22 @@ input {
 
 /* TABLET */
 @media (min-width:600px) and (max-width:990px) {
+
+    /* HEADER */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .navbar ul li {
+        padding: 20px;
+    }
 
     /* MAIN */
     .registro {

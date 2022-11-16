@@ -111,6 +111,18 @@ textarea:valid~.etiqueta {
     padding: 20px;
 }
 
+/*Errores */
+
+.error-msg{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    padding-left: 15%;
+}
+form p i {
+    font-size: 1em;
+}
+
 @media (max-width: 400px) {
     .banner {
         height: 110vh;
