@@ -67,6 +67,16 @@ Reunion 15hs (Nicolas Denaday y Nicolas Berisso)
 
 - Falta arreglar cosas visuales en diferentes vistas
 
+16/11 
+
+Reunion 17hs (todos presentes)
+
+- Arrancamos con el diagrama de entidad relacion con draw.io (quedaron algunas dudas que vamos a preguntar en la clase de hoy).
+
+- Organizamos futuras reuniones para el viernes y el lunes que viene.
+
+- Falta para completar el sprint vigente.
+
 
 
 

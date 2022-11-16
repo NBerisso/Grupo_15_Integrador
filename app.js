@@ -29,8 +29,8 @@ app.use(session({
 }));
 app.use(cookieParser());
 
-app.use(recordameMiddle);
 app.use(localsMiddleware);
+app.use(recordameMiddle);
 
 
 // Routers
