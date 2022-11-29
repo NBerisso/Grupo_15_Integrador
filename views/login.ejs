@@ -4,7 +4,7 @@
 
   <body>
     <main>
-      <%- include ("./partials/navbar.ejs")%>
+        <%- include ("./partials/navbar.ejs")%>
         <div class="registro">
           <form action="/users/login" method="POST">
             <div class="complete">
@@ -41,7 +41,7 @@
 
             <% if(locals.errorLogin){ %>
               <p class="error-msg"><i class="far fa-times-circle"></i>
-                   <%= errorLogin %>
+                <%= errorLogin %>
               </p>
               <% } %>
           </form>

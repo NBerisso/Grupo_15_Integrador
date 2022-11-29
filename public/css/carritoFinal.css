@@ -136,7 +136,7 @@ h5 {
 .total span{
     font-size: 1.2em;
 }
-button {
+.total button {
     color: white;
     background-color: #bf771b;
     padding: 0.5em;
@@ -149,7 +149,7 @@ button {
     box-shadow: black 0px 1px 3px 0px;
 }
 
-button:hover {
+.total button:hover {
     background-color: #ffc14d;
 }
 
