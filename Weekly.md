@@ -88,7 +88,19 @@ Reunion 17hs (todos presentes)
 - Falta para completar el sprint vigente.
 
 
+28/11 
 
+Reunion 17hs (todos presentes)
+
+- Avanzamos sobre la creacion y relaciones de la base de datos (quedaron algunas dudas que vamos a preguntar en la clase de hoy).
+
+- Creamos una carpeta database (cargamos el diagrama de la base de datos, script de sql y script para poblar la base)
+
+- Creamos un script de datos para la tabla users (falta completar las demas)
+
+- Instalamos y configuramos sequelize en nuestro proyecto, comenzamos a crear los modelos (faltan completar)
+
+- Falta para completar el sprint vigente.
 
 
 
