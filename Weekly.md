@@ -103,6 +103,12 @@ Reunion 17hs (todos presentes)
 - Falta para completar el sprint vigente.
 
 
+30/11 
+
+- Realizamos entrega del Sprint 6 (sin terminar)
+
+
+
 
 
 
