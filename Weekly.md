@@ -113,6 +113,12 @@ Reunion 17hs (todos presentes)
 
 - Creamos los modelos de todas las tablas y completamos solo la de user y products, falta entender las relaciones de estas con la tabla pivot 
 
+30/11 
+
+- Realizamos entrega del Sprint 6 (sin terminar)
+
+
+
 
 
 
