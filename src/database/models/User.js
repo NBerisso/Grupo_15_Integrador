@@ -16,9 +16,29 @@ const cols = {
     email :  {
         type: DataTypes.STRING(30),
         allowNull: false
+    },
+    user_password: {
+        type: DataTypes.INTEGER
+    },
+    image: {
+        type: DataTypes.STRING(255),
+        allowNull: false
     }
+}
 
+const config = {
+    timestamps: true,
+    createdAt: "created_at",
+    updatedAt: "update_at",
+    deleteAt: false,
+    tableName: "users"
 }
     
-    
+    const User = sequelize.define(alias, cols, config);
+
+    User.associate = (models) => {
+        User.belongsTo(models.ShoppingCart, {
+            
+        })      
+    }
 }

@@ -103,6 +103,15 @@ Reunion 17hs (todos presentes)
 - Falta para completar el sprint vigente.
 
 
+07/12
+
+Reunion 17hs (todos presentes)
+
+- Agregamos información a las tablas en nuestra base de datos
+
+- Modificamos el tipo de dato de imagen y corregimos el nombre de columna weight
+
+- Creamos los modelos de todas las tablas y completamos solo la de user y products, falta entender las relaciones de estas con la tabla pivot 
 
 
 

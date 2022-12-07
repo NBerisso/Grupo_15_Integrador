@@ -42,7 +42,7 @@ CREATE TABLE `grindings` (
 CREATE TABLE `products` (
   `id` int(5) NOT NULL,
   `name` varchar(25) NOT NULL,
-  `image` blob NOT NULL,
+  `image` VARCHAR(255) NOT NULL,
   `description` text NOT NULL,
   `price` smallint(5) UNSIGNED NOT NULL,
   `intensity` decimal(2,0) UNSIGNED NOT NULL
@@ -73,7 +73,7 @@ CREATE TABLE `users` (
   `name` varchar(25) NOT NULL,
   `email` varchar(30) NOT NULL,
   `user_password` varchar(20) NOT NULL,
-  `image` blob DEFAULT NULL,
+  `image` VARCHAR(255) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -85,7 +85,7 @@ CREATE TABLE `users` (
 
 CREATE TABLE `weights` (
   `id` int(5) NOT NULL,
-  `weigth` varchar(10) NOT NULL,
+  `weight` varchar(10) NOT NULL,
   `id_product` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
