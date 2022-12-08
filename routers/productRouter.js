@@ -32,6 +32,8 @@ router.put("/editar-Productos/:id", productController.update);
 router.delete("/eliminar/:id", productController.destroy);
 
 router.get("/detalle-producto/:id", productController.detalleProducto);
+router.post("/agregarcarrito/:id", productController.agregarcarrito);
+
 
 router.get("/list", productController.list);
 

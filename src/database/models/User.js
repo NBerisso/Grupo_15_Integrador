@@ -34,11 +34,9 @@ const config = {
     tableName: "users"
 }
     
-    const User = sequelize.define(alias, cols, config);
+const User = sequelize.define(alias, cols, config);
 
-    User.associate = (models) => {
-        User.belongsTo(models.ShoppingCart, {
-            
-        })      
-    }
+return User
+
+
 }

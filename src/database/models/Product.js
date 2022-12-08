@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         image: {
             type: DataTypes.STRING(255),
-            allowNull: false
+            allowNull: true
         },
         description :  {
             type: DataTypes.TEXT,
@@ -24,15 +24,19 @@ module.exports = (sequelize, DataTypes) => {
         price: {
             type: DataTypes.SMALLINT(5)
         },
-        intesity: {
+        intensity: {
             type: DataTypes.INTEGER(2),
             allowNull: false
         }
     }
     
     const config = {
-        timestamps: false
+        timestamps: false,
+        tableName: "products"
     }
         
-        const product = sequelize.define(alias, cols, config);
-    }
+    const product = sequelize.define(alias, cols, config);
+
+    return product
+
+}
