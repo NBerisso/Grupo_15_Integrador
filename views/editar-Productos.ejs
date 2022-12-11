@@ -6,55 +6,37 @@
     <main>
       <%- include ("./partials/navbar.ejs") %>
         <div class="banner">
-          <form class="register" action="/productos/editar-Productos/<%= cafe.id %>?_method=PUT" method="POST">
-            <h3>Editar Producto: <%= cafe.name %>
+          <form class="register" action="/productos/editar-Productos/<%= productBuscado.id %>?_method=PUT" method="POST">
+            <h3>Editar Producto: <%= productBuscado.name %>
             </h3>
             <div class="row">
               <div class="inputs">
-                <input type="text" id="producto" name="name" value="<%= cafe.name %>" required>
+                <input type="text" id="producto" name="name" value="<%= productBuscado.name %>" required>
                 <label class="etiqueta" for="producto">Producto</label>
               </div>
               <div class="inputs">
-                <input type="text" id="precio" name="price" value="<%= cafe.price %>" required>
+                <input type="text" id="precio" name="price" value="<%= productBuscado.price %>" required>
                 <label class="etiqueta" for="precio">Precio</label>
               </div>
             </div>
 
-            <div class="moliendas">
-              <h4>Seleccionar nueva Molienda:</h4>
-              <div>
-                <input type="checkbox" name="moliendas" value="Granos" id="a" <%= cafe.moliendas.includes("Granos") ? "checked": "" %> >
-                <label for="a">Granos</label>
-              </div>
-              <div>
-                <input type="checkbox" name="moliendas" value="Prensa Francesa" id="b" <%= cafe.moliendas.includes("Prensa Francesa") ? "checked": "" %>>
-                <label for="b">Prensa Francesa</label>
-              </div>
-              <div>
-                <input type="checkbox" name="moliendas" value="Filtrado Manual" id="c" <%= cafe.moliendas.includes("Filtrado Manual") ? "checked": "" %>>
-                <label for="c">Filtrado Manual</label>
-              </div>
-              <div>
-                <input type="checkbox" name="moliendas" value="Maquina Espresso" id="d" <%= cafe.moliendas.includes("Maquina Espresso") ? "checked": "" %>>
-                <label for="d">Maquina Espresso</label>
-              </div>
-              <div>
-                <input type="checkbox" name="moliendas" value="Aeropress" id="e" <%= cafe.moliendas.includes("Aeropress") ? "checked": "" %>>
-                <label for="e">Aeropress</label>
-              </div>
-            </div>
+          
             <div class="inputs">
               <label class="image-input" for="imagen-producto">Nueva Imagen (Opcional)</label>
               <input type="file" id="imagen-producto">
             </div>
             <div class="inputs">
-              <textarea id="description" name="description" rows="8" required><%= cafe.description %></textarea>
+              <input type="text" name="intensity" id="intensity" value="<%= productBuscado.intensity %>" required/>
+              <label class="etiqueta" for="intensity">intensity</label>
+            </div>
+            <div class="inputs">
+              <textarea id="description" name="description" rows="8" required><%= productBuscado.description %></textarea>
               <label class="etiqueta" for="description"></label>
             </div>
             <button type="submit">Editar</button>
 
           </form>
-          <form action="/productos/eliminar/<%= cafe.id %>?_method=DELETE" method="POST">
+          <form action="/productos/eliminar/<%= productBuscado.id %>?_method=DELETE" method="POST">
             <button>Borrar</button>
           </form>
         </div>

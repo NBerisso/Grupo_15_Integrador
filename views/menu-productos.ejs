@@ -9,20 +9,20 @@
       <%- include ("./partials/navbar.ejs") %>
       <h1>Menú de Café:</h1>
       <section class="menu-wrap">
-        <% products.forEach(function(cafe) { %>
+        <% producto.forEach(function(producto) { %>
 
         <article>
           <div class="img-container">
                 <!-- if ternario para el caso que no tenga imagen definida ponga una por defecto -->
-            <img src="/img/imagenes-cafes/<%= cafe.image ? cafe.image : 'porDefecto.jpg' %>" alt="cafe" />
+            <img src="/img/imagenes-cafes/<%= producto.image ? producto.image : 'porDefecto.jpg' %>" alt="cafe" />
           </div>
           <div class="info">
             <p>Información del café </p>
             <ul>
-              <li>Nombre: <%= cafe.name %></li>
-              <li>Descripción: <%= cafe.description %></li>  
-              <li>Precio: <%= cafe.price %></li>
-              <li>Moliendas: <%= cafe.moliendas %></li>
+              <li>Nombre: <%= producto.name %></li>
+              <li>Descripción: <%= producto.description %></li>  
+              <li>Precio: <%= producto.price %></li>
+              <li>Intensidad: <%= producto.intensity %></li>
             </ul>
           </div>
         </article>

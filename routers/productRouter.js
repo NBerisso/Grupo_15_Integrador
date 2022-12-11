@@ -28,7 +28,7 @@ router.post("/agregar-Productos", upload.single('image'), productsValidation, pr
 
 
 router.get("/editar-Productos/:id", middleware, productController.edit);
-router.put("/editar-Productos/:id", productController.update);
+router.put("/editar-Productos/:id", upload.single('image'), productController.update);
 router.delete("/eliminar/:id", productController.destroy);
 
 router.get("/detalle-producto/:id", productController.detalleProducto);

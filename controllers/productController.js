@@ -48,12 +48,19 @@ const controller = {
         }
     },
     
-    list: (req, res) => {
-        const data = findAll();
-        res.render("./menu-productos.ejs", { products: data });
+    list: async (req, res) => {
+        try {
+            const producto = await product.findAll();
+            res.render("./menu-productos.ejs", {producto})
+
+        }catch(err){
+            res.send(err)
+        }
+
+
     },
 
-    store: (req, res) => {
+    store: async (req, res) => {
         const validationErrors = validationResult(req)
 
         if(!validationErrors.isEmpty()){
@@ -62,66 +69,119 @@ const controller = {
                 errors2: validationErrors.array(),
                 old: req.body
             })
-        }else{
-            const data = findAll();
-        
-            const newProduct = {
-                id: data.length + 1,
-                name: req.body.name,
-                price: Number(req.body.price),
-                description: req.body.description,
-                image: req.file.filename,
-                moliendas: [...req.body.moliendas]
-            }  
+        } else{
+            try{
+                await product.create ({ 
+                    name: req.body.name,
+                    description: req.body.description,
+                    price: req.body.price,
+                    image: req.file.filename,
+                    intensity: req.body.intensity
+                })
+
+                res.redirect("/productos/list")
+
+            } catch (err) {
+                res.send(err);
+            }
+            }
+        },
+  
     
-            data.push(newProduct);
-    
-            writeFile(data);
-    
-            res.redirect("/productos/list");
-        }        
+
+    edit: async (req, res) => {
+        const id = req.params.id;
+
+        try{
+            const productBuscado = await product.findByPk(id)
+            
+            res.render("editar-Productos", {productBuscado})
+        }catch (err) {
+            res.send(err);
+          }
+
+        // const data = findAll();
+
+        // const cafeEncontrado = data.find(function(cafe){
+        //     return cafe.id == req.params.id;
+        // });
+
+        // res.render("editar-Productos", { cafe: cafeEncontrado});
     },
 
-    edit: (req, res) => {
-        const data = findAll();
+    update: async (req, res) =>{
+        const validationErrors = validationResult(req)
+        const productId = req.params.id;
 
-        const cafeEncontrado = data.find(function(cafe){
-            return cafe.id == req.params.id;
-        });
 
-        res.render("editar-Productos", { cafe: cafeEncontrado});
-    },
+        if(!validationErrors.isEmpty()){
+            res.render("editar-Productos", {
+                errors: validationErrors.mapped(),
+                errors2: validationErrors.array(),
+                old: req.body
+            })
+        } else{
+            try{
+                let productBuscado = await product.findByPk(productId) 
 
-    update: (req, res) =>{
-        const data = findAll();
+                await product.update({
+                    name: req.body.name,
+                    description: req.body.description,
+                    price: req.body.price,
+                    image: req.file.filename,
+                    intensity: req.body.intensity
+                },
+                {
+                    where: { id: productId },
+                }
+                );
 
-        const cafeEncontrado = data.find(function(cafe){
-            return cafe.id == req.params.id
-        })
+                res.redirect("/productos/list")
 
-        cafeEncontrado.name = req.body.name;
-        cafeEncontrado.price = req.body.price;
-        cafeEncontrado.description = req.body.description;
-        cafeEncontrado.image = req.file ? req.file.filename : cafeEncontrado.image;
-        cafeEncontrado.moliendas = req.body.moliendas;
+            } catch (err) {
+                res.send(err);
+            }
+            }
+        },
+        // const data = findAll();
 
-        writeFile(data);
+        // const cafeEncontrado = data.find(function(cafe){
+        //     return cafe.id == req.params.id
+        // })
 
-        res.redirect("/productos/list");
-    },
+        // cafeEncontrado.name = req.body.name;
+        // cafeEncontrado.price = req.body.price;
+        // cafeEncontrado.description = req.body.description;
+        // cafeEncontrado.image = req.file ? req.file.filename : cafeEncontrado.image;
+        // cafeEncontrado.moliendas = req.body.moliendas;
 
-    destroy: (req, res) =>{
-        const data = findAll();
+        // writeFile(data);
 
-        const cafeEncontrado = data.findIndex(function(cafe){
-            return cafe.id == req.params.id
-        })
+        // res.redirect("/productos/list");
+    
 
-        data.splice(cafeEncontrado, 1);
+    destroy: async (req, res) =>{
+        const productId = req.params.id;
 
-        writeFile(data);
+        try{
+            await product.destroy({ where: { id: productId}});
 
-        res.redirect("/productos/list");
+            res.redirect("/productos/list")
+        }catch (err) {
+            res.send(err);
+        }
+
+        // const data = findAll();
+
+        // const cafeEncontrado = data.findIndex(function(cafe){
+        //     return cafe.id == req.params.id
+        // })
+
+        // data.splice(cafeEncontrado, 1);
+
+        // writeFile(data);
+
+        // res.redirect("/productos/list");
     },
 
     agregarcarrito: async (req, res) => {

@@ -38,31 +38,6 @@
                   </div>
             </div>
         
-            <div class="moliendas">
-                <h4>Molienda Disponible:</h4>
-                <div class="cajita">
-                    <input type="checkbox" name="moliendas" value=" Granos" id="a">
-                    <label for="a">Granos</label>
-                </div>
-                <div class="cajita">
-                    <input type="checkbox" name="moliendas" value=" Prensa Francesa" id="b">
-                    <label for="b">Prensa Francesa</label>
-                </div>
-                <div class="cajita">
-                    <input type="checkbox" name="moliendas" value=" Filtrado Manual" id="c">
-                    <label for="c">Filtrado Manual</label>
-                </div>
-                <div class="cajita">
-                    <input type="checkbox" name="moliendas" value=" Maquina Espresso" id="d">
-                    <label for="d">Maquina Espresso</label>
-                </div>
-                <div class="cajita">
-                    <input type="checkbox" name="moliendas" value=" Aeropress" id="e">
-                    <label for="e">Aeropress</label>
-                </div>
-            </div>
-
-
           <div class="inputs">
             <label class="image-input" for="image">Imagen</label>
             <input type="file" name="image" id="image"/>
@@ -71,6 +46,11 @@
                   <%= errors.image.msg %>
               </p>
               <% } %>
+          </div>
+
+          <div class="inputs">
+            <input type="text" name="intensity" id="intensity"/>
+            <label class="etiqueta" for="intensity">intensity</label>
           </div>
 
           <div class="inputs">
