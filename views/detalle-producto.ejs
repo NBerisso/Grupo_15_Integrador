@@ -10,16 +10,17 @@
     <main>
         <div class="seccion">
             <div class="seccion1">
-                <h1><%= cafe.name %></h1>
-                <img src="/img/imagenes-cafes/<%= cafe.image ? cafe.image : 'porDefecto.jpg' %>" alt="cafe" />
+                <h1><%= producto.name %></h1>
+                <img src="/img/imagenes-cafes/<%= producto.image ? producto.image : 'porDefecto.jpg' %>" alt="cafe" />
             </div>
             <div class="seccion2">
                 <span class="descripcion">
-                    <h2><%= cafe.name %></h2>
+                    <h2><%= producto.name %></h2>
                 </span>
                 <span class="precio">
-                    <h3><%= cafe.price %></h3>
+                    <h3><%= producto.price %></h3>
                 </span>
+                <form  action="/productos/agregarcarrito/<%= producto.id %>" method="post">
                 <span class="MedioDePago">
                     <h3>Medios de Pago</h3>
                     <i class="fab fa-cc-visa"></i>
@@ -28,22 +29,23 @@
                 </span>
                 <select name="peso" id="peso">
                     <option disabled selected>Selecciona un Peso</option>
-                    <option value="250gr">250gr</option>
-                    <option value="500gr">500gr</option>
-                    <option value="1kg">1 Kilo</option>
+                    <% pesos.forEach(function(tipoPeso) {%>                                    
+                        <option value=<%= tipoPeso.id %>><%= tipoPeso.weight%></option>
+                    <% }); %>
                 </select>
                 <select name="molienda" id="molienda">
                     <option disabled selected>Selecciona una Molienda</option>
-                    <% cafe.moliendas.forEach(function(tipoMolienda) {%>                                    
-                        <option value=<%= tipoMolienda %>><%= tipoMolienda%></option>
+                    <% moliendas.forEach(function(tipoMolienda) {%>                                    
+                        <option value=<%= tipoMolienda.id %>><%= tipoMolienda.grind%></option>
                     <% }); %>
                     </select>     
 
                         <label>Cantidad</label>
-                        <input class="numero" type="number" placeholder="0">
-                        <input class="boton" type="button" value="agregar al carrito">
+                        <input name="cantidad" class="numero" type="number" placeholder="0">
+                        <input class="boton" type="submit" value="agregar al carrito">
+                    </form>
                         <h2>Descripcion del Producto</h2>
-                <p><%= cafe.description %></p>
+                <p><%= producto.description %></p>
             </div>
         </div>
     </main>

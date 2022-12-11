@@ -92,3 +92,79 @@ values
         'wuzhP4Qpx',
         '1/3/2022'
     );
+
+insert into
+    products (id, name, image, description, price, intensity)
+values
+    (
+        1,
+        "Cafe Negro Colombiano",
+        "",
+        "Cafe proveniente del valle de tunja en Colombia, se caracteriza por su color negro oscuro acompañado de un sabor intenso y seco",
+        650,
+        8
+    );
+
+insert into
+    products (id, name, image, description, price, intensity)
+values
+    (
+        2,
+        "Cafe Frutal Brasilero",
+        "",
+        "Cafe traido directo de la region de Barreiras en el interior de Brasil, un cafe aromatico con dejos frutales y un sabor suave",
+        800,
+        6
+    );
+
+insert into
+    products (id, name, image, description, price, intensity)
+values
+    (
+        3,
+        "Cafe Seco Peruano",
+        "",
+        "Cafe cultivado en las montañas de Quillabamba en Perú, conocido mundialmente por su sabor seco y color amarronado claro que se obtiene mediante un proceso especial de cultivo",
+        500,
+        4
+    );
+
+insert into
+    grindings (id, grind)
+values
+    (1, "Granos");
+
+insert into
+    grindings (id, grind)
+values
+    (2, "Prensa Francesa");
+
+insert into
+    grindings (id, grind)
+values
+    (3, "Filtrado Manual");
+
+insert into
+    grindings (id, grind)
+values
+    (4, "Maquina Espresso");
+
+insert into
+    grindings (id, grind)
+values
+    (5, "Aeropress");
+
+insert into
+    weights (id, weight)
+values
+    (1, "250g");
+
+insert into
+    weights (id, weight)
+values
+    (2, "500g");
+
+insert into
+    weights (id, weight)
+values
+    (3, "1Kg");

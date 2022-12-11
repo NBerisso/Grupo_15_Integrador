@@ -2,6 +2,14 @@ const { create } = require("domain");
 const fs = require("fs");
 const path = require("path");
 const { validationResult } = require('express-validator');
+const db = require("../src/database/models");
+
+
+const weights = db.Weight
+const grindings = db.Grinding
+const product = db.Products
+const shoppingcart = db.ShoppingCart
+// const users = db.user
 
 
 function findAll() {
@@ -22,12 +30,22 @@ const controller = {
         res.render("./agregar-Productos.ejs");
     },
     
-    detalleProducto: (req, res) => {
-        const data = findAll();
-        const cafeEncontrado = data.find(function(cafe){
-            return cafe.id == req.params.id;
-        });
-        res.render("detalle-producto", { cafe: cafeEncontrado });
+    detalleProducto: async (req, res) => {
+        // metodo usando JSON
+        // const data = findAll();
+        // const cafeEncontrado = data.find(function(cafe){
+        //     return cafe.id == req.params.id;
+        // });
+        // res.render("detalle-producto", { cafe: cafeEncontrado });
+        try {
+            const producto = await product.findByPk(req.params.id);
+            const pesos = await weights.findAll();
+            const moliendas = await grindings.findAll();
+            res.render("detalle-producto", {pesos, moliendas, producto})
+
+        }catch(err){
+            res.send(err)
+        }
     },
     
     list: (req, res) => {
@@ -104,7 +122,25 @@ const controller = {
         writeFile(data);
 
         res.redirect("/productos/list");
+    },
+
+    agregarcarrito: async (req, res) => {
+        try{
+
+        await shoppingcart.create({ 
+            id_user: "",
+            id_product: req.params.id,
+            id_grindings: req.body.molienda,
+            id_weights: req.body.peso,
+            quantity: req.body.cantidad
+        })
+        res.redirect("/")
+        }catch(err){
+            res.send(err)
+        }
     }
+
+
 }
 
 

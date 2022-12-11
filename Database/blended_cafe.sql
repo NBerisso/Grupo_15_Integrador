@@ -20,6 +20,9 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `blended_cafe`
 --
+DROP DATABASE IF EXISTS blended_cafe;
+CREATE DATABASE blended_cafe;
+USE blended_cafe;
 
 -- --------------------------------------------------------
 
@@ -28,9 +31,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `grindings` (
-  `id` int(1) NOT NULL,
-  `grind` varchar(20) NOT NULL,
-  `id_product` int(5) NOT NULL
+  `id` int(3) NOT NULL,
+  `grind` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -42,10 +44,10 @@ CREATE TABLE `grindings` (
 CREATE TABLE `products` (
   `id` int(5) NOT NULL,
   `name` varchar(25) NOT NULL,
-  `image` blob NOT NULL,
+  `image` VARCHAR(255) NOT NULL,
   `description` text NOT NULL,
   `price` smallint(5) UNSIGNED NOT NULL,
-  `intensity` decimal(2,0) UNSIGNED NOT NULL
+  `intensity` INT(2) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -56,10 +58,11 @@ CREATE TABLE `products` (
 
 CREATE TABLE `shoppingcart` (
   `id` int(20) NOT NULL,
-  `id_user` int(2) NOT NULL,
-  `id_product` int(2) NOT NULL,
-  `cuantity` int(2) DEFAULT NULL,
-  `order_status` tinyint(1) DEFAULT NULL
+  `id_user` int(3) NULL,
+  `id_product` int(3) NOT NULL,
+  `id_grindings` int(3) NOT NULL,
+  `id_weights` int(3) NOT NULL,
+  `quantity` int(3) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -73,7 +76,7 @@ CREATE TABLE `users` (
   `name` varchar(25) NOT NULL,
   `email` varchar(30) NOT NULL,
   `user_password` varchar(20) NOT NULL,
-  `image` blob DEFAULT NULL,
+  `image` VARCHAR(255) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -85,8 +88,7 @@ CREATE TABLE `users` (
 
 CREATE TABLE `weights` (
   `id` int(5) NOT NULL,
-  `weigth` varchar(10) NOT NULL,
-  `id_product` int(5) NOT NULL
+  `weight` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
