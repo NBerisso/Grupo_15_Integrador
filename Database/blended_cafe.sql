@@ -42,7 +42,7 @@ CREATE TABLE `grindings` (
 --
 
 CREATE TABLE `products` (
-  `id` int(5) NOT NULL,
+  `id` int(5) NOT NULL AUTO_INCREMENT,
   `name` varchar(25) NOT NULL,
   `image` VARCHAR(255) NOT NULL,
   `description` text NOT NULL,

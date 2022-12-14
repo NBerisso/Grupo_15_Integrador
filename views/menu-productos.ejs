@@ -16,7 +16,7 @@
             <p><%= producto.description %></p>
             <h6> $ <%= producto.price %></h6>
             <h6>Intensidad:  <%= producto.intensity %></h6>
-            <button class="detail">Detalle</button>
+            <a href="/productos/detalle-producto/<%= producto.id %> "><button class="detail">Detalle</button></a>
           </div>
         
         <% }) %>

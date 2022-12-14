@@ -6,16 +6,23 @@
     <main>
       <%- include ("./partials/navbar.ejs") %>
         <div class="banner">
-          <form class="register" action="/productos/editar-Productos/<%= productBuscado.id %>?_method=PUT" method="POST">
+          <form class="register" action="/productos/editar-Productos/<%= productBuscado.id %>?_method=PUT"  enctype="multipart/form-data" method="POST">
             <h3>Editar Producto: <%= productBuscado.name %>
             </h3>
+            <% if(locals.errors2){ %>
+              <ul>
+                  <% errors2.forEach(function(error) {  %>
+                      <li class="error-msg"> <%= error.msg %> </li>
+                  <% }) %> 
+              </ul>
+             <% } %>
             <div class="row">
               <div class="inputs">
-                <input type="text" id="producto" name="name" value="<%= productBuscado.name %>" required>
+                <input type="text" id="producto" name="name" value="<%= productBuscado.name %>" >
                 <label class="etiqueta" for="producto">Producto</label>
               </div>
               <div class="inputs">
-                <input type="text" id="precio" name="price" value="<%= productBuscado.price %>" required>
+                <input type="text" id="precio" name="price" value="<%= productBuscado.price %>">
                 <label class="etiqueta" for="precio">Precio</label>
               </div>
             </div>
@@ -23,14 +30,14 @@
           
             <div class="inputs">
               <label class="image-input" for="imagen-producto">Nueva Imagen (Opcional)</label>
-              <input type="file" id="imagen-producto">
+              <input type="file" id="imagen-producto" name="image">
             </div>
             <div class="inputs">
-              <input type="text" name="intensity" id="intensity" value="<%= productBuscado.intensity %>" required/>
+              <input type="text" name="intensity" id="intensity" value="<%= productBuscado.intensity %>"/>
               <label class="etiqueta" for="intensity">intensity</label>
             </div>
             <div class="inputs">
-              <textarea id="description" name="description" rows="8" required><%= productBuscado.description %></textarea>
+              <textarea id="description" name="description" rows="8" ><%= productBuscado.description %></textarea>
               <label class="etiqueta" for="description"></label>
             </div>
             <button type="submit">Editar</button>

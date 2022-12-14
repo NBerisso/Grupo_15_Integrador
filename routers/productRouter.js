@@ -4,7 +4,7 @@ const productController = require('../controllers/productController')
 const multer = require('multer');
 const path= require("path");
 const middleware = require('../middlewares/middleware')
-const {productsValidation} = require('../validations/productsValidation')
+const {productsValidation, updateValidation} = require('../validations/productsValidation')
 
 
 
@@ -28,7 +28,7 @@ router.post("/agregar-Productos", upload.single('image'), productsValidation, pr
 
 
 router.get("/editar-Productos/:id", middleware, productController.edit);
-router.put("/editar-Productos/:id", upload.single('image'), productController.update);
+router.put("/editar-Productos/:id", upload.single('image'), updateValidation, productController.update);
 router.delete("/eliminar/:id", productController.destroy);
 
 router.get("/detalle-producto/:id", productController.detalleProducto);

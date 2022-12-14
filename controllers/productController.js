@@ -113,12 +113,15 @@ const controller = {
         const validationErrors = validationResult(req)
         const productId = req.params.id;
 
-
+    
         if(!validationErrors.isEmpty()){
+            const productBuscado = await product.findByPk(productId)
+
             res.render("editar-Productos", {
                 errors: validationErrors.mapped(),
                 errors2: validationErrors.array(),
-                old: req.body
+                old: req.body,
+                productBuscado
             })
         } else{
             try{
@@ -128,21 +131,23 @@ const controller = {
                     name: req.body.name,
                     description: req.body.description,
                     price: req.body.price,
-                    image: req.file.filename,
+                    image: req.file ? req.file.filename: productBuscado.image,
                     intensity: req.body.intensity
                 },
                 {
                     where: { id: productId },
                 }
                 );
-
+                console.log("Producto editado!");
                 res.redirect("/productos/list")
-
+    
             } catch (err) {
                 res.send(err);
             }
+    
             }
         },
+
         // const data = findAll();
 
         // const cafeEncontrado = data.find(function(cafe){
@@ -188,7 +193,7 @@ const controller = {
         try{
 
         await shoppingcart.create({ 
-            id_user: "",
+            id_user: req.session.usuarioLogueado.id,
             id_product: req.params.id,
             id_grindings: req.body.molienda,
             id_weights: req.body.peso,
