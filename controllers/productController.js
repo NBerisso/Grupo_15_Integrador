@@ -29,7 +29,7 @@ const controller = {
     agregarProductos: (req, res) => {
         res.render("./agregar-Productos.ejs");
     },
-    
+
     detalleProducto: async (req, res) => {
         // metodo usando JSON
         // const data = findAll();
@@ -41,19 +41,19 @@ const controller = {
             const producto = await product.findByPk(req.params.id);
             const pesos = await weights.findAll();
             const moliendas = await grindings.findAll();
-            res.render("detalle-producto", {pesos, moliendas, producto})
+            res.render("detalle-producto", { pesos, moliendas, producto })
 
-        }catch(err){
+        } catch (err) {
             res.send(err)
         }
     },
-    
+
     list: async (req, res) => {
         try {
             const producto = await product.findAll();
-            res.render("./menu-productos.ejs", {producto})
+            res.render("./menu-productos.ejs", { producto })
 
-        }catch(err){
+        } catch (err) {
             res.send(err)
         }
 
@@ -63,15 +63,15 @@ const controller = {
     store: async (req, res) => {
         const validationErrors = validationResult(req)
 
-        if(!validationErrors.isEmpty()){
+        if (!validationErrors.isEmpty()) {
             res.render("agregar-Productos", {
                 errors: validationErrors.mapped(),
                 errors2: validationErrors.array(),
                 old: req.body
             })
-        } else{
-            try{
-                await product.create ({ 
+        } else {
+            try {
+                await product.create({
                     name: req.body.name,
                     description: req.body.description,
                     price: req.body.price,
@@ -84,21 +84,21 @@ const controller = {
             } catch (err) {
                 res.send(err);
             }
-            }
-        },
-  
-    
+        }
+    },
+
+
 
     edit: async (req, res) => {
         const id = req.params.id;
 
-        try{
+        try {
             const productBuscado = await product.findByPk(id)
-            
-            res.render("editar-Productos", {productBuscado})
-        }catch (err) {
+
+            res.render("editar-Productos", { productBuscado })
+        } catch (err) {
             res.send(err);
-          }
+        }
 
         // const data = findAll();
 
@@ -109,12 +109,12 @@ const controller = {
         // res.render("editar-Productos", { cafe: cafeEncontrado});
     },
 
-    update: async (req, res) =>{
+    update: async (req, res) => {
         const validationErrors = validationResult(req)
         const productId = req.params.id;
 
-    
-        if(!validationErrors.isEmpty()){
+
+        if (!validationErrors.isEmpty()) {
             const productBuscado = await product.findByPk(productId)
 
             res.render("editar-Productos", {
@@ -123,56 +123,88 @@ const controller = {
                 old: req.body,
                 productBuscado
             })
-        } else{
-            try{
-                let productBuscado = await product.findByPk(productId) 
+        } else {
+            try {
+                let productBuscado = await product.findByPk(productId)
+
+
+                if (req.file) {
+                    await fs.unlink(
+                        path.join(
+                            __dirname,
+                            "../public/img/imagenes-cafes/" +
+                            productBuscado.image
+                        ),
+                        (error) => {
+                            if (error) throw error;
+                            console.log("Imagen de producto viejo eliminada!");
+                        }
+                    );
+                }
 
                 await product.update({
                     name: req.body.name,
                     description: req.body.description,
                     price: req.body.price,
-                    image: req.file ? req.file.filename: productBuscado.image,
+                    image: req.file ? req.file.filename : productBuscado.image,
                     intensity: req.body.intensity
                 },
-                {
-                    where: { id: productId },
-                }
+                    {
+                        where: { id: productId },
+                    }
                 );
                 console.log("Producto editado!");
                 res.redirect("/productos/list")
-    
+
             } catch (err) {
                 res.send(err);
             }
-    
-            }
-        },
 
-        // const data = findAll();
+        }
+    },
 
-        // const cafeEncontrado = data.find(function(cafe){
-        //     return cafe.id == req.params.id
-        // })
+    // const data = findAll();
 
-        // cafeEncontrado.name = req.body.name;
-        // cafeEncontrado.price = req.body.price;
-        // cafeEncontrado.description = req.body.description;
-        // cafeEncontrado.image = req.file ? req.file.filename : cafeEncontrado.image;
-        // cafeEncontrado.moliendas = req.body.moliendas;
+    // const cafeEncontrado = data.find(function(cafe){
+    //     return cafe.id == req.params.id
+    // })
 
-        // writeFile(data);
+    // cafeEncontrado.name = req.body.name;
+    // cafeEncontrado.price = req.body.price;
+    // cafeEncontrado.description = req.body.description;
+    // cafeEncontrado.image = req.file ? req.file.filename : cafeEncontrado.image;
+    // cafeEncontrado.moliendas = req.body.moliendas;
 
-        // res.redirect("/productos/list");
-    
+    // writeFile(data);
 
-    destroy: async (req, res) =>{
+    // res.redirect("/productos/list");
+
+
+    destroy: async (req, res) => {
         const productId = req.params.id;
+        let productBuscado = await product.findByPk(productId)
 
-        try{
-            await product.destroy({ where: { id: productId}});
+        try {
+            await product.destroy({ where: { id: productId } });
+            
+            console.log(productBuscado.image)
+
+            //Chequear esta funcionalidad
+            await fs.unlink(
+                path.join(
+                    __dirname,
+                    "../public/img/imagenes-cafes/" +
+                    productBuscado.image
+                ),
+                (error) => {
+                    if (error) throw error;
+                    console.log("Imagen de producto viejo eliminada!");
+                }
+            );
+
 
             res.redirect("/productos/list")
-        }catch (err) {
+        } catch (err) {
             res.send(err);
         }
 
@@ -190,17 +222,17 @@ const controller = {
     },
 
     agregarcarrito: async (req, res) => {
-        try{
+        try {
 
-        await shoppingcart.create({ 
-            id_user: req.session.usuarioLogueado.id,
-            id_product: req.params.id,
-            id_grindings: req.body.molienda,
-            id_weights: req.body.peso,
-            quantity: req.body.cantidad
-        })
-        res.redirect("/")
-        }catch(err){
+            await shoppingcart.create({
+                id_user: req.session.usuarioLogueado.id,
+                id_product: req.params.id,
+                id_grindings: req.body.molienda,
+                id_weights: req.body.peso,
+                quantity: req.body.cantidad
+            })
+            res.redirect("/")
+        } catch (err) {
             res.send(err)
         }
     }

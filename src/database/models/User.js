@@ -29,7 +29,7 @@ const cols = {
 const config = {
     timestamps: true,
     createdAt: "created_at",
-    updatedAt: "update_at",
+    updatedAt: false,
     deleteAt: false,
     tableName: "users"
 }
