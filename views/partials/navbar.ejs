@@ -3,19 +3,22 @@
     <img src="/img/LogoCafe.png" class="logo" />Blended Cafe
   </h2>
   <ul>
-    <li><a href="/"> Home</a></li>
-    <li><a href="/productos/list"> Tienda</a></li>
-    <li><a href="#"> Contacto</a></li>
-    <li><a href="/carritoFinal"> Carrito</a></li>
-    <% if(!locals.usuario){ %>
-     <li><a href="/users/login"> Login</a></li>
-    <% } else { %>
-     <form action="/users/logout" method="post">
+    <div class="burger-menu">
+      <i class="fa fa-bars burger"></i>
+    </div>
+    <div class="sidebar">
+      <li><a href="/" class="sidebar-item"> Home</a></li>
+      <li><a href="/productos/list" class="sidebar-item"> Tienda</a></li>
+      <li><a href="/carritoFinal" class="sidebar-item"> Carrito</a></li>
+      <% if(!locals.usuario){ %>
+      <li><a href="/users/login" class="sidebar-item"> Login</a></li>
+      <% } else { %>
+      <form action="/users/logout" method="post" class="sidebar-item">
         <button type="submit" class="cerradoSesion">CERRAR SESION</button>
       </form>
-    <% } %>
+      <% } %>
+    </div>
   </ul>
-  <div class="burger-menu">
-    <i class="fa fa-bars burger"></i>
-  </div>
+  <script src="/js/script.js"></script>
 </nav>
+

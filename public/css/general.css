@@ -6,9 +6,9 @@
 }
 
 
-        /* NAVBAR */
+/* NAVBAR */
 
-.navbar{
+.navbar {
     width: 90%;
     margin: auto;
     padding: 35px 0;
@@ -17,63 +17,26 @@
     justify-content: space-between;
 }
 
-.logotipo{
+.logotipo {
     display: flex;
     align-items: center;
     color: white;
 }
 
-.logo{
+.logo {
     width: 100px;
     cursor: pointer;
     padding-right: 8px;
 }
 
-.navbar ul li,
-.cerradoSesion{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
+.burger-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    cursor: pointer;
 }
 
-.navbar ul li a{
-    font-size: 17px;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-
-.navbar ul li::after,
-.cerradoSesion::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background-color: #de984d;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-}
-
-.navbar ul li:hover::after,
-.cerradoSesion:hover::after{
-    width: 100%;
-}
-
-
-.cerradoSesion{
-    font-size: 17px;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    background: transparent;
-    border: none;
-    filter: opacity(1);
-}
-
-
-div.burger-menu i{
+div.burger-menu i {
     background-color: #9f5e28;
     border-radius: 5px;
     color: #FFF;
@@ -84,72 +47,151 @@ div.burger-menu i{
     width: 40px;
 }
 
-@media (max-width: 680px){
-    nav ul{
+@media (max-width: 680px) {
+    /* nav ul {
         display: none;
         text-align: right;
-    }
+    } */
 
-    .contenido{
+    .contenido {
         width: 100%;
     }
-    
-    .contenido h1{
+
+    .contenido h1 {
         font-size: 45px;
         margin-top: 80px;
         padding: 50px;
     }
-    
-    .contenido p{
+
+    .contenido p {
         margin: 20px;
         font-size: 15px;
     }
 
-    .slide-cafe{
+    .slide-cafe {
         display: none;
     }
 
-    .cafes-favoritos{
+    .cafes-favoritos {
         flex-basis: 100%;
     }
+
+    /* NAVBAR  PRUEBA DESPLEGABLE*/
+
+    .sidebar{
+        width: 0px;
+        height: 100vh;
+        background-color: #a1580a;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        overflow: hidden;
+        transition: width .5s ease;
+    }
+
+    .open{
+        width: 100px;
+    }
+
+    .sidebar-item {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 1em;
+        margin-top: 0.8em;
+        margin-right: 0.8em;
+        font-size: 20px;
+    }
+
+    .sidebar-item:hover{
+        background-color: rgb(134, 126, 126);
+    }
+
 }
 
 
-@media (min-width: 681px){
-    .burger-menu{
+@media (min-width: 681px) {
+    .burger-menu {
         display: none;
     }
 
-    .navbar ul li{
+    .navbar ul li {
         margin: 0 5px;
     }
-    .navbar ul{
+
+    .navbar ul {
         width: 100%;
         text-align: right;
     }
 
+    .navbar ul li,
+    .cerradoSesion {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .navbar ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .navbar ul li::after,
+    .cerradoSesion::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background-color: #de984d;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li:hover::after,
+    .cerradoSesion:hover::after {
+        width: 100%;
+    }
+
+
+    .cerradoSesion {
+        font-size: 17px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        background: transparent;
+        border: none;
+        filter: opacity(1);
+    }
 }
 
-@media (max-width: 830px){
-    .navbar form{
+@media (max-width: 830px) {
+    .navbar form {
         display: flex;
         flex-direction: row-reverse;
         padding-right: 14%;
     }
-    .cerradoSesion{
+
+    .cerradoSesion {
         padding-top: 10px
     }
 }
 
-@media (min-width: 850px){
-    .navbar ul{
+@media (min-width: 850px) {
+    .navbar ul {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
         justify-content: flex-end;
     }
 
-    .navbar ul li{
+    .navbar ul li {
         margin: 0 20px;
     }
 }
@@ -240,8 +282,5 @@ li a {
         padding: 0;
     }
 }
+
 /* ---------------Footer---------------- */
-
-
-
-

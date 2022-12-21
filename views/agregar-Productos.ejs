@@ -51,11 +51,21 @@
           <div class="inputs">
             <input type="text" name="intensity" id="intensity"/>
             <label class="etiqueta" for="intensity">intensity</label>
+            <% if(locals.errors && locals.errors.intensity){ %>
+              <p class="error-msg"><i class="far fa-times-circle"></i>
+                  <%= errors.intensity.msg %>
+              </p>
+              <% } %>
           </div>
 
           <div class="inputs">
             <textarea name="description" id="description" rows="8"></textarea>
             <label class="etiqueta" for="description">Descripcion </label>
+            <% if(locals.errors && locals.errors.description){ %>
+              <p class="error-msg"><i class="far fa-times-circle"></i>
+                  <%= errors.description.msg %>
+              </p>
+              <% } %>
           </div>
           <button type="submit">Crear</button>
 
