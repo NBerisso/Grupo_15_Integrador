@@ -117,6 +117,13 @@ Reunion 17hs (todos presentes)
 
 - Realizamos entrega del Sprint 6 (sin terminar)
 
+23/12 
+
+Reunion 17hs (Todos presentes)
+
+- Avanzamos sobre el sprint 6 (session, cookies, login y register)
+- Se modificaron algunos valores de los modelos y la base de datos.
+
 
 
 

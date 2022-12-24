@@ -35,9 +35,9 @@ module.exports = {
                 };               
             })
             .withMessage("EMAIL ya registrado"),
-        body("image")
-            .notEmpty()
-            .withMessage("Campo IMAGEN incompleto"),
+        // body("image")
+        //     .notEmpty()
+        //     .withMessage("Campo IMAGEN incompleto"),
         body("password")
             .notEmpty()
             .withMessage("Campo PASSWORD incompleto")
