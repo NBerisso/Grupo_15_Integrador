@@ -3,17 +3,6 @@ const { validationResult } = require("express-validator");
 const db = require("../src/database/models");
 
 
-// function findAll() {
-//   const jsonData = fs.readFileSync(path.join(__dirname, "../data/users.json"));
-//   const data = JSON.parse(jsonData);
-//   return data;
-// }
-
-// Metodo con persistencia en JSON
-// function writeFile(data) {
-//   const dataString = JSON.stringify(data, null, 4);
-//   fs.writeFileSync(path.join(__dirname, "../data/users.json"), dataString);
-// }
 
 module.exports = {
   register: (req, res) => {
@@ -57,7 +46,6 @@ module.exports = {
       const error = validationResult(req);
 
       if (!error.isEmpty()) {
-        console.log("hay error");
         return res.render("login", { errors: error.mapped() });
       }
 
@@ -72,9 +60,6 @@ module.exports = {
           req.body.password,
           userFound.user_password
         );
-        console.log(passwordTrue);
-        console.log(typeof req.body.password);
-        console.log(userFound.user_password);
         if (passwordTrue) {
           delete userFound.user_password;
 
