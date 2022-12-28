@@ -10,7 +10,7 @@ module.exports = {
   },
 
   processRegister: async (req, res) => {
-    console.log(req.file);
+   
     try {
       const error = validationResult(req);
 

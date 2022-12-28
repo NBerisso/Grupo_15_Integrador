@@ -11,11 +11,6 @@ window.onload = function () {
     if (name.value == "") {
       errores.push("name no puede estar vacio");
 
-      // name.classList.add("is-invalid");
-      // name.classList.remove("is-valid");
-      // }else{
-      //     name.classList.add("is-valid");
-      //     name.classList.remove("is-invalid");
     }
 
     if (name.value.length == "1") {
@@ -24,11 +19,6 @@ window.onload = function () {
 
     if (email.value == "") {
       errores.push("email no puede estar vacio");
-      //     email.classList.add("is-invalid");
-      //     email.classList.remove("is-valid");
-      // }else{
-      //     email.classList.add("is-valid");
-      //     email.classList.remove("is-invalid")
     }
 
     if (/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(email.value)) {
@@ -39,11 +29,6 @@ window.onload = function () {
 
     if (image.value == "") {
       errores.push("image no puede estar vacio");
-      //     image.classList.add("is-invalid");
-      //     image.classList.remove("is-valid");
-      // }else{
-      //     image.classList.add("is-valid");
-      //     image.classList.remove("is-invalid")
     }
 
     let validExtensions = /(.jpg|.jpeg|.png)$/i;
@@ -53,23 +38,18 @@ window.onload = function () {
 
     if (password.value == "") {
       errores.push("password no puede estar vacio");
-      //     password.classList.add("is-invalid");
-      //     password.classList.remove("is-valid");
-      // }else{
-      //     password.classList.add("is-valid");
-      //     password.classList.remove("is-invalid")
     }
 
     if (password.value.length < "8") {
       errores.push("password debe tener 8 caracteres o mas");
     }
 
-    var decimal = /(?=.[a-z])(?=.[A-Z])$/;
-    if (password.value.match(decimal)) {
-      return true;
-    } else {
-        errores.push("Contraseña debe contener numero,un caracter especial");
-    }
+    // var decimal = /(?=.[a-z])(?=.[A-Z])$/;
+    // if (password.value.match(decimal)) {
+    //   return true;
+    // } else {
+    //     errores.push("Contraseña debe contener numero,un caracter especial");
+    // }
 
     if (errores.length > 0) {
       evento.preventDefault();

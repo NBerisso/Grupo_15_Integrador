@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html>
-<%- include ("./partials/head.ejs", {title:"login", style:"login"}) %>
+  <%- include ("./partials/head.ejs", {title:"login", style:"login"}) %>
 
   <body>
     <main>
-        <%- include ("./partials/navbar.ejs")%>
-        <div class="registro">
-          <form action="/users/login" method="POST">
-            <div class="complete">
-              <label for="E-mail"></label>
-              <input name="email" type="email" placeholder="E-mail" />
-              <% if(locals.errors && locals.errors.email){ %>
-                <p class="error-msg"><i class="far fa-times-circle"></i>
-                  <%= locals.errors.email.msg %>
-                </p>
-                <% } %>
-            </div>
-            <div>
-              <div class="complete">
-                <label for="Contraseña"></label>
-                <input name="password" type="password" placeholder="Contraseña" />
-                <% if(locals.errors && locals.errors.password){ %>
-                  <p class="error-msg"><i class="far fa-times-circle"></i>
-                    <%= locals.errors.password.msg %>
-                  </p>
-                  <% } %>
-              </div>
-              <div class="rememberUser">
-                <input type="checkbox" name="rememberUser" id="rememberBox">
-                <label for="rememberBox">Recuerdame</label>
-              </div>
-            </div>
-            <div class="botones">
-              <button type="submit">Iniciar sesión</button>
-            </div>
-            <p class="link-registro">
-              No tienes cuenta? Registrate
-              <a href="/users/crearCuenta">aqui</a>
+      <%- include ("./partials/navbar.ejs")%>
+      <div class="lista">
+        <ul class="listaError"></ul>
+      </div>
+      <div class="registro">
+        <form class="form" action="/users/login" method="POST">
+          <div class="complete">
+            <label for="E-mail"></label>
+            <input id="email" name="email" type="email" placeholder="E-mail" />
+            <% if(locals.errors && locals.errors.email){ %>
+            <p class="error-msg">
+              <i class="far fa-times-circle"></i>
+              <%= locals.errors.email.msg %>
             </p>
-
-            <% if(locals.errorLogin){ %>
-              <p class="error-msg"><i class="far fa-times-circle"></i>
-                <%= errorLogin %>
+            <% } %>
+          </div>
+          <div>
+            <div class="complete">
+              <label for="Contraseña"></label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Contraseña"
+              />
+              <% if(locals.errors && locals.errors.password){ %>
+              <p class="error-msg">
+                <i class="far fa-times-circle"></i>
+                <%= locals.errors.password.msg %>
               </p>
               <% } %>
-          </form>
-        </div>
+            </div>
+            <div class="rememberUser">
+              <input type="checkbox" name="rememberUser" id="rememberBox" />
+              <label for="rememberBox">Recuerdame</label>
+            </div>
+          </div>
+          <div class="botones">
+            <button type="submit">Iniciar sesión</button>
+          </div>
+          <p class="link-registro">
+            No tienes cuenta? Registrate
+            <a href="/users/crearCuenta">aqui</a>
+          </p>
+
+          <% if(locals.errorLogin){ %>
+          <p class="error-msg">
+            <i class="far fa-times-circle"></i>
+            <%= errorLogin %>
+          </p>
+          <% } %>
+        </form>
+      </div>
     </main>
     <%- include ("./partials/footer.ejs", {title:"general", style:"general"}) %>
+    <script src="/js/validationFrontLogin.js"></script>
   </body>
-
 </html>

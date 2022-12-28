@@ -124,6 +124,17 @@ Reunion 17hs (Todos presentes)
 - Avanzamos sobre el sprint 6 (session, cookies, login y register)
 - Se modificaron algunos valores de los modelos y la base de datos.
 
+28/12 
+
+Reunion 17hs 
+
+- Sprint 7 finalizados
+
+- Validaciones del frontend hechas
+
+- Sprint 8 falta revisar entre todos
+
+- Tambien falta Hacer una practica de la exposicion entre todos
 
 
 

@@ -157,8 +157,7 @@ const controller = {
         try {
             await product.destroy({ where: { id: productId } });
             
-            console.log(productBuscado.image)
-
+           
             //Chequear esta funcionalidad
             await fs.unlink(
                 path.join(

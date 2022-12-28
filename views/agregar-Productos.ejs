@@ -7,8 +7,11 @@
   <body>
     <main>
         <%- include ("./partials/navbar.ejs") %>
+        <div class="lista">
+          <ul class="listaError"></ul>
+        </div>
       <div class="banner">
-        <form class="register" action="/productos/agregar-Productos" enctype="multipart/form-data" method="post">
+        <form id="form" class="register" action="/productos/agregar-Productos" enctype="multipart/form-data" method="post">
             <h3>Agregar Producto</h3>
             <!-- <% if(locals.errors2){ %>
               <ul>
@@ -72,6 +75,7 @@
         </form>
       </div> 
     </main>
+    <script src="/js/validationFrontAgregar.js"></script>
   </body>
 
   <%- include ("./partials/footer.ejs") %>

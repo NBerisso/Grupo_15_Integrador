@@ -23,7 +23,7 @@ module.exports = {
             .withMessage('imagen requerida')
             .bail()
             .custom(function(value, {req}){
-                const extensionesAceptadas = ['.jpg', '.png'];
+                const extensionesAceptadas = ['.jpg','.jpeg','.png'];
                 const extension = path.extname(req.file.originalname);
                 console.log(extensionesAceptadas.includes(extension))
                 return extensionesAceptadas.includes(extension);

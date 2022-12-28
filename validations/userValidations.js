@@ -1,13 +1,5 @@
 const { body } = require('express-validator');
-const path = require('path');
-const fs = require("fs");
-
-
-function findAll() {
-    const jsonData = fs.readFileSync(path.join(__dirname, "../data/users.json"));
-    const data = JSON.parse(jsonData);
-    return data;
-};
+const db = require("../src/database/models")
 
 module.exports = {
     registerValidation: [
@@ -23,21 +15,17 @@ module.exports = {
             .isEmail()
             .withMessage("Email invalido")
             .custom(function(value,{req}){
-                const users = findAll()
-
-                const usuarioEncontrado = users.find(function(user){
-                    return user.email == value
-                });
-                if(usuarioEncontrado){
-                    return false
-                } else {
-                    return true
-                };               
+                return db.Users.findOne({
+                    where:{
+                        email: value
+                    }
+                }).then((email) =>{
+                    if(email){
+                        return Promise.reject("Email ya registrado")
+                    }
+                });           
             })
             .withMessage("EMAIL ya registrado"),
-        // body("image")
-        //     .notEmpty()
-        //     .withMessage("Campo IMAGEN incompleto"),
         body("password")
             .notEmpty()
             .withMessage("Campo PASSWORD incompleto")
