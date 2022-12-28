@@ -110,11 +110,19 @@ div.burger-menu i {
         background-color: rgb(134, 126, 126);
     }
 
+    #cerrar-sidebar{
+        font-size: 25px;
+        cursor: pointer
+    }
 }
 
 
 @media (min-width: 681px) {
     .burger-menu {
+        display: none;
+    }
+
+    #cerrar-sidebar{
         display: none;
     }
 

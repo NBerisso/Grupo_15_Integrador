@@ -1,87 +1,88 @@
-const fs = require("fs");
-const path = require("path");
 const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
+const db = require("../src/database/models");
 
 
-function findAll() {
-  const jsonData = fs.readFileSync(path.join(__dirname, "../data/users.json"));
-  const data = JSON.parse(jsonData);
-  return data;
-}
-
-
-function writeFile(data) {
-  const dataString = JSON.stringify(data, null, 4);
-  fs.writeFileSync(path.join(__dirname, "../data/users.json"), dataString);
-}
 
 module.exports = {
   register: (req, res) => {
     res.render("crearCuenta");
   },
 
-  processRegister: (req, res) => {
-    const error = validationResult(req);
+  processRegister: async (req, res) => {
+    console.log(req.file);
+    try {
+      const error = validationResult(req);
 
-    if (!error.isEmpty()) {
-      return res.render("crearCuenta", {
-        errors: error.mapped(),
-        old: req.body,
-      });
-    } else {
-      const users = findAll();
+      if (!error.isEmpty()) {
+        return res.render("crearCuenta", {
+          errors: error.mapped(),
+          old: req.body,
+        });
+      } else {
 
-      const newUser = {
-        id: users.length + 1,
-        name: req.body.name,
-        email: req.body.email,
-        image: req.file.filename,
-        password: bcryptjs.hashSync(req.body.password, 10),
-      };
+        const newUser = {
+          name: req.body.name,
+          email: req.body.email,
+          image: req.file ? req.file.filename : "default-image.png",
+          user_password: bcryptjs.hashSync(req.body.password, 10),
+        };
 
-      users.push(newUser);
+        await db.Users.create(newUser);
 
-      writeFile(users);
-
-      res.redirect("/");
+        res.redirect("/users/login");
+      }
+    } catch (error) {
+      console.log(error);
     }
   },
 
-  login: (req, res) => {
+  login: async (req, res) => {
     res.render("login");
   },
-  processLogin: (req, res) => {
-    const error = validationResult(req);
 
-    if (!error.isEmpty()) {
-      return res.render("login", { errors: error.mapped() });
-    };
-
-    const users = findAll();
+  processLogin: async (req, res) => {
     
-    const userFound = users.find(function(user){
-        return user.email == req.body.email && bcryptjs.compareSync(req.body.password, user.password)
-    });
+      const error = validationResult(req);
 
-    if (!userFound) {
-      return res.render("login", { errorLogin: "Credenciales invalidas!" });
-    } else {
-        req.session.usuarioLogueado = {
-            id: userFound.id,
-            email: userFound.email,
+      if (!error.isEmpty()) {
+        return res.render("login", { errors: error.mapped() });
+      }
+
+      const userFound = await db.Users.findOne({
+        where: {
+          email: req.body.email,
+        },
+      });
+
+      if (userFound) {
+        let passwordTrue = bcryptjs.compareSync(
+          req.body.password,
+          userFound.user_password
+        );
+        if (passwordTrue) {
+          delete userFound.user_password;
+
+          req.session.usuarioLogueado = userFound;
+
+          if (req.body.rememberUser) {
+            res.cookie("recordame", userFound.id, { maxAge: 60000 * 24 });
+          }
+
+          return res.redirect("/");
         }
+      }
 
-        if(req.body.rememberUser){
-            res.cookie('recordame', userFound.id, {maxAge: 60 * 60 * 60})
+      return res.render("login", { errors:{
+        email: {
+          msg: "Las credenciales son invalidas"
         }
-
-        res.redirect('/');
-    }
+      } });
   },
-  logout: (req, res)=>{
+
+  logout: (req, res) => {
     req.session.destroy();
     res.clearCookie("recordame");
-    res.redirect("/");
-  }
+    return res.redirect("/");
+  },
 };

@@ -9,7 +9,7 @@ const weights = db.Weight
 const grindings = db.Grinding
 const product = db.Products
 const shoppingcart = db.ShoppingCart
-// const users = db.user
+
 
 
 function findAll() {
@@ -31,12 +31,6 @@ const controller = {
     },
 
     detalleProducto: async (req, res) => {
-        // metodo usando JSON
-        // const data = findAll();
-        // const cafeEncontrado = data.find(function(cafe){
-        //     return cafe.id == req.params.id;
-        // });
-        // res.render("detalle-producto", { cafe: cafeEncontrado });
         try {
             const producto = await product.findByPk(req.params.id);
             const pesos = await weights.findAll();
@@ -100,13 +94,6 @@ const controller = {
             res.send(err);
         }
 
-        // const data = findAll();
-
-        // const cafeEncontrado = data.find(function(cafe){
-        //     return cafe.id == req.params.id;
-        // });
-
-        // res.render("editar-Productos", { cafe: cafeEncontrado});
     },
 
     update: async (req, res) => {
@@ -163,23 +150,6 @@ const controller = {
         }
     },
 
-    // const data = findAll();
-
-    // const cafeEncontrado = data.find(function(cafe){
-    //     return cafe.id == req.params.id
-    // })
-
-    // cafeEncontrado.name = req.body.name;
-    // cafeEncontrado.price = req.body.price;
-    // cafeEncontrado.description = req.body.description;
-    // cafeEncontrado.image = req.file ? req.file.filename : cafeEncontrado.image;
-    // cafeEncontrado.moliendas = req.body.moliendas;
-
-    // writeFile(data);
-
-    // res.redirect("/productos/list");
-
-
     destroy: async (req, res) => {
         const productId = req.params.id;
         let productBuscado = await product.findByPk(productId)
@@ -208,17 +178,6 @@ const controller = {
             res.send(err);
         }
 
-        // const data = findAll();
-
-        // const cafeEncontrado = data.findIndex(function(cafe){
-        //     return cafe.id == req.params.id
-        // })
-
-        // data.splice(cafeEncontrado, 1);
-
-        // writeFile(data);
-
-        // res.redirect("/productos/list");
     },
 
     agregarcarrito: async (req, res) => {

@@ -17,7 +17,7 @@ let storage = multer.diskStorage({
     }
 })
 
-let upload = multer({storage: storage});
+const upload = multer({storage: storage});
 
 
 //register

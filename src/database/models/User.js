@@ -18,7 +18,7 @@ const cols = {
         allowNull: false
     },
     user_password: {
-        type: DataTypes.INTEGER
+        type: DataTypes.STRING(255)
     },
     image: {
         type: DataTypes.STRING(255),
