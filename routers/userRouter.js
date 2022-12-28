@@ -8,7 +8,7 @@ const validation = require("../validations/userValidations");
 
 let storage = multer.diskStorage({
 	destination: (req, file, cb) => { 
-        cb(null, path.join(__dirname,'../public/img/usuarios-register' ))
+        cb(null, path.join(__dirname,'../public/img' ))
 	},
 
 	filename: (req, file, cb) => { 

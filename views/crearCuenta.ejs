@@ -8,12 +8,14 @@
             <%- include ("./partials/navbar.ejs")%>
         </header>
         <main>
+        <div class="lista">
+            <ul class="listaError"></ul>
+        </div>
             <div class="registro">
-
-                <form action="/users/crearCuenta" enctype="multipart/form-data" method="post">
+                <form class="form" action="/users/crearCuenta" enctype="multipart/form-data" method="post">
                     <p>
                         <label for="Nombre de usuari@"></label>
-                        <input type="text" name="name" placeholder="Nombre de usuario">
+                        <input id="name" type="text" name="name" placeholder="Nombre de usuario">
                         <% if(locals.errors && locals.errors.name){ %>
                             <p class="error-msg"><i class="far fa-times-circle"></i>
                                 <%= errors.name.msg %>
@@ -22,7 +24,7 @@
                     </p>
                     <p>
                         <label for="email"></label>
-                        <input type="email" name="email" placeholder="E-mail">
+                        <input id="email" type="email" name="email" placeholder="E-mail">
                         <% if(locals.errors && locals.errors.email){ %>
                             <p class="error-msg"><i class="far fa-times-circle"></i>
                                 <%= errors.email.msg %>
@@ -31,7 +33,7 @@
                     </p>
                     <p>
                         <label class="image1" for="image">Subir Imagen</label>
-                        <input type="file" name="image" class="image" />
+                        <input id="image" type="file" name="image" class="image" />
                         <% if(locals.errors && locals.errors.image){ %>
                             <p class="error-msg"><i class="far fa-times-circle"></i>
                                 <%= errors.image.msg %>
@@ -40,7 +42,7 @@
                     </p>
                     <p>
                         <label for="Contraseña"></label>
-                        <input type="password" name="password" placeholder="Contraseña">
+                        <input id="password" type="password" name="password" placeholder="Contraseña">
                         <% if(locals.errors && locals.errors.password){ %>
                             <p class="error-msg"><i class="far fa-times-circle"></i>
                                 <%= errors.password.msg %>
@@ -63,6 +65,7 @@
             </div>
         </main>
         <%- include ("./partials/footer.ejs") %>
+        <script src="/js/validacionFrontRegister.js"></script>
     </body>
 
 </html>

@@ -196,6 +196,21 @@ div.burger-menu i {
     }
 }
 
+/*------------- Validaciones Front --------------*/
+
+.lista ul{
+    display: block;
+}
+
+.listaError li{
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    padding-left: 15%;
+}
+
+/*------------- Validaciones Front --------------*/
+
 
 /* ---------------Footer---------------- */
 .footer {
