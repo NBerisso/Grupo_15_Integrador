@@ -12,7 +12,11 @@ const userRouter = require('./routers/userRouter');
 const localsMiddleware = require('./middlewares/localsMiddle');
 const recordameMiddle = require('./middlewares/recordameMiddle');
 
+// API routes
 
+const productApiRouter = require('./routers/api/productApiRouter')
+const userApiRouter = require('./routers/api/userApiRouter')
+const grindingApiRouter = require('./routers/api/grindingApiRouter')
 
 // Configuracion
 // Template Engine ---------- (NO TOCAR) --------------------------
@@ -37,6 +41,12 @@ app.use(localsMiddleware);
 app.use("/", mainRouter);
 app.use("/productos", productRouter);
 app.use("/users", userRouter);
+
+
+// Api Routers
+app.use('/api', productApiRouter);
+app.use('/api', userApiRouter);
+app.use('/api', grindingApiRouter);
 
 app.listen(process.env.PORT || 3030, () => {
     console.log ("Servidor corriendo en el puerto 3030");
