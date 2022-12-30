@@ -37,12 +37,47 @@ const productAPIController = {
                 res.json(respuesta);
             });
     },
+
+    'FirstCoffee': (req, res) => {
+        product.findAll({
+            limit: 3,
+            order: [["id", "ASC"]],
+        })
+        .then(product => {
+            let respuesta = {
+                meta: {
+                    status : 200,
+                    total: product.length,
+                    url: 'api/products/firstCoffee'
+                },
+                data: product
+            }
+                res.json(respuesta);
+            })
+      },
+
+      lastProduct: (req, res) => {
+        product.findAll({
+          limit: 1,
+          order: [["id", "DESC"]],
+        }).then((product) => {
+          let response = {
+            meta: {
+              status: 200,
+              url: "/api/products/lastProduct",
+            },
+            data: product,
+          };
+          res.json(response);
+        });
+      },
+
+
+
 }
 
 
 module.exports = productAPIController;
-
-
 
 
 
