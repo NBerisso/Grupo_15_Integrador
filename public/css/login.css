@@ -103,6 +103,18 @@ form .rememberUser label{
     font-weight: bold;
     padding-left: 15%;
 }
+.email-error{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.password-error{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
 form p i {
     font-size: 1em;
 }

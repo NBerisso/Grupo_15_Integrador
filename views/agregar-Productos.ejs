@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <%- include ("./partials/head.ejs", {title:"agregar-Productos",
-  style:"agregar-Productos"}) %>
+
+<%- include ("./partials/head.ejs", {title:"agregar-Productos", style:"agregar-Productos"}) %>
 
   <body>
     <main>
-        <%- include ("./partials/navbar.ejs") %>
+      <%- include ("./partials/navbar.ejs") %>
         <div class="lista">
           <ul class="listaError"></ul>
         </div>
-      <div class="banner">
-        <form id="form" class="register" action="/productos/agregar-Productos" enctype="multipart/form-data" method="post">
+        <div class="banner">
+          <form id="form" class="register" action="/productos/agregar-Productos" enctype="multipart/form-data"
+            method="post">
             <h3>Agregar Producto</h3>
             <!-- <% if(locals.errors2){ %>
               <ul>
@@ -21,63 +21,68 @@
               </ul>
              <% } %> -->
             <div class="row">
-                <div class="inputs">
-                    <input type="text" name="name" id="name"/>
-                    <label class="etiqueta" for="name">Producto</label>
-                    <% if(locals.errors && locals.errors.name){ %>
-                      <p class="error-msg"><i class="far fa-times-circle"></i>
-                          <%= errors.name.msg %>
-                      </p>
-                      <% } %> 
-                  </div>
-                  <div class="inputs">
-                    <input type="text" name="price" id="price"/>
-                    <label class="etiqueta" for="price">Precio</label>
-                    <% if(locals.errors && locals.errors.price){ %>
-                      <p class="error-msg"><i class="far fa-times-circle"></i>
-                          <%= errors.price.msg %>
-                      </p>
-                      <% } %>
-                  </div>
+              <div class="inputs">
+                <input type="text" name="name" id="name" />
+                <label class="etiqueta" for="name">Producto</label>
+                <% if(locals.errors && locals.errors.name){ %>
+                  <p class="error-msg"><i class="far fa-times-circle"></i>
+                    <%= errors.name.msg %>
+                  </p>
+                  <% } %>
+                    <ul class="nameEr"></ul>
+              </div>
+              <div class="inputs">
+                <input type="text" name="price" id="price" />
+                <label class="etiqueta" for="price">Precio</label>
+                <% if(locals.errors && locals.errors.price){ %>
+                  <p class="error-msg"><i class="far fa-times-circle"></i>
+                    <%= errors.price.msg %>
+                  </p>
+                  <% } %>
+                    <ul class="priceEr"></ul>
+              </div>
             </div>
-        
-          <div class="inputs">
-            <label class="image-input" for="image">Imagen</label>
-            <input type="file" name="image" id="image"/>
-            <% if(locals.errors && locals.errors.image){ %>
-              <p class="error-msg"><i class="far fa-times-circle"></i>
+
+            <div class="inputs">
+              <label class="image-input" for="image">Imagen</label>
+              <input type="file" name="image" id="image" />
+              <% if(locals.errors && locals.errors.image){ %>
+                <p class="error-msg"><i class="far fa-times-circle"></i>
                   <%= errors.image.msg %>
-              </p>
-              <% } %>
-          </div>
+                </p>
+                <% } %>
+                  <ul class="imageEr"></ul>
+            </div>
 
-          <div class="inputs">
-            <input type="text" name="intensity" id="intensity"/>
-            <label class="etiqueta" for="intensity">intensity</label>
-            <% if(locals.errors && locals.errors.intensity){ %>
-              <p class="error-msg"><i class="far fa-times-circle"></i>
+            <div class="inputs">
+              <input type="text" name="intensity" id="intensity" />
+              <label class="etiqueta" for="intensity">intensity</label>
+              <% if(locals.errors && locals.errors.intensity){ %>
+                <p class="error-msg"><i class="far fa-times-circle"></i>
                   <%= errors.intensity.msg %>
-              </p>
-              <% } %>
-          </div>
+                </p>
+                <% } %>
+                  <ul class="intensityEr"></ul>
+            </div>
 
-          <div class="inputs">
-            <textarea name="description" id="description" rows="8"></textarea>
-            <label class="etiqueta" for="description">Descripcion </label>
-            <% if(locals.errors && locals.errors.description){ %>
-              <p class="error-msg"><i class="far fa-times-circle"></i>
+            <div class="inputs">
+              <textarea name="description" id="description" rows="8"></textarea>
+              <label class="etiqueta" for="description">Descripcion </label>
+              <% if(locals.errors && locals.errors.description){ %>
+                <p class="error-msg"><i class="far fa-times-circle"></i>
                   <%= errors.description.msg %>
-              </p>
-              <% } %>
-          </div>
-          <button type="submit">Crear</button>
+                </p>
+                <% } %>
+                  <ul class="descriptionEr"></ul>
+            </div>
+            <button type="submit">Crear</button>
 
-        </form>
-      </div> 
+          </form>
+        </div>
     </main>
     <script src="/js/validationFrontAgregar.js"></script>
   </body>
 
   <%- include ("./partials/footer.ejs") %>
-</html>
 
+</html>

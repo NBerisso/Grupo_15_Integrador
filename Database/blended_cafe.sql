@@ -67,7 +67,7 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`id`, `name`, `image`, `description`, `price`, `intensity`) VALUES
 (1, 'Cafe Negro Colombiano', 'image1670974686538-.jpg', 'Cafe proveniente del valle de tunja en Colombia, se caracteriza por su color negro oscuro acompañado de un sabor intenso y seco', 650, 8),
-(2, 'Cafe Frutal Brasilero', 'image1670974714961-.jpg', 'Cafe traido directo de la region de Barreiras en el interior de Brasil, un cafe aromatico con dejos frutales y un sabor suave', 800, 6),
+(2, 'Cafe Frutal Brasilero', 'image1672183603176-.jpg', 'Cafe traido directo de la region de Barreiras en el interior de Brasil, un cafe aromatico con dejos frutales y un sabor suave', 800, 6),
 (3, 'Cafe Seco Peruano', 'image1670974659453-.jpg', 'Cafe cultivado en las montañas de Quillabamba en Perú, conocido mundialmente por su sabor seco y color amarronado claro que se obtiene mediante un proceso especial de cultivo', 400, 5),
 (5, 'Morro Aromatico', 'image1672183568641-.jpg', 'Proveniente de Brasil este grano se caracteriza por su robustes y aroma intenso', 400, 5),
 (6, 'Manizales Frutal', 'image1672183603176-.jpg', 'Originario de Colombia y gracias a su clima tropical, esta region produce un grano suave con un sabor frutal', 350, 4),

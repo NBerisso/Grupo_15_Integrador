@@ -8,9 +8,9 @@
             <%- include ("./partials/navbar.ejs")%>
         </header>
         <main>
-        <div class="lista">
-            <ul class="listaError"></ul>
-        </div>
+            <!-- <div class="lista">
+                <ul class="listaError"></ul>
+            </div> -->
             <div class="registro">
                 <form class="form" action="/users/crearCuenta" enctype="multipart/form-data" method="post">
                     <p>
@@ -21,6 +21,7 @@
                                 <%= errors.name.msg %>
                             </p>
                             <% } %>
+                        <ul class="name-error"></ul>
                     </p>
                     <p>
                         <label for="email"></label>
@@ -30,6 +31,7 @@
                                 <%= errors.email.msg %>
                             </p>
                             <% } %>
+                        <ul class="email-error"></ul>
                     </p>
                     <p>
                         <label class="image1" for="image">Subir Imagen</label>
@@ -39,6 +41,7 @@
                                 <%= errors.image.msg %>
                             </p>
                             <% } %>
+                        <ul class="image-error"></ul>
                     </p>
                     <p>
                         <label for="Contraseña"></label>
@@ -48,6 +51,7 @@
                                 <%= errors.password.msg %>
                             </p>
                             <% } %>
+                        <ul class="password-error"></ul>
                     </p>
                     <!-- <p>
                     <label for="Confirmar contraseña"></label>
@@ -55,17 +59,17 @@
                 </p> -->
                     <p>
                         <label for="Enviar"></label>
-                        <input class="efecto" type="submit">
+                        <input class="efecto" type="submit" value="Crear Cuenta">
                     </p>
                     <p>
                         <label for="Cancelar"></label>
-                        <input class="efecto" type="reset">
+                        <input class="efecto" type="reset" value="Borrar">
                     </p>
                 </form>
             </div>
         </main>
         <%- include ("./partials/footer.ejs") %>
-        <script src="/js/validacionFrontRegister.js"></script>
+            <script src="/js/validacionFrontRegister.js"></script>
     </body>
 
 </html>

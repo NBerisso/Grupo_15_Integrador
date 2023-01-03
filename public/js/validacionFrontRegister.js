@@ -2,61 +2,74 @@ window.onload = function () {
   let form = document.querySelector(".form");
 
   form.addEventListener("submit", (evento) => {
-    let errores = [];
+    let nameError = [];
     let name = document.querySelector("#name");
+    let emailError = [];
     let email = document.querySelector("#email");
+    let imageError = [];
     let image = document.querySelector("#image");
+    let passwordError = [];
     let password = document.querySelector("#password");
 
     if (name.value == "") {
-      errores.push("name no puede estar vacio");
+      nameError.push("Name no puede estar vacio");
 
     }
 
     if (name.value.length == "1") {
-      errores.push("name debe tener 2 caracteres o mas");
+      nameError.push("Name debe tener 2 caracteres o mas");
     }
 
     if (email.value == "") {
-      errores.push("email no puede estar vacio");
+      emailError.push("Email no puede estar vacio");
     }
 
     if (/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(email.value)) {
       return true;
     } else {
-      errores.push("email invalido");
+      emailError.push("Email invalido");
     }
 
     if (image.value == "") {
-      errores.push("image no puede estar vacio");
+      imageError.push("Image no puede estar vacio");
     }
 
     let validExtensions = /(.jpg|.jpeg|.png)$/i;
     if (!validExtensions.exec(image.value)) {
-          errores.push("Solamente se permiten archivos tipo .jpeg/.jpg/.png");
+          imageError.push("Formato invalido");
         }
 
     if (password.value == "") {
-      errores.push("password no puede estar vacio");
+      passwordError.push("Password no puede estar vacio");
     }
 
-    if (password.value.length < "8") {
-      errores.push("password debe tener 8 caracteres o mas");
+    if (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(password.value)) {
+      return true;
+    } else {
+      passwordError.push("Password debe contener una Mayuscula, numeros y algún simbolo");
     }
 
-    // var decimal = /(?=.[a-z])(?=.[A-Z])$/;
-    // if (password.value.match(decimal)) {
-    //   return true;
-    // } else {
-    //     errores.push("Contraseña debe contener numero,un caracter especial");
-    // }
-
-    if (errores.length > 0) {
+    if (nameError.length > 0 || emailError.length > 0 || imageError.length > 0 || passwordError.length > 0) {
       evento.preventDefault();
-      let listaError = document.querySelector(".listaError");
-      listaError.innerHTML = "";
-      for (let i = 0; i < errores.length; i++) {
-        listaError.innerHTML += "<li>" + errores[i] + "</li>";
+      let nameEr = document.querySelector(".name-error");
+      nameEr.innerHTML = "";
+      let emailEr = document.querySelector(".email-error");
+      emailEr.innerHTML = "";
+      let imageEr = document.querySelector(".image-error");
+      imageEr.innerHTML = "";
+      let passwordEr = document.querySelector(".password-error");
+      passwordEr.innerHTML = "";
+      for (let i = 0; i < nameError.length; i++) {
+        nameEr.innerHTML += "<li><i class='far fa-times-circle'></i> " + nameError[i] + "</li>";
+      }
+      for (let i = 0; i < emailError.length; i++) {
+        emailEr.innerHTML += "<li><i class='far fa-times-circle'></i> " + emailError[i] + "</li>";
+      }
+      for (let i = 0; i < imageError.length; i++) {
+        imageEr.innerHTML += "<li><i class='far fa-times-circle'></i> " + imageError[i] + "</li>";
+      }
+      for (let i = 0; i < passwordError.length; i++) {
+        passwordEr.innerHTML += "<li><i class='far fa-times-circle'></i> " + passwordError[i] + "</li>";
       }
     }
   });

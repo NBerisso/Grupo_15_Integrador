@@ -102,6 +102,7 @@ textarea:valid~.etiqueta {
 
 .row .inputs{
     flex-basis: 48%;
+    margin-bottom: 14px;
 }
 
 
@@ -118,6 +119,36 @@ textarea:valid~.etiqueta {
     font-size: large;
     font-weight: bold;
     padding-left: 15%;
+}
+.nameEr{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.priceEr{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.imageEr{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.intensityEr{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.descriptionEr{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
 }
 form p i {
     font-size: 1em;
