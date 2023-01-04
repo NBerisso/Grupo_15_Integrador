@@ -1,25 +1,16 @@
-
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Fondo-2.jpg");
 }
 
 
-            /* MAIN */
-main{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), #c58642c3),url("../img/fondo-login.jpg");
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), #c58642c3), url("../img/fondo-login.jpg");
     background-size: cover;
-    background-position: bottom; 
+    background-position: bottom;
 }
-/* 
-h1{
-    color: white;
-    display: flex;
-    align-content: center;
-    justify-content: center; 
-    margin: 1px auto;
-    padding: 0.5em;
-} */
-.registro{
+
+.registro {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -27,12 +18,9 @@ h1{
     justify-content: center;
     padding-bottom: 2em;
     flex-direction: column;
-    /* background-color: #fff0b6ba;
-    border-radius: 10%;
-    box-shadow: inset black -1px 1px 20px 4px; */
-
 }
-form{
+
+form {
     height: 70%;
     width: 35%;
     display: flex;
@@ -42,7 +30,8 @@ form{
     border-radius: 10%;
     box-shadow: inset black -1px 2px 20px 4px;
 }
-form .complete input{
+
+form .complete input {
     height: 2.3rem;
     display: flex;
     align-items: stretch;
@@ -54,23 +43,27 @@ form .complete input{
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-    /* background-color: #f4e0ca; */
+
 }
-form .rememberUser{
+
+form .rememberUser {
     display: flex;
     margin-top: 5%;
 }
-form .rememberUser input{
+
+form .rememberUser input {
     height: 1.7rem;
     width: 5%;
     margin-left: 60px;
 }
-form .rememberUser label{
+
+form .rememberUser label {
     margin-left: 10px;
     display: flex;
     align-items: center;
 }
-.botones button{
+
+.botones button {
     color: white;
     background-color: peru;
     height: 2.2rem;
@@ -83,79 +76,91 @@ form .rememberUser label{
     box-shadow: black 0px 1px 1px 0px;
     font-size: 1.3rem;
 }
-.botones a{
+
+.botones a {
     text-decoration: none;
 }
-.botones button:hover{
+
+.botones button:hover {
     background-color: rgb(161, 90, 20);
 }
-.link-registro{
+
+.link-registro {
     font-size: 1.1rem;
     text-align: center;
     padding: 0 1rem;
 }
 
-/*Errores */
-
-.error-msg{
+.error-msg {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     padding-left: 15%;
 }
-.email-error{
+
+.email-error {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
-.password-error{
+
+.password-error {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
+
 form p i {
     font-size: 1em;
 }
-/* -----------Media Queries---------- */
+
 @media (min-width:320px) and (max-width:600px) {
-    .navbar ul{
+    .navbar ul {
         text-align: center;
     }
-    form{
+
+    form {
         width: 70%;
         height: 60%;
     }
-    form input{
+
+    form input {
         height: 2.3rem;
         font-size: 0.8rem;
     }
-    .botones button{
+
+    .botones button {
         height: 2.3rem;
         font-size: 1.1rem;
     }
-    .link-registro{
+
+    .link-registro {
         font-size: 1.1rem;
     }
 }
 
-@media (min-width:601px) and (max-width:990px){
-    .navbar ul{
+@media (min-width:601px) and (max-width:990px) {
+    .navbar ul {
         text-align: center;
     }
-    form{
+
+    form {
         width: 50%;
         height: 70%;
     }
-    form input{
+
+    form input {
         height: 2.6rem;
         font-size: 1rem;
     }
-    .botones button{
+
+    .botones button {
         height: 2.6rem;
     }
-    .link-registro{
+
+    .link-registro {
         font-size: 1.2rem;
     }
 }

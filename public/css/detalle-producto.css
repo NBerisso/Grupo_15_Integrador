@@ -1,7 +1,5 @@
-
-
-body{
-    background-image: linear-gradient(#00000078, #de984d00),url(../img/detalleCafe.jpg);
+body {
+    background-image: linear-gradient(#00000078, #de984d00), url(../img/detalleCafe.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -112,26 +110,9 @@ p {
     height: 37px;
 }
 
-/* MOVIL */
+
 @media (min-width:320px) and (max-width:599px) {
 
-    /* HEADER */
-    /* .navbar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar ul {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .navbar ul li {
-        padding: 20px;
-    } */
-
-    /* MAIN */
     .seccion {
         display: flex;
         flex-direction: column;
@@ -164,26 +145,9 @@ p {
     }
 }
 
-/* TABLET */
+
 @media (min-width:600px) and (max-width:989px) {
 
-    /* HEADER */
-    /* .navbar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar ul {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .navbar ul li {
-        padding: 20px;
-    } */
-
-    /* MAIN */
     .seccion {
         display: flex;
         flex-direction: column;
@@ -293,7 +257,6 @@ li a {
 
 /* ----------------Footer--------------------------- */
 
-/* -------------------------MediaQueries--------------------------------- */
 @media (max-width: 1440px) {
     .container {
         display: grid;
@@ -306,5 +269,3 @@ li a {
         padding: 0;
     }
 }
-
-/* -------------------------MediaQueries--------------------------------- */

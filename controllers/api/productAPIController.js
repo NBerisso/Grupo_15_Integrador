@@ -1,5 +1,5 @@
-const path = require('path');
 const db = require('../../src/database/models');
+const { Op } = require("sequelize");
 const sequelize = db.sequelize;
 
 
@@ -72,7 +72,21 @@ const productAPIController = {
         });
       },
 
-
+      search: (req, res) => {
+        product.findAll({
+          where: { name: { [Op.like]: "%" + req.query.product + "%" } },
+        }).then((products) => {
+          let response = {
+            meta: {
+              status: 200,
+              total: products.length,
+              url: "api/products/search/",
+            },
+            data: products,
+          };
+          res.json(response);
+        });
+      },
 
 }
 

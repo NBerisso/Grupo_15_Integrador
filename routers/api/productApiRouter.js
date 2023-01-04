@@ -9,6 +9,7 @@ router.get('/product', productAPIController.list);
 router.get('/product/:id', productAPIController.detail);
 router.get('/products/firstCoffee', productAPIController.FirstCoffee);
 router.get('/products/lastProduct', productAPIController.lastProduct);
+router.get('/products/search', productAPIController.search);
 
 
 

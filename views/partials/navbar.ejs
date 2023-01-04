@@ -13,9 +13,8 @@
       <% if(!locals.usuario){ %>
       <li><a href="/users/login" class="sidebar-item"> Login</a></li>
       <% } else { %>
-      <form action="/users/logout" method="post" class="sidebar-item">
-        <button type="submit" class="cerradoSesion">CERRAR SESION</button>
-      </form>
+      <li><form action="/users/logout" method="post" class="sidebar-item">
+        <button type="submit" class="cerradoSesion">Logout</form></li>
       <% } %>
       <li class="sidebar-item" id="cerrar-sidebar"><i class="fa-solid fa-x"></i></li>
     </div>

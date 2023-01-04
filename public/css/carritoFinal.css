@@ -1,31 +1,15 @@
-
-
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Fondo-2.jpg");
 }
 
-
-
-/* CARRITO */
-main{
-    background-image: linear-gradient(rgba(0,0,0,0.7), #c58642),url("../img/fondo-carrito.jpg");
-    background-size: cover;
-    background-position: center;     
-    height: 130vh;
-}
-/* main {  
-    color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.30)), url("../img/testeo.jpg");
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 80vh;
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), #c58642), url("../img/fondo-carrito.jpg");
     background-size: cover;
     background-position: center;
-} */
+    height: 130vh;
+}
 
 
-/* PRODUCTO */
 .productos {
     color: white;
     display: flex;
@@ -53,7 +37,7 @@ main{
     height: 70px;
 }
 
-.productos div{
+.productos div {
     font-size: 1.12em;
 }
 
@@ -116,13 +100,13 @@ main{
     margin-left: 15%;
 }
 
-/* TOTAL */
 .total {
     width: 20%;
     position: relative;
     top: 38%;
     left: 80%;
-    color: white;;
+    color: white;
+    ;
 }
 
 h5 {
@@ -133,9 +117,11 @@ h5 {
 .total i {
     margin-right: auto;
 }
-.total span{
+
+.total span {
     font-size: 1.2em;
 }
+
 .total button {
     color: white;
     background-color: #bf771b;
@@ -153,37 +139,36 @@ h5 {
     background-color: #ffc14d;
 }
 
-/* ------------MediaQueries------------------- */
-
-            /* MOBILE */
-@media (min-width:320px) and (max-width:599px){
-    .navbar ul{
+@media (min-width:320px) and (max-width:599px) {
+    .navbar ul {
         text-align: center;
     }
-    .productos{
+
+    .productos {
         justify-content: space-evenly;
     }
-    .productos div{
+
+    .productos div {
         font-size: 0.8em;
     }
-    .productos img{
+
+    .productos img {
         width: 40px;
         height: 40px;
     }
-    .descripcion{
+
+    .descripcion {
         width: 30%;
     }
-    .cantidad select{
+
+    .cantidad select {
         width: 70%;
         margin: 30% 0;
     }
 }
-            /* TABLET */
-@media (min-width:600px) and (max-width:990px){
-    .navbar ul{
+
+@media (min-width:600px) and (max-width:990px) {
+    .navbar ul {
         text-align: center;
     }
 }
-
-
-/* ------------MediaQueries------------------- */

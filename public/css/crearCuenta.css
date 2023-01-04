@@ -1,18 +1,16 @@
-
-
 body {
-    background-image: linear-gradient(rgb(0 0 0 / 43%), #c5864254),url(../img/maquina.jpg);
+    background-image: linear-gradient(rgb(0 0 0 / 43%), #c5864254), url(../img/maquina.jpg);
     background-size: cover;
     background-position: center;
 }
 
 
 main {
-    
+
     height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap:  nowrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: center;
 }
@@ -44,7 +42,7 @@ h1 {
 .registro {
     display: flex;
     margin: 5% auto;
-    width: 30%; 
+    width: 30%;
     height: 80%;
     background-color: #eaac6ade;
     padding: 20px;
@@ -72,7 +70,7 @@ form p input {
     padding: 5px 10px;
 }
 
-.image1{
+.image1 {
     color: white;
     font-size: 20px;
     text-shadow: 1px 1px 2px black, 0 0 1em rgb(99, 54, 22), 0 0 1em rgb(99, 54, 22);
@@ -104,47 +102,47 @@ input {
     font-size: 20px;
 }
 
-/*Errores */
-
-.error-msg{
+.error-msg {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     padding-left: 15%;
 }
-.name-error{
+
+.name-error {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
-.email-error{
+
+.email-error {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
-.image-error{
+
+.image-error {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
-.password-error{
+
+.password-error {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
+
 form p i {
     font-size: 1em;
 }
 
-/* MOVIL */
 @media (min-width:320px) and (max-width:599px) {
 
-
-    /* MAIN */
     .registro {
         width: 85%;
         height: 90%;
@@ -159,10 +157,10 @@ form p i {
     }
 }
 
-/* TABLET */
+
 @media (min-width:600px) and (max-width:990px) {
 
-    /* HEADER */
+
     .navbar {
         display: flex;
         flex-direction: column;
@@ -178,7 +176,6 @@ form p i {
         padding: 20px;
     }
 
-    /* MAIN */
     .registro {
         width: 70%;
         height: 85%;
@@ -193,10 +190,9 @@ form p i {
     }
 }
 
-/* LAPTOP */
+
 @media (min-width:991px) and (max-width:1296px) {
 
-    /* MAIN */
     .registro {
         width: 60%;
         height: 100%;
@@ -208,13 +204,13 @@ form p i {
         font-size: 20px;
         text-align: center;
     }
-    
+
     main {
         height: 120vh;
     }
 }
 
-/* ----------------MediaQueries------------------ */
+
 @media (max-width: 1440px) {
     .container {
         display: grid;
@@ -227,5 +223,3 @@ form p i {
         padding: 0;
     }
 }
-
-/* ----------------MediaQueries------------------ */

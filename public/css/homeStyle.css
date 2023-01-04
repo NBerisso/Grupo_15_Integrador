@@ -5,31 +5,28 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/*--------------------------------------------------------
-----------------Seccion de NicoB--------------------------
------------------------------------------------------------*/
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Fondo-2.jpg");
 }
 
-h1 a{
+h1 a {
     color: #ffffff;
 }
 
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("../img/Fondo-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("../img/Fondo-1.jpg");
     background-size: cover;
     background-position: center;
 }
 
-        /* Pantalla 1 */
+/* Pantalla 1 */
 
 
-.contenido{
+.contenido {
     width: 100%;
-    
+
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -37,18 +34,18 @@ h1 a{
     color: white;
 }
 
-.contenido h1{
+.contenido h1 {
     font-size: 70px;
     margin-top: 80px;
 }
 
-.contenido p{
+.contenido p {
     margin: 20px;
     font-weight: 100;
     line-height: 25px;
 }
 
-div .botones1{
+div .botones1 {
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -63,8 +60,8 @@ div .botones1{
     overflow: hidden;
 }
 
-div .span1{
-    background-color:#de984d;
+div .span1 {
+    background-color: #de984d;
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -75,40 +72,40 @@ div .span1{
     transition: 0.5s;
 }
 
-.botones1:hover span{
+.botones1:hover span {
     width: 100%;
 }
 
-.botones1:hover{
+.botones1:hover {
     border: none;
 }
 
 
-            /* PANTALLA 2 */
+/* PANTALLA 2 */
 
-#destacados{
+#destacados {
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url("../img/testeo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url("../img/testeo.jpg");
     padding: 70px 0;
 }
 
-.titulo-destacados{
+.titulo-destacados {
     text-align: center;
     padding: 40px
 }
 
-.titulo-destacados p{
+.titulo-destacados p {
     margin: auto;
     color: white;
     font-weight: bold;
     font-size: 40px;
 }
 
-.titulo-destacados h1{
+.titulo-destacados h1 {
     font-size: 25px;
 }
 
-.box-destacados{
+.box-destacados {
     width: 80%;
     margin: auto;
     display: flex;
@@ -117,39 +114,39 @@ div .span1{
     text-align: center;
 }
 
-.cafes-favoritos{
+.cafes-favoritos {
     flex-basis: 60%;
 }
 
-.slide-cafe{
+.slide-cafe {
     flex-basis: 40%;
     margin: auto;
 }
 
-.slide-cafe img{
+.slide-cafe img {
     width: 90%;
     border-radius: 15px;
 }
 
-.cafes-favoritos h2{
+.cafes-favoritos h2 {
     text-align: left;
     margin-bottom: 10px;
     font-size: 28px;
     color: rgb(0, 0, 0);
 }
 
-.favoritos-cont{
+.favoritos-cont {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.bandera img{
+.bandera img {
     width: 100px;
     height: 100px;
 }
 
-.favoritos-texto p{
+.favoritos-texto p {
     padding: 0 20px;
     font-size: 18px;
     text-align: initial;
@@ -157,7 +154,7 @@ div .span1{
 }
 
 
-div .btn-1{
+div .btn-1 {
     width: 200px;
     height: 45px;
     border: 2px solid #de984d;
@@ -177,65 +174,31 @@ div .btn-1{
     cursor: pointer;
 }
 
-
-/* div.burger-menu i{
-    background-color: #9f5e28;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
-} */
-
-@media (max-width: 680px){
-        .contenido{
+@media (max-width: 680px) {
+    .contenido {
         width: 100%;
     }
-    
-    .contenido h1{
+
+    .contenido h1 {
         font-size: 45px;
         margin-top: 80px;
         padding: 50px;
     }
-    
-    .contenido p{
+
+    .contenido p {
         margin: 20px;
         font-size: 15px;
     }
 
-    .slide-cafe{
+    .slide-cafe {
         display: none;
     }
 
-    .cafes-favoritos{
+    .cafes-favoritos {
         flex-basis: 100%;
     }
 }
 
-
-/* @media (min-width: 681px){
-    
-} */
-
-/* @media (min-width: 750px){
-
-
-} */
-
-
-
-/*--------------------------------------------------------
-----------------Seccion de NicoB--------------------------
------------------------------------------------------------*/
-
-
-
-
-/*--------------------------------------------------------
-----------------Seccion de NicoD--------------------------
------------------------------------------------------------*/
 .section-three {
     margin-top: 3rem;
     display: flex;
@@ -282,15 +245,6 @@ div .btn-1{
     position: relative;
 }
 
-/*<<<<<<<<<<<<<<SOLO PARA 460 Y SUPERIOR>>>>>>>>>>>>>>>>>*/
-/* .card-info:hover {
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
-    width: 25.5rem;
-    height: 25.5rem;
-} */
-/*<<<<<<<<<<<<<<SOLO PARA 460 Y SUPERIOR>>>>>>>>>>>>>>>>>*/
-
-
 .card-info a {
     display: flex;
     justify-content: center;
@@ -308,15 +262,6 @@ div .btn-1{
 }
 
 
-/*--------------------------------------------------------
-----------------Seccion de NicoD--------------------------
------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
---------------------MediaQueries--------------------------------
----------------------------------------------------------------*/
-
 @media (max-width: 460px) {
     .card-info {
         width: 90%;
@@ -329,7 +274,7 @@ div .btn-1{
     }
 }
 
-@media (min-width: 460px){
+@media (min-width: 460px) {
     .card-info:hover {
         box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
         width: 25.5rem;
@@ -337,17 +282,15 @@ div .btn-1{
     }
 }
 
-@media (max-width: 1440px){
-    .container{
+@media (max-width: 1440px) {
+    .container {
         display: grid;
         grid-template-columns: repeat(min-content, 10rem);
         gap: 3rem;
     }
-    .footer-col-3, .footer-col-4{
+
+    .footer-col-3,
+    .footer-col-4 {
         padding: 0;
     }
 }
-
-/*--------------------------------------------------------------
---------------------MediaQueries--------------------------------
----------------------------------------------------------------*/

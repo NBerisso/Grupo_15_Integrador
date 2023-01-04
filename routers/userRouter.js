@@ -20,12 +20,11 @@ let storage = multer.diskStorage({
 const upload = multer({storage: storage});
 
 
-//register
 
 router.get("/crearCuenta", userController.register);
 router.post("/crearCuenta", upload.single('image'), validation.registerValidation, userController.processRegister);
 
-//login - logout
+
 
 router.get("/login", userController.login);
 router.post("/login", validation.loginValidation, userController.processLogin);

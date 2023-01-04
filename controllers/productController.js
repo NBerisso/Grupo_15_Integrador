@@ -157,8 +157,6 @@ const controller = {
         try {
             await product.destroy({ where: { id: productId } });
             
-           
-            //Chequear esta funcionalidad
             await fs.unlink(
                 path.join(
                     __dirname,

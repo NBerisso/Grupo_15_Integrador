@@ -1,15 +1,15 @@
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Fondo-2.jpg");
 }
 
-h1 a{
+h1 a {
     color: #ffffff;
 }
 
-main{
-    background-image: linear-gradient(rgba(0,0,0,0.6), #de984d),url("../img/fondo-prueba.jpg");
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), #de984d), url("../img/fondo-prueba.jpg");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
 
 
@@ -23,13 +23,13 @@ main{
     margin-top: 2rem;
 }
 
-form{
+form {
     width: 90%;
     max-width: 600px;
     padding-bottom: 1rem;
 }
 
-form h3{
+form h3 {
     color: white;
     display: flex;
     padding-bottom: 30px;
@@ -38,12 +38,13 @@ form h3{
     text-decoration: underline;
 }
 
-.inputs{
+.inputs {
     margin-bottom: 30px;
     position: relative;
 }
 
-input, textarea{
+input,
+textarea {
     width: 100%;
     padding: 10px;
     outline: 0;
@@ -52,7 +53,7 @@ input, textarea{
     background: transparent;
 }
 
-.etiqueta{
+.etiqueta {
     height: 100%;
     position: absolute;
     left: 0;
@@ -64,16 +65,16 @@ input, textarea{
     font-size: 18px;
 }
 
-.image-input{
+.image-input {
     position: relative;
     color: #fff;
-    cursor: text;  
+    cursor: text;
     padding: 10px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
     font-size: 18px;
 }
 
-button{
+button {
     font-size: 20px;
     padding: 10px 0;
     color: #fff;
@@ -92,28 +93,28 @@ textarea:valid~.etiqueta {
     font-size: 14px;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.row .input{
+.row .input {
     flex-basis: 48%;
     position: relative;
     top: 0;
     margin-bottom: 10px;
 }
 
-.moliendas{
-    display:flex;
+.moliendas {
+    display: flex;
     flex-direction: column;
     color: #fff;
     font-size: 18px;
     padding: 0.8rem;
 }
 
-.moliendas div{
+.moliendas div {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -122,44 +123,46 @@ textarea:valid~.etiqueta {
     gap: 4rem;
 }
 
-.moliendas input{
+.moliendas input {
     width: min-content;
 }
 
-/*Errores */
-.error-msg{
+.error-msg {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     padding-left: 15%;
 }
-.productoEr{
-    color: rgb(255, 255, 255);
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-    /* margin-bottom: 22px; */
-}
-.precioEr{
-    color: rgb(255, 255, 255);
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-    /* margin-bottom: 22px; */
-}
-.imagenEr{
+
+.productoEr {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
-.intensityEr{
+
+.precioEr {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
-.descriptionEr{
+
+.imagenEr {
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intensityEr {
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.descriptionEr {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;

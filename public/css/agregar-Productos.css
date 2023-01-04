@@ -1,22 +1,16 @@
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../img/Fondo-2.jpg");
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Fondo-2.jpg");
 }
 
-h1 a{
+h1 a {
     color: #ffffff;
 }
 
-main{
-    background-image: linear-gradient(rgba(0,0,0,0.8), #de984d),url("../img/Fondo-Productos.jpg");
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), #de984d), url("../img/Fondo-Productos.jpg");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
-
-/* .cajita{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-} */
 
 .banner {
     width: 100%;
@@ -26,17 +20,17 @@ main{
     justify-content: center;
 }
 
-form{
+form {
     width: 90%;
     max-width: 600px;
 }
 
-.inputs{
+.inputs {
     margin-bottom: 30px;
     position: relative;
 }
 
-form h3{
+form h3 {
     color: white;
     display: flex;
     padding-bottom: 30px;
@@ -45,7 +39,8 @@ form h3{
     text-decoration: underline;
 }
 
-input, textarea{
+input,
+textarea {
     width: 100%;
     padding: 10px;
     outline: 0;
@@ -54,7 +49,7 @@ input, textarea{
     background: transparent;
 }
 
-.etiqueta{
+.etiqueta {
     height: 100%;
     position: absolute;
     left: 0;
@@ -66,16 +61,16 @@ input, textarea{
     font-size: 18px;
 }
 
-.image-input{
+.image-input {
     position: relative;
     color: #fff;
-    cursor: text;  
+    cursor: text;
     padding: 10px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
     font-size: 18px;
 }
 
-button{
+button {
     font-size: 20px;
     padding: 10px 0;
     color: #fff;
@@ -94,19 +89,19 @@ textarea:valid~.etiqueta {
     font-size: 14px;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.row .inputs{
+.row .inputs {
     flex-basis: 48%;
     margin-bottom: 14px;
 }
 
 
-.moliendas{
+.moliendas {
     color: #fff;
     font-size: 18px;
     padding: 20px;
@@ -114,42 +109,48 @@ textarea:valid~.etiqueta {
 
 /*Errores */
 
-.error-msg{
+.error-msg {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     padding-left: 15%;
 }
-.nameEr{
+
+.nameEr {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
-.priceEr{
+
+.priceEr {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
-.imageEr{
+
+.imageEr {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
-.intensityEr{
+
+.intensityEr {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
-.descriptionEr{
+
+.descriptionEr {
     color: rgb(255, 255, 255);
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
+
 form p i {
     font-size: 1em;
 }
