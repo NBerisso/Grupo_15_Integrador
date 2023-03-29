@@ -20,6 +20,11 @@ const productApiRouter = require('./routers/api/productApiRouter')
 const userApiRouter = require('./routers/api/userApiRouter')
 const grindingApiRouter = require('./routers/api/grindingApiRouter')
 
+//RENDER DEPLOY CONFIG
+const port = process.env.PORT || 3030;
+require("dotenv").config();
+
+
 // Configuracion
 // Template Engine ---------- (NO TOCAR) --------------------------
 app.set("view engine", "ejs");
@@ -51,6 +56,8 @@ app.use('/api', productApiRouter);
 app.use('/api', userApiRouter);
 app.use('/api', grindingApiRouter);
 
-app.listen(process.env.PORT || 3030, () => {
-    console.log ("Servidor corriendo en el puerto 3030");
-});
+app.listen(port, () => {
+    console.log(`Servidor corriendo en el puerto ${port}`);
+    console.log(`http://localhost:${port}`);
+  });
+  
